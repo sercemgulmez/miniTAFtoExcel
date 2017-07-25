@@ -1,0 +1,259 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/ANI_Indexing_SM_Suite/test_suite.xml name= ANI_INDEXING_SM_AUTOMATION_SUITE ------
+  # <run-0>
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_37.xml name= ANI-INDEXING_AUTOMATION_TEST_37: Add Digit Based Route with valid variables ------
+       # <run-0>
+          SC;../omi/addPbxDigitBasedRoute.xml;2754;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;206;PASSED;
+          SC;../omi/getPbxDigitBasedRoutesBySipPbxAndRange.xml;2238;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5172;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_37.xml;ANI-INDEXING_AUTOMATION_TEST_37: Add Digit Based Route with valid variables;10844;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_38.xml name= ANI-INDEXING_AUTOMATION_TEST_38: Add Digit Based Route with used from and to digits ------
+       # <run-0>
+          SC;../omi/addPbxDigitBasedRoute.xml;2157;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;204;PASSED;
+          SC;omi/addPbxDigitBasedRouteFailCase.xml;166;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;204;PASSED;
+          SC;../omi/getPbxDigitBasedRoutesBySipPbxAndRange.xml;2160;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5136;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_38.xml;ANI-INDEXING_AUTOMATION_TEST_38: Add Digit Based Route with used from and to digits;10472;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_39.xml name= ANI-INDEXING_AUTOMATION_TEST_39: Add Digit Based Route within the range of another digit based route ------
+       # <run-0>
+          SC;../omi/addPbxDigitBasedRoute.xml;2124;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;omi/addPbxDigitBasedRouteFailCase.xml;77;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;../omi/getPbxDigitBasedRoutesBySipPbxAndRange.xml;2137;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5112;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_39.xml;ANI-INDEXING_AUTOMATION_TEST_39: Add Digit Based Route within the range of another digit based route;10279;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_40.xml name= ANI-INDEXING_AUTOMATION_TEST_40: Add Digit Based Route for a pbx that has no route ------
+       # <run-0>
+          SC;../omi/deletePbxRoute.xml;2350;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;omi/addPbxDigitBasedRouteFailCase.xml;78;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/addPbxRoute.xml;2138;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_40.xml;ANI-INDEXING_AUTOMATION_TEST_40: Add Digit Based Route for a pbx that has no route;5389;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_41.xml name= ANI-INDEXING_AUTOMATION_TEST_41: Add Digit Based Route with invalid characters ------
+       # <run-0>
+          SC;omi/addPbxDigitBasedRouteFailCase.xml;77;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;omi/addPbxDigitBasedRouteFailCase.xml;74;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_41.xml;ANI-INDEXING_AUTOMATION_TEST_41: Add Digit Based Route with invalid characters;768;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_42.xml name= ANI-INDEXING_AUTOMATION_TEST_42: Add Digit Based Route by exceeding the character limit for the from and to fields ------
+       # <run-0>
+          SC;omi/addPbxDigitBasedRouteFailCase.xml;72;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;omi/addPbxDigitBasedRouteFailCase.xml;75;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;omi/addPbxDigitBasedRouteFailCase.xml;77;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_42.xml;ANI-INDEXING_AUTOMATION_TEST_42: Add Digit Based Route by exceeding the character limit for the from and to fields;1047;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_43.xml name= ANI-INDEXING_AUTOMATION_TEST_43: Add Digit Based Route with for the case that TO value is LESS than FROM value ------
+       # <run-0>
+          SC;omi/addPbxDigitBasedRouteFailCase.xml;68;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_43.xml;ANI-INDEXING_AUTOMATION_TEST_43: Add Digit Based Route with for the case that TO value is LESS than FROM value;478;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_44.xml name= ANI-INDEXING_AUTOMATION_TEST_44: Remove Digit Based Route ------
+       # <run-0>
+          SC;../omi/addPbxDigitBasedRoute.xml;2110;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5113;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_44.xml;ANI-INDEXING_AUTOMATION_TEST_44: Remove Digit Based Route;7840;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_45.xml name= ANI-INDEXING_AUTOMATION_TEST_45: Remove a Route when the LTID of route is being used by a Digit Based Route ------
+       # <run-0>
+          SC;../omi/addPbxDigitBasedRoute.xml;2127;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;omi/deletePbxRouteFailCase.xml;95;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5113;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_45.xml;ANI-INDEXING_AUTOMATION_TEST_45: Remove a Route when the LTID of route is being used by a Digit Based Route;8157;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_46.xml name= ANI-INDEXING_AUTOMATION_TEST_46: Merge two Digit Based Route with adding route to the end of a route ------
+       # <run-0>
+          SC;../omi/addPbxDigitBasedRoute.xml;2123;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;../omi/addPbxDigitBasedRoute.xml;2185;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/getPbxDigitBasedRoutesBySipPbxAndRange.xml;2124;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5114;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_46.xml;ANI-INDEXING_AUTOMATION_TEST_46: Merge two Digit Based Route with adding route to the end of a route;12369;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_47.xml name= ANI-INDEXING_AUTOMATION_TEST_47: Merge two Digit Based Route with adding route to the beginning of a route ------
+       # <run-0>
+          SC;../omi/addPbxDigitBasedRoute.xml;2124;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/addPbxDigitBasedRoute.xml;2147;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;../omi/getPbxDigitBasedRoutesBySipPbxAndRange.xml;2119;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5108;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_47.xml;ANI-INDEXING_AUTOMATION_TEST_47: Merge two Digit Based Route with adding route to the beginning of a route;12320;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_48.xml name= ANI-INDEXING_AUTOMATION_TEST_48: Merge two Digit Based Route while one of the route is intercepting with the other ------
+       # <run-0>
+          SC;../omi/addPbxDigitBasedRoute.xml;2093;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;omi/addPbxDigitBasedRouteFailCase.xml;83;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;../omi/getPbxDigitBasedRoutesBySipPbxAndRange.xml;2122;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5108;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_48.xml;ANI-INDEXING_AUTOMATION_TEST_48: Merge two Digit Based Route while one of the route is intercepting with the other;10432;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_49.xml name= ANI-INDEXING_AUTOMATION_TEST_49: Split a Digit Based Route by deleting the beginning of a Digit Based Route ------
+       # <run-0>
+          SC;../omi/addPbxDigitBasedRoute.xml;2109;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5123;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;../omi/getPbxDigitBasedRoutesBySipPbxAndRange.xml;2120;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5143;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_49.xml;ANI-INDEXING_AUTOMATION_TEST_49: Split a Digit Based Route by deleting the beginning of a Digit Based Route;15521;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_50.xml name= ANI-INDEXING_AUTOMATION_TEST_50: Split a Digit Based Route by deleting the end of a Digit Based Route ------
+       # <run-0>
+          SC;../omi/addPbxDigitBasedRoute.xml;2118;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5181;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;../omi/getPbxDigitBasedRoutesBySipPbxAndRange.xml;2102;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5143;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_50.xml;ANI-INDEXING_AUTOMATION_TEST_50: Split a Digit Based Route by deleting the end of a Digit Based Route;15567;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_51.xml name= ANI-INDEXING_AUTOMATION_TEST_51: Split a Digit Based Route by deleting the middle of a Digit Based Route ------
+       # <run-0>
+          SC;../omi/addPbxDigitBasedRoute.xml;2127;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5213;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/getPbxDigitBasedRoutesBySipPbxAndRange.xml;2127;PASSED;
+          SC;../omi/getPbxDigitBasedRoutesBySipPbxAndRange.xml;2121;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5125;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5121;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_51.xml;ANI-INDEXING_AUTOMATION_TEST_51: Split a Digit Based Route by deleting the middle of a Digit Based Route;23067;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_52.xml name= ANI-INDEXING_AUTOMATION_TEST_52: Split a Digit Based Route with invalid characters for TO field ------
+       # <run-0>
+          SC;../omi/addPbxDigitBasedRoute.xml;2100;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;omi/deletePbxDigitBasedRouteFailCaseWith500.xml;81;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/getPbxDigitBasedRoutesBySipPbxAndRange.xml;2090;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5109;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_52.xml;ANI-INDEXING_AUTOMATION_TEST_52: Split a Digit Based Route with invalid characters for TO field;10401;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_53.xml name= ANI-INDEXING_AUTOMATION_TEST_53: Split a Digit Based Route with invalid characters for FROM field ------
+       # <run-0>
+          SC;../omi/addPbxDigitBasedRoute.xml;2118;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;omi/deletePbxDigitBasedRouteFailCaseWith500.xml;68;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/getPbxDigitBasedRoutesBySipPbxAndRange.xml;2084;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5102;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_53.xml;ANI-INDEXING_AUTOMATION_TEST_53: Split a Digit Based Route with invalid characters for FROM field;10393;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_54.xml name= ANI-INDEXING_AUTOMATION_TEST_54: Split a Digit Based Route with invalid characters for both FROM and TO field ------
+       # <run-0>
+          SC;../omi/addPbxDigitBasedRoute.xml;2124;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;omi/deletePbxDigitBasedRouteFailCaseWith500.xml;62;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;omi/deletePbxDigitBasedRouteFailCaseWith500.xml;72;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/getPbxDigitBasedRoutesBySipPbxAndRange.xml;2111;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5092;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;200;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_54.xml;ANI-INDEXING_AUTOMATION_TEST_54: Split a Digit Based Route with invalid characters for both FROM and TO field;10688;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_55.xml name= ANI-INDEXING_AUTOMATION_TEST_55: Split a Digit Based Route for off range FROM variable ------
+       # <run-0>
+          SC;../omi/addPbxDigitBasedRoute.xml;2121;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;omi/deletePbxDigitBasedRouteFailCase.xml;76;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;../omi/getPbxDigitBasedRoutesBySipPbxAndRange.xml;2080;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5108;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_55.xml;ANI-INDEXING_AUTOMATION_TEST_55: Split a Digit Based Route for off range FROM variable;10204;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_56.xml name= ANI-INDEXING_AUTOMATION_TEST_56: Split a Digit Based Route for off range TO variable ------
+       # <run-0>
+          SC;../omi/addPbxDigitBasedRoute.xml;2120;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;203;PASSED;
+          SC;omi/deletePbxDigitBasedRouteFailCase.xml;64;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+          SC;../omi/getPbxDigitBasedRoutesBySipPbxAndRange.xml;2093;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5108;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_56.xml;ANI-INDEXING_AUTOMATION_TEST_56: Split a Digit Based Route for off range TO variable;10203;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_57.xml name= ANI-INDEXING_AUTOMATION_TEST_57: Get multiple Digit Based Routes ------
+       # <run-0>
+          SC;../omi/addPbxDigitBasedRoute.xml;2130;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/addPbxDigitBasedRoute.xml;2157;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/getPbxDigitBasedRoutesBySipPbxAndRangeForRoutes.xml;2123;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5101;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+          SC;../omi/deletePbxDigitBasedRoute.xml;5088;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_57.xml;ANI-INDEXING_AUTOMATION_TEST_57: Get multiple Digit Based Routes;17622;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_58.xml name= ANI-INDEXING_AUTOMATION_TEST_58: Get Trunk Based Route by Sip Pbx and Trunk Group ------
+       # <run-0>
+          SC;../omi/addPbxTrunkBasedRoute.xml;2164;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/getPbxTrunkBasedRoutesBySipPbxAndTrunkGroup.xml;2101;PASSED;
+          SC;../omi/deletePbxTrunkBasedRoute.xml;2170;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_58.xml;ANI-INDEXING_AUTOMATION_TEST_58: Get Trunk Based Route by Sip Pbx and Trunk Group;7048;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_59.xml name= ANI-INDEXING_AUTOMATION_TEST_59: Get Trunk Based Route by Sip Pbx and Trunk Context ------
+       # <run-0>
+          SC;../omi/addPbxTrunkBasedRoute.xml;2097;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/getPbxTrunkBasedRoutesBySipPbxAndTrunkContext.xml;2081;PASSED;
+          SC;../omi/deletePbxTrunkBasedRoute.xml;2093;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_59.xml;ANI-INDEXING_AUTOMATION_TEST_59: Get Trunk Based Route by Sip Pbx and Trunk Context;6885;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_60.xml name= ANI-INDEXING_AUTOMATION_TEST_60: Get Trunk Based Route by Sip Pbx, Trunk Group and Trunk Context ------
+       # <run-0>
+          SC;../omi/addPbxTrunkBasedRoute.xml;2104;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;202;PASSED;
+          SC;../omi/getPbxTrunkBasedRouteBySipPbxAndTrunkGroupContext.xml;2104;PASSED;
+          SC;../omi/deletePbxTrunkBasedRoute.xml;2075;PASSED;
+       # <run-1>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;201;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_60.xml;ANI-INDEXING_AUTOMATION_TEST_60: Get Trunk Based Route by Sip Pbx, Trunk Group and Trunk Context;6898;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/ANI_Indexing_SM_Suite/test_suite.xml;ANI_INDEXING_SM_AUTOMATION_SUITE;234968;PASSED;

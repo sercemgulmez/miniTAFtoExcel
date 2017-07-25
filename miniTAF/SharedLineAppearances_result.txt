@@ -1,0 +1,1081 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/SharedLineAppearances/test_suite.xml name= SharedLineAppearances ------
+  # <run-0>
+     #------ Testcase file=tc/addSipProfile.xml name= addSipProfile ------
+       # <run-0>
+          SC;../omi/addSipProfile.xml;2823;PASSED;
+     TC;tc/addSipProfile.xml;addSipProfile;2863;PASSED;null
+     #------ Testcase file=tc/domainSetup.xml name= domainSetup ------
+       # <run-0>
+          SC;../opi/addRootDomain.xml;109;PASSED;
+          SC;../opi/setSystemProfilesForDomain.xml;111;PASSED;
+          SC;../opi/setServicesForDomain.xml;131;PASSED;
+          SC;opi/setDomainResources4.xml;209;PASSED;
+          SC;../opi/clir_setSystemProfilesForDomain.xml;1123;PASSED;
+          SC;../opi/addLogicalEntity.xml;161;PASSED;
+          SC;../opi/assignDomainsToPooledRoute.xml;82;PASSED;
+          SC;../opi/setAdhocConferencePoolLocations.xml;309;PASSED;
+          SC;../opi/adhoc_setSystemProfilesForDomain.xml;1072;PASSED;
+          SC;../opi/callfwd_setSystemProfilesForDomain.xml;1005;PASSED;
+          SC;../opi/ncwd_setSystemProfilesForDomain.xml;1071;PASSED;
+          SC;../opi/addLogicalEntity.xml;113;PASSED;
+          SC;../opi/assignDomainsToPooledRoute.xml;78;PASSED;
+          SC;../opi/addMusicOnHoldFolder.xml;508;PASSED;
+          SC;../opi/setMusicOnHoldDomainPool.xml;263;PASSED;
+          SC;../opi/setMOHPoolLocations.xml;119;PASSED;
+          SC;../opi/addLogicalEntity.xml;82;PASSED;
+          SC;../opi/assignDomainsToPooledRoute.xml;72;PASSED;
+          SC;../opi/addTreatmentService.xml;1412;PASSED;
+     TC;tc/domainSetup.xml;domainSetup;8096;PASSED;null
+  # <run-1>
+     #------ Testcase file=tc/tc1_sla_sca_incoming_call.xml name= tc1_sla_sca_incoming_call ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3576;PASSED;
+          SC;../opi/addSingleUser.xml;3578;PASSED;
+          SC;../opi/addSingleUser.xml;3585;PASSED;
+          SC;../opi/addSingleUser.xml;3665;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;297;PASSED;
+          SC;../opi/setLocationForUser.xml;297;PASSED;
+          SC;../opi/setLocationForUser.xml;309;PASSED;
+          SC;../opi/setLocationForUser.xml;315;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;251;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;599;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3010;PASSED;
+       # <run-4>
+          SC;scenario/tc1_non_sla_orig_user_call.xml;857;PASSED;
+          SC;scenario/tc1_sla_primary_user_call.xml;1172;PASSED;
+          SC;scenario/tc1_sla_secondary_user1_call.xml;1177;PASSED;
+          SC;scenario/tc1_sla_secondary_user2_call.xml;1182;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;361;PASSED;
+          SC;../opi/removeUser.xml;361;PASSED;
+          SC;../opi/removeUser.xml;378;PASSED;
+          SC;../opi/removeUser.xml;378;PASSED;
+     TC;tc/tc1_sla_sca_incoming_call.xml;tc1_sla_sca_incoming_call;12424;PASSED;null
+     #------ Testcase file=tc/tc2_sla_sca_dialog_event_primary_subscription_call.xml name= tc2_sla_sca_dialog_event_primary_subscription_call ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3517;PASSED;
+          SC;../opi/addSingleUser.xml;3517;PASSED;
+          SC;../opi/addSingleUser.xml;3533;PASSED;
+          SC;../opi/addSingleUser.xml;3571;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;275;PASSED;
+          SC;../opi/setLocationForUser.xml;275;PASSED;
+          SC;../opi/setLocationForUser.xml;280;PASSED;
+          SC;../opi/setLocationForUser.xml;281;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;137;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;132;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3003;PASSED;
+       # <run-4>
+          SC;scenario/tc2_sla_primary_user_subscription_dialog_event.xml;126;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;251;PASSED;
+          SC;../opi/removeUser.xml;275;PASSED;
+          SC;../opi/removeUser.xml;277;PASSED;
+          SC;../opi/removeUser.xml;276;PASSED;
+     TC;tc/tc2_sla_sca_dialog_event_primary_subscription_call.xml;tc2_sla_sca_dialog_event_primary_subscription_call;10623;PASSED;null
+     #------ Testcase file=tc/tc3_sla_sca_dialog_event_nonsla_subscription_secondary.xml name= tc3_sla_sca_dialog_event_nonsla_subscription_secondary ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3440;PASSED;
+          SC;../opi/addSingleUser.xml;3441;PASSED;
+          SC;../opi/addSingleUser.xml;3451;PASSED;
+          SC;../opi/addSingleUser.xml;3481;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;336;PASSED;
+          SC;../opi/setLocationForUser.xml;348;PASSED;
+          SC;../opi/setLocationForUser.xml;352;PASSED;
+          SC;../opi/setLocationForUser.xml;351;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;112;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;119;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3003;PASSED;
+       # <run-4>
+          SC;scenario/tc3_sla_sca_dialog_event_nonsla_subscription_secondary.xml;113;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;240;PASSED;
+          SC;../opi/removeUser.xml;248;PASSED;
+          SC;../opi/removeUser.xml;254;PASSED;
+          SC;../opi/removeUser.xml;255;PASSED;
+     TC;tc/tc3_sla_sca_dialog_event_nonsla_subscription_secondary.xml;tc3_sla_sca_dialog_event_nonsla_subscription_secondary;10303;PASSED;null
+     #------ Testcase file=tc/tc4_sla_sca_dialog_event_nonsla_subscription_primary.xml name= tc4_sla_sca_dialog_event_nonsla_subscription_primary ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3395;PASSED;
+          SC;../opi/addSingleUser.xml;3396;PASSED;
+          SC;../opi/addSingleUser.xml;3412;PASSED;
+          SC;../opi/addSingleUser.xml;3455;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;221;PASSED;
+          SC;../opi/setLocationForUser.xml;229;PASSED;
+          SC;../opi/setLocationForUser.xml;230;PASSED;
+          SC;../opi/setLocationForUser.xml;239;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;139;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;114;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3003;PASSED;
+       # <run-4>
+          SC;scenario/tc4_sla_sca_dialog_event_nonsla_subscription_primary.xml;114;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;216;PASSED;
+          SC;../opi/removeUser.xml;229;PASSED;
+          SC;../opi/removeUser.xml;229;PASSED;
+          SC;../opi/removeUser.xml;240;PASSED;
+     TC;tc/tc4_sla_sca_dialog_event_nonsla_subscription_primary.xml;tc4_sla_sca_dialog_event_nonsla_subscription_primary;10160;PASSED;null
+     #------ Testcase file=tc/tc5_sla_sca_incoming_call_with_CLIR.xml name= tc5_sla_sca_incoming_call_with_CLIR ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3431;PASSED;
+          SC;../opi/addSingleUser.xml;3434;PASSED;
+          SC;../opi/addSingleUser.xml;3509;PASSED;
+          SC;../opi/addSingleUser.xml;3557;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;209;PASSED;
+          SC;../opi/setLocationForUser.xml;211;PASSED;
+          SC;../opi/setLocationForUser.xml;210;PASSED;
+          SC;../opi/setLocationForUser.xml;212;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;98;PASSED;
+          SC;../opi/addServicesForUser.xml;96;PASSED;
+          SC;../opi/clir_setSystemProfileForUser.xml;173;PASSED;
+          SC;../opi/clir_setUserProfile.xml;365;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;120;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc5_non_sla_orig_user_call_CLIR.xml;214;PASSED;
+          SC;scenario/tc5_sla_secondary_user1_call_CLIR.xml;449;PASSED;
+          SC;scenario/tc5_sla_secondary_user2_call_CLIR.xml;450;PASSED;
+          SC;scenario/tc5_sla_primary_user_call_CLIR.xml;454;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;225;PASSED;
+          SC;../opi/removeUser.xml;244;PASSED;
+          SC;../opi/removeUser.xml;244;PASSED;
+          SC;../opi/removeUser.xml;298;PASSED;
+     TC;tc/tc5_sla_sca_incoming_call_with_CLIR.xml;tc5_sla_sca_incoming_call_with_CLIR;11305;PASSED;null
+     #------ Testcase file=tc/tc6_sla_sca_outgoing_call_CLIR.xml name= tc6_sla_sca_outgoing_call_CLIR ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3459;PASSED;
+          SC;../opi/addSingleUser.xml;3458;PASSED;
+          SC;../opi/addSingleUser.xml;3560;PASSED;
+          SC;../opi/addSingleUser.xml;3560;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;217;PASSED;
+          SC;../opi/setLocationForUser.xml;249;PASSED;
+          SC;../opi/setLocationForUser.xml;257;PASSED;
+          SC;../opi/setLocationForUser.xml;264;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;100;PASSED;
+          SC;../opi/addServicesForUser.xml;101;PASSED;
+          SC;../opi/clir_setSystemProfileForUser.xml;144;PASSED;
+          SC;../opi/clir_setUserProfile.xml;102;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;114;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc6_non_sla_user_outgoing_call_CLIR.xml;220;PASSED;
+          SC;scenario/tc6_sla_primary_user_outgoing_call_CLIR.xml;421;PASSED;
+          SC;scenario/tc6_sla_secondary_user1_outgoing_call_CLIR.xml;422;PASSED;
+          SC;scenario/tc6_sla_secondary_user2_outgoing_call_CLIR.xml;426;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;334;PASSED;
+          SC;../opi/removeUser.xml;334;PASSED;
+          SC;../opi/removeUser.xml;343;PASSED;
+          SC;../opi/removeUser.xml;354;PASSED;
+     TC;tc/tc6_sla_sca_outgoing_call_CLIR.xml;tc6_sla_sca_outgoing_call_CLIR;11072;PASSED;null
+     #------ Testcase file=tc/tc7_sla_sca_incoming_call_with_CLIR_privateHold.xml name= tc7_sla_sca_incoming_call_with_CLIR_privateHold ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3435;PASSED;
+          SC;../opi/addSingleUser.xml;3445;PASSED;
+          SC;../opi/addSingleUser.xml;3444;PASSED;
+          SC;../opi/addSingleUser.xml;3481;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;430;PASSED;
+          SC;../opi/setLocationForUser.xml;429;PASSED;
+          SC;../opi/setLocationForUser.xml;430;PASSED;
+          SC;../opi/setLocationForUser.xml;441;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;205;PASSED;
+          SC;../opi/addServicesForUser.xml;110;PASSED;
+          SC;../opi/clir_setSystemProfileForUser.xml;106;PASSED;
+          SC;../opi/clir_setUserProfile.xml;125;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;125;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc7_non_sla_orig_user_call_CLIR_privateHold.xml;281;PASSED;
+          SC;scenario/tc7_sla_secondary_user2_call_CLIR_privateHold.xml;670;PASSED;
+          SC;scenario/tc7_sla_secondary_user1_call_CLIR_privateHold.xml;691;PASSED;
+          SC;scenario/tc7_sla_primary_user_call_CLIR_privateHold.xml;693;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;231;PASSED;
+          SC;../opi/removeUser.xml;231;PASSED;
+          SC;../opi/removeUser.xml;247;PASSED;
+          SC;../opi/removeUser.xml;255;PASSED;
+     TC;tc/tc7_sla_sca_incoming_call_with_CLIR_privateHold.xml;tc7_sla_sca_incoming_call_with_CLIR_privateHold;11448;PASSED;null
+     #------ Testcase file=tc/tc8_sla_sca_incoming_call_with_privateHold.xml name= tc8_sla_sca_incoming_call_with_privateHold ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3395;PASSED;
+          SC;../opi/addSingleUser.xml;3407;PASSED;
+          SC;../opi/addSingleUser.xml;3423;PASSED;
+          SC;../opi/addSingleUser.xml;3426;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;254;PASSED;
+          SC;../opi/setLocationForUser.xml;254;PASSED;
+          SC;../opi/setLocationForUser.xml;254;PASSED;
+          SC;../opi/setLocationForUser.xml;262;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;135;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;150;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc8_non_sla_orig_user_call_privateHold.xml;351;PASSED;
+          SC;scenario/tc8_sla_secondary_user2_call_privateHold.xml;504;PASSED;
+          SC;scenario/tc8_sla_secondary_user1_call_privateHold.xml;528;PASSED;
+          SC;scenario/tc8_sla_primary_user_call_privateHold.xml;533;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;242;PASSED;
+          SC;../opi/removeUser.xml;242;PASSED;
+          SC;../opi/removeUser.xml;242;PASSED;
+          SC;../opi/removeUser.xml;246;PASSED;
+     TC;tc/tc8_sla_sca_incoming_call_with_privateHold.xml;tc8_sla_sca_incoming_call_with_privateHold;10650;PASSED;null
+     #------ Testcase file=tc/tc9_sla_sca_outgoing_call.xml name= tc9_sla_sca_outgoing_call ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3493;PASSED;
+          SC;../opi/addSingleUser.xml;3509;PASSED;
+          SC;../opi/addSingleUser.xml;3514;PASSED;
+          SC;../opi/addSingleUser.xml;3557;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;212;PASSED;
+          SC;../opi/setLocationForUser.xml;236;PASSED;
+          SC;../opi/setLocationForUser.xml;243;PASSED;
+          SC;../opi/setLocationForUser.xml;250;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;236;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;148;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc9_non_sla_user_outgoing_call.xml;189;PASSED;
+          SC;scenario/tc9_sla_secondary_user2_outgoing_call.xml;301;PASSED;
+          SC;scenario/tc9_sla_primary_user_outgoing_call.xml;340;PASSED;
+          SC;scenario/tc9_sla_secondary_user1_outgoing_call.xml;346;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;202;PASSED;
+          SC;../opi/removeUser.xml;233;PASSED;
+          SC;../opi/removeUser.xml;237;PASSED;
+          SC;../opi/removeUser.xml;263;PASSED;
+     TC;tc/tc9_sla_sca_outgoing_call.xml;tc9_sla_sca_outgoing_call;10681;PASSED;null
+     #------ Testcase file=tc/tc10_sla_sca_outgoing_call_with_privateHold.xml name= tc10_sla_sca_outgoing_call_with_privateHold ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3421;PASSED;
+          SC;../opi/addSingleUser.xml;3421;PASSED;
+          SC;../opi/addSingleUser.xml;3474;PASSED;
+          SC;../opi/addSingleUser.xml;3481;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;303;PASSED;
+          SC;../opi/setLocationForUser.xml;305;PASSED;
+          SC;../opi/setLocationForUser.xml;345;PASSED;
+          SC;../opi/setLocationForUser.xml;345;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;128;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;149;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc10_non_sla_user_outgoing_call_with_privateHold.xml;252;PASSED;
+          SC;scenario/tc10_sla_secondary_user1_outgoing_call_with_privateHold.xml;373;PASSED;
+          SC;scenario/tc10_sla_primary_user_outgoing_call_with_privateHold.xml;377;PASSED;
+          SC;scenario/tc10_sla_secondary_user2_outgoing_call_with_privateHold.xml;379;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;233;PASSED;
+          SC;../opi/removeUser.xml;240;PASSED;
+          SC;../opi/removeUser.xml;241;PASSED;
+          SC;../opi/removeUser.xml;240;PASSED;
+     TC;tc/tc10_sla_sca_outgoing_call_with_privateHold.xml;tc10_sla_sca_outgoing_call_with_privateHold;10620;PASSED;null
+     #------ Testcase file=tc/tc11_sla_sca_outgoing_call_with_CLIR_privateHold.xml name= tc11_sla_sca_outgoing_call_with_CLIR_privateHold ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3500;PASSED;
+          SC;../opi/addSingleUser.xml;3503;PASSED;
+          SC;../opi/addSingleUser.xml;3520;PASSED;
+          SC;../opi/addSingleUser.xml;3550;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;221;PASSED;
+          SC;../opi/setLocationForUser.xml;245;PASSED;
+          SC;../opi/setLocationForUser.xml;245;PASSED;
+          SC;../opi/setLocationForUser.xml;244;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;116;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;138;PASSED;
+          SC;../opi/addServicesForUser.xml;131;PASSED;
+          SC;../opi/clir_setSystemProfileForUser.xml;221;PASSED;
+          SC;../opi/clir_setUserProfile.xml;115;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc11_non_sla_user_outgoing_call_with_CLIR_privateHold.xml;273;PASSED;
+          SC;scenario/tc11_sla_primary_user_outgoing_call_with_CLIR_privateHold.xml;417;PASSED;
+          SC;scenario/tc11_sla_secondary_user2_outgoing_call_with_CLIR_privateHold.xml;422;PASSED;
+          SC;scenario/tc11_sla_secondary_user1_outgoing_call_with_CLIR_privateHold.xml;436;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;287;PASSED;
+          SC;../opi/removeUser.xml;286;PASSED;
+          SC;../opi/removeUser.xml;306;PASSED;
+          SC;../opi/removeUser.xml;313;PASSED;
+     TC;tc/tc11_sla_sca_outgoing_call_with_CLIR_privateHold.xml;tc11_sla_sca_outgoing_call_with_CLIR_privateHold;11146;PASSED;null
+  # <run-2>
+     #------ Testcase file=tc/addAuthMethods.xml name= addAuthMethods ------
+       # <run-0>
+          SC;../omi/authorizedMethodAdd.xml;2197;PASSED;
+          SC;../omi/authorizedMethodAdd.xml;2075;PASSED;
+     TC;tc/addAuthMethods.xml;addAuthMethods;4274;PASSED;null
+  # <run-3>
+     #------ Testcase file=tc/tc13_sla_sca_dialog_event_primary_subscription_call_authorized.xml name= tc13_sla_sca_dialog_event_primary_subscription_call_authorized ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3443;PASSED;
+          SC;../opi/addSingleUser.xml;3476;PASSED;
+          SC;../opi/addSingleUser.xml;3477;PASSED;
+          SC;../opi/addSingleUser.xml;3487;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;239;PASSED;
+          SC;../opi/setLocationForUser.xml;262;PASSED;
+          SC;../opi/setLocationForUser.xml;263;PASSED;
+          SC;../opi/setLocationForUser.xml;262;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;116;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;114;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc13_sla_primary_user_subscription_dialog_event_authorized.xml;248;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;200;PASSED;
+          SC;../opi/removeUser.xml;208;PASSED;
+          SC;../opi/removeUser.xml;230;PASSED;
+          SC;../opi/removeUser.xml;232;PASSED;
+     TC;tc/tc13_sla_sca_dialog_event_primary_subscription_call_authorized.xml;tc13_sla_sca_dialog_event_primary_subscription_call_authorized;10309;PASSED;null
+     #------ Testcase file=tc/tc14_sla_sca_dialog_event_nonsla_subscription_secondary_authorized.xml name= tc14_sla_sca_dialog_event_nonsla_subscription_secondary_authorized ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3407;PASSED;
+          SC;../opi/addSingleUser.xml;3424;PASSED;
+          SC;../opi/addSingleUser.xml;3424;PASSED;
+          SC;../opi/addSingleUser.xml;3442;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;281;PASSED;
+          SC;../opi/setLocationForUser.xml;307;PASSED;
+          SC;../opi/setLocationForUser.xml;321;PASSED;
+          SC;../opi/setLocationForUser.xml;329;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;105;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;151;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc14_sla_sca_dialog_event_nonsla_subscription_secondary_authorized.xml;140;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;233;PASSED;
+          SC;../opi/removeUser.xml;233;PASSED;
+          SC;../opi/removeUser.xml;233;PASSED;
+          SC;../opi/removeUser.xml;235;PASSED;
+     TC;tc/tc14_sla_sca_dialog_event_nonsla_subscription_secondary_authorized.xml;tc14_sla_sca_dialog_event_nonsla_subscription_secondary_authorized;10243;PASSED;null
+     #------ Testcase file=tc/tc15_sla_sca_dialog_event_nonsla_subscription_primary_authorized.xml name= tc15_sla_sca_dialog_event_nonsla_subscription_primary_authorized ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3436;PASSED;
+          SC;../opi/addSingleUser.xml;3445;PASSED;
+          SC;../opi/addSingleUser.xml;3446;PASSED;
+          SC;../opi/addSingleUser.xml;3478;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;302;PASSED;
+          SC;../opi/setLocationForUser.xml;314;PASSED;
+          SC;../opi/setLocationForUser.xml;315;PASSED;
+          SC;../opi/setLocationForUser.xml;315;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;104;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;120;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc15_sla_sca_dialog_event_nonsla_subscription_primary_authorized.xml;117;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;218;PASSED;
+          SC;../opi/removeUser.xml;219;PASSED;
+          SC;../opi/removeUser.xml;234;PASSED;
+          SC;../opi/removeUser.xml;244;PASSED;
+     TC;tc/tc15_sla_sca_dialog_event_nonsla_subscription_primary_authorized.xml;tc15_sla_sca_dialog_event_nonsla_subscription_primary_authorized;10221;PASSED;null
+  # <run-4>
+     #------ Testcase file=tc/modifyAuthMethods.xml name= modifyAuthMethods ------
+       # <run-0>
+          SC;../omi/authorizedMethodRemove.xml;2145;PASSED;
+          SC;../omi/authorizedMethodAdd.xml;2116;PASSED;
+     TC;tc/modifyAuthMethods.xml;modifyAuthMethods;4264;PASSED;null
+  # <run-5>
+     #------ Testcase file=tc/tc16_sla_sca_incoming_call_authorized.xml name= tc16_sla_sca_incoming_call_authorized ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3518;PASSED;
+          SC;../opi/addSingleUser.xml;3538;PASSED;
+          SC;../opi/addSingleUser.xml;3537;PASSED;
+          SC;../opi/addSingleUser.xml;3584;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;273;PASSED;
+          SC;../opi/setLocationForUser.xml;294;PASSED;
+          SC;../opi/setLocationForUser.xml;295;PASSED;
+          SC;../opi/setLocationForUser.xml;303;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;142;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;125;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc16_non_sla_orig_user_call_authorized.xml;201;PASSED;
+          SC;scenario/tc16_sla_primary_user_call_authorized.xml;314;PASSED;
+          SC;scenario/tc16_sla_secondary_user1_call_authorized.xml;322;PASSED;
+          SC;scenario/tc16_sla_secondary_user2_call_authorized.xml;325;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;212;PASSED;
+          SC;../opi/removeUser.xml;212;PASSED;
+          SC;../opi/removeUser.xml;211;PASSED;
+          SC;../opi/removeUser.xml;219;PASSED;
+     TC;tc/tc16_sla_sca_incoming_call_authorized.xml;tc16_sla_sca_incoming_call_authorized;10619;PASSED;null
+     #------ Testcase file=tc/tc17_sla_sca_incoming_call_with_CLIR_authorized.xml name= tc17_sla_sca_incoming_call_with_CLIR_authorized ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3487;PASSED;
+          SC;../opi/addSingleUser.xml;3486;PASSED;
+          SC;../opi/addSingleUser.xml;3494;PASSED;
+          SC;../opi/addSingleUser.xml;3539;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;272;PASSED;
+          SC;../opi/setLocationForUser.xml;300;PASSED;
+          SC;../opi/setLocationForUser.xml;300;PASSED;
+          SC;../opi/setLocationForUser.xml;305;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;177;PASSED;
+          SC;../opi/addServicesForUser.xml;168;PASSED;
+          SC;../opi/clir_setSystemProfileForUser.xml;120;PASSED;
+          SC;../opi/clir_setUserProfile.xml;119;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;275;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc17_non_sla_orig_user_call_CLIR_authorized.xml;291;PASSED;
+          SC;scenario/tc17_sla_secondary_user1_call_CLIR_authorized.xml;452;PASSED;
+          SC;scenario/tc17_sla_primary_user_call_CLIR_authorized.xml;460;PASSED;
+          SC;scenario/tc17_sla_secondary_user2_call_CLIR_authorized.xml;461;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;235;PASSED;
+          SC;../opi/removeUser.xml;235;PASSED;
+          SC;../opi/removeUser.xml;241;PASSED;
+          SC;../opi/removeUser.xml;247;PASSED;
+     TC;tc/tc17_sla_sca_incoming_call_with_CLIR_authorized.xml;tc17_sla_sca_incoming_call_with_CLIR_authorized;11515;PASSED;null
+     #------ Testcase file=tc/tc18_sla_sca_outgoing_call_CLIR_authorized.xml name= tc18_sla_sca_outgoing_call_CLIR_authorized ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3435;PASSED;
+          SC;../opi/addSingleUser.xml;3617;PASSED;
+          SC;../opi/addSingleUser.xml;3618;PASSED;
+          SC;../opi/addSingleUser.xml;3618;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;365;PASSED;
+          SC;../opi/setLocationForUser.xml;366;PASSED;
+          SC;../opi/setLocationForUser.xml;365;PASSED;
+          SC;../opi/setLocationForUser.xml;389;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;142;PASSED;
+          SC;../opi/addServicesForUser.xml;128;PASSED;
+          SC;../opi/clir_setSystemProfileForUser.xml;129;PASSED;
+          SC;../opi/clir_setUserProfile.xml;117;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;137;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc18_non_sla_user_outgoing_call_CLIR_authorized.xml;531;PASSED;
+          SC;scenario/tc18_sla_secondary_user1_outgoing_call_CLIR_authorized.xml;645;PASSED;
+          SC;scenario/tc18_sla_primary_user_outgoing_call_CLIR_authorized.xml;656;PASSED;
+          SC;scenario/tc18_sla_secondary_user2_outgoing_call_CLIR_authorized.xml;663;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;187;PASSED;
+          SC;../opi/removeUser.xml;187;PASSED;
+          SC;../opi/removeUser.xml;194;PASSED;
+          SC;../opi/removeUser.xml;200;PASSED;
+     TC;tc/tc18_sla_sca_outgoing_call_CLIR_authorized.xml;tc18_sla_sca_outgoing_call_CLIR_authorized;11404;PASSED;null
+     #------ Testcase file=tc/tc19_sla_sca_incoming_call_with_CLIR_privateHold_authorized.xml name= tc19_sla_sca_incoming_call_with_CLIR_privateHold_authorized ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3433;PASSED;
+          SC;../opi/addSingleUser.xml;3433;PASSED;
+          SC;../opi/addSingleUser.xml;3442;PASSED;
+          SC;../opi/addSingleUser.xml;3489;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;378;PASSED;
+          SC;../opi/setLocationForUser.xml;379;PASSED;
+          SC;../opi/setLocationForUser.xml;378;PASSED;
+          SC;../opi/setLocationForUser.xml;378;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;175;PASSED;
+          SC;../opi/addServicesForUser.xml;168;PASSED;
+          SC;../opi/clir_setSystemProfileForUser.xml;149;PASSED;
+          SC;../opi/clir_setUserProfile.xml;123;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;181;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc19_non_sla_orig_user_call_CLIR_privateHold_authorized.xml;280;PASSED;
+          SC;scenario/tc19_sla_primary_user_call_CLIR_privateHold_authorized.xml;424;PASSED;
+          SC;scenario/tc19_sla_secondary_user1_call_CLIR_privateHold_authorized.xml;444;PASSED;
+          SC;scenario/tc19_sla_secondary_user2_call_CLIR_privateHold_authorized.xml;446;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;346;PASSED;
+          SC;../opi/removeUser.xml;370;PASSED;
+          SC;../opi/removeUser.xml;371;PASSED;
+          SC;../opi/removeUser.xml;372;PASSED;
+     TC;tc/tc19_sla_sca_incoming_call_with_CLIR_privateHold_authorized.xml;tc19_sla_sca_incoming_call_with_CLIR_privateHold_authorized;11369;PASSED;null
+     #------ Testcase file=tc/tc20_sla_sca_incoming_call_with_privateHold_authorized.xml name= tc20_sla_sca_incoming_call_with_privateHold_authorized ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3440;PASSED;
+          SC;../opi/addSingleUser.xml;3469;PASSED;
+          SC;../opi/addSingleUser.xml;3469;PASSED;
+          SC;../opi/addSingleUser.xml;3505;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;301;PASSED;
+          SC;../opi/setLocationForUser.xml;318;PASSED;
+          SC;../opi/setLocationForUser.xml;330;PASSED;
+          SC;../opi/setLocationForUser.xml;330;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;147;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;179;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc20_non_sla_orig_user_call_privateHold_authorized.xml;293;PASSED;
+          SC;scenario/tc20_sla_primary_user_call_privateHold_authorized.xml;416;PASSED;
+          SC;scenario/tc20_sla_secondary_user2_call_privateHold_authorized.xml;423;PASSED;
+          SC;scenario/tc20_sla_secondary_user1_call_privateHold_authorized.xml;424;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;205;PASSED;
+          SC;../opi/removeUser.xml;219;PASSED;
+          SC;../opi/removeUser.xml;218;PASSED;
+          SC;../opi/removeUser.xml;218;PASSED;
+     TC;tc/tc20_sla_sca_incoming_call_with_privateHold_authorized.xml;tc20_sla_sca_incoming_call_with_privateHold_authorized;10685;PASSED;null
+     #------ Testcase file=tc/tc21_sla_sca_outgoing_call_authorized.xml name= tc21_sla_sca_outgoing_call_authorized ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3438;PASSED;
+          SC;../opi/addSingleUser.xml;3439;PASSED;
+          SC;../opi/addSingleUser.xml;3462;PASSED;
+          SC;../opi/addSingleUser.xml;3486;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;309;PASSED;
+          SC;../opi/setLocationForUser.xml;342;PASSED;
+          SC;../opi/setLocationForUser.xml;342;PASSED;
+          SC;../opi/setLocationForUser.xml;360;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;117;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;125;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc21_non_sla_user_outgoing_call_authorized.xml;178;PASSED;
+          SC;scenario/tc21_sla_secondary_user2_outgoing_call_authorized.xml;298;PASSED;
+          SC;scenario/tc21_sla_secondary_user1_outgoing_call_authorized.xml;306;PASSED;
+          SC;scenario/tc21_sla_primary_user_outgoing_call_authorized.xml;308;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;230;PASSED;
+          SC;../opi/removeUser.xml;232;PASSED;
+          SC;../opi/removeUser.xml;235;PASSED;
+          SC;../opi/removeUser.xml;259;PASSED;
+     TC;tc/tc21_sla_sca_outgoing_call_authorized.xml;tc21_sla_sca_outgoing_call_authorized;10543;PASSED;null
+     #------ Testcase file=tc/tc22_sla_sca_outgoing_call_with_privateHold_authorized.xml name= tc22_sla_sca_outgoing_call_with_privateHold_authorized ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3445;PASSED;
+          SC;../opi/addSingleUser.xml;3458;PASSED;
+          SC;../opi/addSingleUser.xml;3477;PASSED;
+          SC;../opi/addSingleUser.xml;3492;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;319;PASSED;
+          SC;../opi/setLocationForUser.xml;353;PASSED;
+          SC;../opi/setLocationForUser.xml;355;PASSED;
+          SC;../opi/setLocationForUser.xml;355;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;160;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;155;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3001;PASSED;
+       # <run-4>
+          SC;scenario/tc22_non_sla_user_outgoing_call_with_privateHold_authorized.xml;251;PASSED;
+          SC;scenario/tc22_sla_secondary_user1_outgoing_call_with_privateHold_authorized.xml;370;PASSED;
+          SC;scenario/tc22_sla_primary_user_outgoing_call_with_privateHold_authorized.xml;371;PASSED;
+          SC;scenario/tc22_sla_secondary_user2_outgoing_call_with_privateHold_authorized.xml;372;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;240;PASSED;
+          SC;../opi/removeUser.xml;248;PASSED;
+          SC;../opi/removeUser.xml;255;PASSED;
+          SC;../opi/removeUser.xml;256;PASSED;
+     TC;tc/tc22_sla_sca_outgoing_call_with_privateHold_authorized.xml;tc22_sla_sca_outgoing_call_with_privateHold_authorized;10678;PASSED;null
+     #------ Testcase file=tc/tc23_sla_sca_outgoing_call_with_CLIR_privateHold_authorized.xml name= tc23_sla_sca_outgoing_call_with_CLIR_privateHold_authorized ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3469;PASSED;
+          SC;../opi/addSingleUser.xml;3486;PASSED;
+          SC;../opi/addSingleUser.xml;3486;PASSED;
+          SC;../opi/addSingleUser.xml;3547;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;216;PASSED;
+          SC;../opi/setLocationForUser.xml;234;PASSED;
+          SC;../opi/setLocationForUser.xml;233;PASSED;
+          SC;../opi/setLocationForUser.xml;233;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;135;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;161;PASSED;
+          SC;../opi/addServicesForUser.xml;113;PASSED;
+          SC;../opi/clir_setSystemProfileForUser.xml;84;PASSED;
+          SC;../opi/clir_setUserProfile.xml;90;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3001;PASSED;
+       # <run-4>
+          SC;scenario/tc23_non_sla_user_outgoing_call_with_CLIR_privateHold_authorized.xml;242;PASSED;
+          SC;scenario/tc23_sla_secondary_user1_outgoing_call_with_CLIR_privateHold_authorized.xml;342;PASSED;
+          SC;scenario/tc23_sla_primary_user_outgoing_call_with_CLIR_privateHold_authorized.xml;361;PASSED;
+          SC;scenario/tc23_sla_secondary_user2_outgoing_call_with_CLIR_privateHold_authorized.xml;363;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;275;PASSED;
+          SC;../opi/removeUser.xml;275;PASSED;
+          SC;../opi/removeUser.xml;275;PASSED;
+          SC;../opi/removeUser.xml;281;PASSED;
+     TC;tc/tc23_sla_sca_outgoing_call_with_CLIR_privateHold_authorized.xml;tc23_sla_sca_outgoing_call_with_CLIR_privateHold_authorized;10885;PASSED;null
+     #------ Testcase file=tc/tc25_sla_sca_incoming_call_with_publicHold_authorized.xml name= tc25_sla_sca_incoming_call_with_publicHold_authorized ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3427;PASSED;
+          SC;../opi/addSingleUser.xml;3427;PASSED;
+          SC;../opi/addSingleUser.xml;3445;PASSED;
+          SC;../opi/addSingleUser.xml;3468;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;248;PASSED;
+          SC;../opi/setLocationForUser.xml;265;PASSED;
+          SC;../opi/setLocationForUser.xml;290;PASSED;
+          SC;../opi/setLocationForUser.xml;290;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;198;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;168;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3001;PASSED;
+       # <run-4>
+          SC;scenario/tc25_non_sla_orig_user_call_publicHold_authorized.xml;268;PASSED;
+          SC;scenario/tc25_sla_primary_user_call_publicHold_authorized.xml;433;PASSED;
+          SC;scenario/tc25_sla_secondary_user1_call_publicHold_authorized.xml;598;PASSED;
+          SC;scenario/tc25_sla_secondary_user2_call_publicHold_authorized.xml;603;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;208;PASSED;
+          SC;../opi/removeUser.xml;208;PASSED;
+          SC;../opi/removeUser.xml;214;PASSED;
+          SC;../opi/removeUser.xml;232;PASSED;
+     TC;tc/tc25_sla_sca_incoming_call_with_publicHold_authorized.xml;tc25_sla_sca_incoming_call_with_publicHold_authorized;10863;PASSED;null
+     #------ Testcase file=tc/tc26_sla_sca_incoming_publicHold_authorized_anothermember.xml name= tc26_sla_sca_incoming_publicHold_authorized_anothermember ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3430;PASSED;
+          SC;../opi/addSingleUser.xml;3431;PASSED;
+          SC;../opi/addSingleUser.xml;3431;PASSED;
+          SC;../opi/addSingleUser.xml;3630;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;225;PASSED;
+          SC;../opi/setLocationForUser.xml;254;PASSED;
+          SC;../opi/setLocationForUser.xml;254;PASSED;
+          SC;../opi/setLocationForUser.xml;254;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;201;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;155;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc26_non_sla_orig_user_call_publicHold_authorized.xml;341;PASSED;
+          SC;scenario/tc26_sla_primary_user_call_publicHold_authorized.xml;509;PASSED;
+          SC;scenario/tc26_sla_secondary_user1_call_publicHold_authorized.xml;513;PASSED;
+          SC;scenario/tc26_sla_secondary_user2_call_publicHold_authorized.xml;515;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;219;PASSED;
+          SC;../opi/removeUser.xml;233;PASSED;
+          SC;../opi/removeUser.xml;232;PASSED;
+          SC;../opi/removeUser.xml;233;PASSED;
+     TC;tc/tc26_sla_sca_incoming_publicHold_authorized_anothermember.xml;tc26_sla_sca_incoming_publicHold_authorized_anothermember;10892;PASSED;null
+     #------ Testcase file=tc/tc27_sla_sca_outgoing_call_with_publicHold_authorized.xml name= tc27_sla_sca_outgoing_call_with_publicHold_authorized ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3382;PASSED;
+          SC;../opi/addSingleUser.xml;3410;PASSED;
+          SC;../opi/addSingleUser.xml;3417;PASSED;
+          SC;../opi/addSingleUser.xml;3445;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;252;PASSED;
+          SC;../opi/setLocationForUser.xml;270;PASSED;
+          SC;../opi/setLocationForUser.xml;283;PASSED;
+          SC;../opi/setLocationForUser.xml;282;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;123;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;120;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc27_non_sla_user_outgoing_call_with_publicHold_authorized.xml;273;PASSED;
+          SC;scenario/tc27_sla_secondary_user2_outgoing_call_with_publicHold_authorized.xml;598;PASSED;
+          SC;scenario/tc27_sla_secondary_user1_outgoing_call_with_publicHold_authorized.xml;601;PASSED;
+          SC;scenario/tc27_sla_primary_user_outgoing_call_with_publicHold_authorized.xml;615;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;216;PASSED;
+          SC;../opi/removeUser.xml;216;PASSED;
+          SC;../opi/removeUser.xml;221;PASSED;
+          SC;../opi/removeUser.xml;228;PASSED;
+     TC;tc/tc27_sla_sca_outgoing_call_with_publicHold_authorized.xml;tc27_sla_sca_outgoing_call_with_publicHold_authorized;10704;PASSED;null
+     #------ Testcase file=tc/tc29_sla_sca_constransfer_by_sla_authorized.xml name= tc29_sla_sca_constransfer_by_sla_authorized ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3450;PASSED;
+          SC;../opi/addSingleUser.xml;3450;PASSED;
+          SC;../opi/addSingleUser.xml;3482;PASSED;
+          SC;../opi/addSingleUser.xml;3486;PASSED;
+          SC;../opi/addSingleUser.xml;3521;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;284;PASSED;
+          SC;../opi/setLocationForUser.xml;299;PASSED;
+          SC;../opi/setLocationForUser.xml;309;PASSED;
+          SC;../opi/setLocationForUser.xml;310;PASSED;
+          SC;../opi/setLocationForUser.xml;308;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;182;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;137;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc29_sla_sca_constransfer_by_sla_authorized_nonsla2.xml;411;PASSED;
+          SC;scenario/tc29_sla_sca_constransfer_by_sla_authorized_nonsla.xml;440;PASSED;
+          SC;scenario/tc29_sla_sca_constransfer_by_sla_authorized_sec1.xml;669;PASSED;
+          SC;scenario/tc29_sla_sca_constransfer_by_sla_authorized_sec2.xml;674;PASSED;
+          SC;scenario/tc29_sla_sca_constransfer_by_sla_authorized_prim.xml;678;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;229;PASSED;
+          SC;../opi/removeUser.xml;258;PASSED;
+          SC;../opi/removeUser.xml;258;PASSED;
+          SC;../opi/removeUser.xml;264;PASSED;
+          SC;../opi/removeUser.xml;278;PASSED;
+     TC;tc/tc29_sla_sca_constransfer_by_sla_authorized.xml;tc29_sla_sca_constransfer_by_sla_authorized;11009;PASSED;null
+     #------ Testcase file=tc/tc30_sla_sca_incoming_blindtr_to_anothergroup_authorized.xml name= tc30_sla_sca_incoming_blindtr_to_anothergroup_authorized ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3544;PASSED;
+          SC;../opi/addSingleUser.xml;3545;PASSED;
+          SC;../opi/addSingleUser.xml;3545;PASSED;
+          SC;../opi/addSingleUser.xml;3545;PASSED;
+          SC;../opi/addSingleUser.xml;3618;PASSED;
+          SC;../opi/addSingleUser.xml;3616;PASSED;
+          SC;../opi/addSingleUser.xml;3626;PASSED;
+          SC;../opi/addSingleUser.xml;3276;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;383;PASSED;
+          SC;../opi/setLocationForUser.xml;418;PASSED;
+          SC;../opi/setLocationForUser.xml;418;PASSED;
+          SC;../opi/setLocationForUser.xml;419;PASSED;
+          SC;../opi/setLocationForUser.xml;423;PASSED;
+          SC;../opi/setLocationForUser.xml;165;PASSED;
+          SC;../opi/setLocationForUser.xml;168;PASSED;
+          SC;../opi/setLocationForUser.xml;173;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;118;PASSED;
+          SC;../opi/addServicesForUser.xml;122;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;122;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;116;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc30_sla_sca_incoming_blindtr_to_anothergroup_authorized_group1_nonsla.xml;416;PASSED;
+          SC;scenario/tc30_sla_sca_incoming_blindtr_to_anothergroup_authorized_group2_sec1.xml;640;PASSED;
+          SC;scenario/tc30_sla_sca_incoming_blindtr_to_anothergroup_authorized_group2_sec2.xml;642;PASSED;
+          SC;scenario/tc30_sla_sca_incoming_blindtr_to_anothergroup_authorized_group1_sec2.xml;672;PASSED;
+          SC;scenario/tc30_sla_sca_incoming_blindtr_to_anothergroup_authorized_group2_prim.xml;675;PASSED;
+          SC;scenario/tc30_sla_sca_incoming_blindtr_to_anothergroup_authorized_group1_sec1.xml;689;PASSED;
+          SC;scenario/tc30_sla_sca_incoming_blindtr_to_anothergroup_authorized_group1_prim.xml;694;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;387;PASSED;
+          SC;../opi/removeUser.xml;400;PASSED;
+          SC;../opi/removeUser.xml;400;PASSED;
+          SC;../opi/removeUser.xml;401;PASSED;
+          SC;../opi/removeUser.xml;401;PASSED;
+          SC;../opi/removeUser.xml;398;PASSED;
+          SC;../opi/removeUser.xml;408;PASSED;
+          SC;../opi/removeUser.xml;409;PASSED;
+     TC;tc/tc30_sla_sca_incoming_blindtr_to_anothergroup_authorized.xml;tc30_sla_sca_incoming_blindtr_to_anothergroup_authorized;14947;PASSED;null
+     #------ Testcase file=tc/tc31_sla_sca_group2group_publicHold_authorized.xml name= tc31_sla_sca_group2group_publicHold_authorized ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3587;PASSED;
+          SC;../opi/addSingleUser.xml;3587;PASSED;
+          SC;../opi/addSingleUser.xml;3587;PASSED;
+          SC;../opi/addSingleUser.xml;3588;PASSED;
+          SC;../opi/addSingleUser.xml;3587;PASSED;
+          SC;../opi/addSingleUser.xml;3634;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;364;PASSED;
+          SC;../opi/setLocationForUser.xml;364;PASSED;
+          SC;../opi/setLocationForUser.xml;368;PASSED;
+          SC;../opi/setLocationForUser.xml;372;PASSED;
+          SC;../opi/setLocationForUser.xml;394;PASSED;
+          SC;../opi/setLocationForUser.xml;393;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;138;PASSED;
+          SC;../opi/addServicesForUser.xml;145;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;171;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;162;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc31_group2group_publicHold_group2_sec1_authorized.xml;1018;PASSED;
+          SC;scenario/tc31_group2group_publicHold_group2_sec2_authorized.xml;1097;PASSED;
+          SC;scenario/tc31_group2group_publicHold_group2_prim_authorized.xml;1099;PASSED;
+          SC;scenario/tc31_group2group_publicHold_group1_sec2_authorized.xml;1100;PASSED;
+          SC;scenario/tc31_group2group_publicHold_group1_prim_authorized.xml;1101;PASSED;
+          SC;scenario/tc31_group2group_publicHold_group1_sec1_authorized.xml;1110;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;238;PASSED;
+          SC;../opi/removeUser.xml;256;PASSED;
+          SC;../opi/removeUser.xml;271;PASSED;
+          SC;../opi/removeUser.xml;286;PASSED;
+          SC;../opi/removeUser.xml;303;PASSED;
+          SC;../opi/removeUser.xml;303;PASSED;
+     TC;tc/tc31_sla_sca_group2group_publicHold_authorized.xml;tc31_sla_sca_group2group_publicHold_authorized;12015;PASSED;null
+     #------ Testcase file=tc/tc32_sla_sca_group2group_CFB_authorized.xml name= tc32_sla_sca_group2group_CFB_authorized ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3635;PASSED;
+          SC;../opi/addSingleUser.xml;3667;PASSED;
+          SC;../opi/addSingleUser.xml;3666;PASSED;
+          SC;../opi/addSingleUser.xml;3668;PASSED;
+          SC;../opi/addSingleUser.xml;3670;PASSED;
+          SC;../opi/addSingleUser.xml;3694;PASSED;
+          SC;../opi/addSingleUser.xml;3695;PASSED;
+          SC;../opi/addSingleUser.xml;3742;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;306;PASSED;
+          SC;../opi/setLocationForUser.xml;348;PASSED;
+          SC;../opi/setLocationForUser.xml;347;PASSED;
+          SC;../opi/setLocationForUser.xml;349;PASSED;
+          SC;../opi/setLocationForUser.xml;367;PASSED;
+          SC;../opi/setLocationForUser.xml;366;PASSED;
+          SC;../opi/setLocationForUser.xml;365;PASSED;
+          SC;../opi/setLocationForUser.xml;366;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;289;PASSED;
+          SC;../opi/addServicesForUser.xml;182;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;200;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;138;PASSED;
+          SC;../opi/addServicesForUser.xml;143;PASSED;
+          SC;../opi/callfwd_setSystemProfileForUser.xml;214;PASSED;
+          SC;../opi/addServicesForUser.xml;167;PASSED;
+          SC;../opi/ncwd_setSystemProfileForUser.xml;232;PASSED;
+          SC;../opi/ncwd_setUserProfile.xml;178;PASSED;
+       # <run-3>
+          SC;../sopi/setCFVRoute.xml;1616;PASSED;
+       # <run-4>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-5>
+          SC;scenario/tc32_sla_sca_group2group_CFB_authorized_group1_nonsla.xml;414;PASSED;
+          SC;scenario/tc32_sla_sca_group2group_CFB_authorized_group2_nonsla.xml;427;PASSED;
+          SC;scenario/tc32_sla_sca_group2group_CFB_authorized_group1_prim.xml;610;PASSED;
+          SC;scenario/tc32_sla_sca_group2group_CFB_authorized_group2_sec1.xml;621;PASSED;
+          SC;scenario/tc32_sla_sca_group2group_CFB_authorized_group2_prim.xml;625;PASSED;
+          SC;scenario/tc32_sla_sca_group2group_CFB_authorized_group2_sec2.xml;623;PASSED;
+          SC;scenario/tc32_sla_sca_group2group_CFB_authorized_group1_sec2.xml;626;PASSED;
+          SC;scenario/tc32_sla_sca_group2group_CFB_authorized_group1_sec1.xml;633;PASSED;
+       # <run-6>
+          SC;../opi/removeUser.xml;387;PASSED;
+          SC;../opi/removeUser.xml;389;PASSED;
+          SC;../opi/removeUser.xml;409;PASSED;
+          SC;../opi/removeUser.xml;409;PASSED;
+          SC;../opi/removeUser.xml;410;PASSED;
+          SC;../opi/removeUser.xml;411;PASSED;
+          SC;../opi/removeUser.xml;409;PASSED;
+          SC;../opi/removeUser.xml;433;PASSED;
+     TC;tc/tc32_sla_sca_group2group_CFB_authorized.xml;tc32_sla_sca_group2group_CFB_authorized;14475;PASSED;null
+     #------ Testcase file=tc/tc33_sla_sca_incoming_call_authorized_primaryAnswers.xml name= tc33_sla_sca_incoming_call_authorized_primaryAnswers ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3740;PASSED;
+          SC;../opi/addSingleUser.xml;3747;PASSED;
+          SC;../opi/addSingleUser.xml;3769;PASSED;
+          SC;../opi/addSingleUser.xml;3775;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;261;PASSED;
+          SC;../opi/setLocationForUser.xml;297;PASSED;
+          SC;../opi/setLocationForUser.xml;298;PASSED;
+          SC;../opi/setLocationForUser.xml;297;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;98;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;125;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc33_non_sla_orig_user_call_authorized.xml;224;PASSED;
+          SC;scenario/tc33_sla_primary_user_call_authorized.xml;338;PASSED;
+          SC;scenario/tc33_sla_secondary_user1_call_authorized.xml;345;PASSED;
+          SC;scenario/tc33_sla_secondary_user2_call_authorized.xml;345;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;258;PASSED;
+          SC;../opi/removeUser.xml;262;PASSED;
+          SC;../opi/removeUser.xml;280;PASSED;
+          SC;../opi/removeUser.xml;286;PASSED;
+     TC;tc/tc33_sla_sca_incoming_call_authorized_primaryAnswers.xml;tc33_sla_sca_incoming_call_authorized_primaryAnswers;10799;PASSED;null
+     #------ Testcase file=tc/tc34_sla_sca_incoming_publicHold_authorized_anothermember_primaryAnswers.xml name= tc34_sla_sca_incoming_publicHold_authorized_anothermember_primaryAnswers ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3448;PASSED;
+          SC;../opi/addSingleUser.xml;3449;PASSED;
+          SC;../opi/addSingleUser.xml;3527;PASSED;
+          SC;../opi/addSingleUser.xml;3533;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;259;PASSED;
+          SC;../opi/setLocationForUser.xml;293;PASSED;
+          SC;../opi/setLocationForUser.xml;293;PASSED;
+          SC;../opi/setLocationForUser.xml;304;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;136;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;153;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3001;PASSED;
+       # <run-4>
+          SC;scenario/tc34_non_sla_orig_user_call_publicHold_authorized.xml;267;PASSED;
+          SC;scenario/tc34_sla_secondary_user2_call_publicHold_authorized.xml;431;PASSED;
+          SC;scenario/tc34_sla_primary_user_call_publicHold_authorized.xml;438;PASSED;
+          SC;scenario/tc34_sla_secondary_user1_call_publicHold_authorized.xml;441;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;192;PASSED;
+          SC;../opi/removeUser.xml;191;PASSED;
+          SC;../opi/removeUser.xml;204;PASSED;
+          SC;../opi/removeUser.xml;213;PASSED;
+     TC;tc/tc34_sla_sca_incoming_publicHold_authorized_anothermember_primaryAnswers.xml;tc34_sla_sca_incoming_publicHold_authorized_anothermember_primaryAnswers;10678;PASSED;null
+     #------ Testcase file=tc/tc35_sla_sca_outgoing_call_authorized_secondaryCalls.xml name= tc35_sla_sca_outgoing_call_authorized_secondaryCalls ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3360;PASSED;
+          SC;../opi/addSingleUser.xml;3362;PASSED;
+          SC;../opi/addSingleUser.xml;3361;PASSED;
+          SC;../opi/addSingleUser.xml;3425;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;218;PASSED;
+          SC;../opi/setLocationForUser.xml;235;PASSED;
+          SC;../opi/setLocationForUser.xml;241;PASSED;
+          SC;../opi/setLocationForUser.xml;241;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;99;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;144;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3001;PASSED;
+       # <run-4>
+          SC;scenario/tc35_non_sla_user_outgoing_call_authorized.xml;188;PASSED;
+          SC;scenario/tc35_sla_secondary_user2_outgoing_call_authorized.xml;267;PASSED;
+          SC;scenario/tc35_sla_primary_user_outgoing_call_authorized.xml;304;PASSED;
+          SC;scenario/tc35_sla_secondary_user1_outgoing_call_authorized.xml;306;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;227;PASSED;
+          SC;../opi/removeUser.xml;236;PASSED;
+          SC;../opi/removeUser.xml;253;PASSED;
+          SC;../opi/removeUser.xml;253;PASSED;
+     TC;tc/tc35_sla_sca_outgoing_call_authorized_secondaryCalls.xml;tc35_sla_sca_outgoing_call_authorized_secondaryCalls;10335;PASSED;null
+     #------ Testcase file=tc/tc36_sla_sca_outgoing_call_with_publicHold_authorized_secondaryCalls.xml name= tc36_sla_sca_outgoing_call_with_publicHold_authorized_secondaryCalls ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3480;PASSED;
+          SC;../opi/addSingleUser.xml;3528;PASSED;
+          SC;../opi/addSingleUser.xml;3533;PASSED;
+          SC;../opi/addSingleUser.xml;3516;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;255;PASSED;
+          SC;../opi/setLocationForUser.xml;290;PASSED;
+          SC;../opi/setLocationForUser.xml;296;PASSED;
+          SC;../opi/setLocationForUser.xml;300;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;99;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;149;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3001;PASSED;
+       # <run-4>
+          SC;scenario/tc36_non_sla_user_outgoing_call_with_publicHold_authorized.xml;252;PASSED;
+          SC;scenario/tc36_sla_secondary_user2_outgoing_call_with_publicHold_authorized.xml;407;PASSED;
+          SC;scenario/tc36_sla_primary_user_outgoing_call_with_publicHold_authorized.xml;411;PASSED;
+          SC;scenario/tc36_sla_secondary_user1_outgoing_call_with_publicHold_authorized.xml;413;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;173;PASSED;
+          SC;../opi/removeUser.xml;173;PASSED;
+          SC;../opi/removeUser.xml;186;PASSED;
+          SC;../opi/removeUser.xml;195;PASSED;
+     TC;tc/tc36_sla_sca_outgoing_call_with_publicHold_authorized_secondaryCalls.xml;tc36_sla_sca_outgoing_call_with_publicHold_authorized_secondaryCalls;10582;PASSED;null
+     #------ Testcase file=tc/tc37_sla_sca_incoming_call_with_privateHold_authorized_withMoh.xml name= tc37_sla_sca_incoming_call_with_privateHold_authorized_withMoh ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3397;PASSED;
+          SC;../opi/addSingleUser.xml;3397;PASSED;
+          SC;../opi/addSingleUser.xml;3450;PASSED;
+          SC;../opi/addSingleUser.xml;3456;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;210;PASSED;
+          SC;../opi/setLocationForUser.xml;216;PASSED;
+          SC;../opi/setLocationForUser.xml;228;PASSED;
+          SC;../opi/setLocationForUser.xml;228;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;111;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;107;PASSED;
+          SC;../opi/addServicesForUser.xml;94;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc37_non_sla_orig_user_call_privateHold_authorized.xml;368;PASSED;
+          SC;scenario/tc37_sla_secondary_user1_call_privateHold_authorized.xml;486;PASSED;
+          SC;scenario/tc37_sla_secondary_user2_call_privateHold_authorized.xml;487;PASSED;
+          SC;scenario/tc37_sla_primary_user_call_privateHold_authorized.xml;489;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;244;PASSED;
+          SC;../opi/removeUser.xml;244;PASSED;
+          SC;../opi/removeUser.xml;250;PASSED;
+          SC;../opi/removeUser.xml;268;PASSED;
+     TC;tc/tc37_sla_sca_incoming_call_with_privateHold_authorized_withMoh.xml;tc37_sla_sca_incoming_call_with_privateHold_authorized_withMoh;10634;PASSED;null
+     #------ Testcase file=tc/tc38_sla_sca_group2group_publicHold_authorized_withMoh.xml name= tc38_sla_sca_group2group_publicHold_authorized_withMoh ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3550;PASSED;
+          SC;../opi/addSingleUser.xml;3550;PASSED;
+          SC;../opi/addSingleUser.xml;3549;PASSED;
+          SC;../opi/addSingleUser.xml;3567;PASSED;
+          SC;../opi/addSingleUser.xml;3592;PASSED;
+          SC;../opi/addSingleUser.xml;3608;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;315;PASSED;
+          SC;../opi/setLocationForUser.xml;325;PASSED;
+          SC;../opi/setLocationForUser.xml;324;PASSED;
+          SC;../opi/setLocationForUser.xml;335;PASSED;
+          SC;../opi/setLocationForUser.xml;342;PASSED;
+          SC;../opi/setLocationForUser.xml;343;PASSED;
+       # <run-2>
+          SC;../opi/addServicesForUser.xml;129;PASSED;
+          SC;../opi/addServicesForUser.xml;144;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;140;PASSED;
+          SC;../opi/setSLADataWithSecondaryUsers.xml;140;PASSED;
+          SC;../opi/addServicesForUser.xml;117;PASSED;
+          SC;../opi/addServicesForUser.xml;129;PASSED;
+       # <run-3>
+          SC;scenario/pause5.xml;3002;PASSED;
+       # <run-4>
+          SC;scenario/tc38_group2group_publicHold_group2_prim_authorized.xml;1083;PASSED;
+          SC;scenario/tc38_group2group_publicHold_group1_sec2_authorized.xml;1144;PASSED;
+          SC;scenario/tc38_group2group_publicHold_group1_prim_authorized.xml;1149;PASSED;
+          SC;scenario/tc38_group2group_publicHold_group1_sec1_authorized.xml;1161;PASSED;
+          SC;scenario/tc38_group2group_publicHold_group2_sec2_authorized.xml;1161;PASSED;
+          SC;scenario/tc38_group2group_publicHold_group2_sec1_authorized.xml;1165;PASSED;
+       # <run-5>
+          SC;../opi/removeUser.xml;228;PASSED;
+          SC;../opi/removeUser.xml;258;PASSED;
+          SC;../opi/removeUser.xml;259;PASSED;
+          SC;../opi/removeUser.xml;263;PASSED;
+          SC;../opi/removeUser.xml;281;PASSED;
+          SC;../opi/removeUser.xml;281;PASSED;
+     TC;tc/tc38_sla_sca_group2group_publicHold_authorized_withMoh.xml;tc38_sla_sca_group2group_publicHold_authorized_withMoh;12143;PASSED;null
+  # <run-6>
+     #------ Testcase file=tc/removeAuthMethods.xml name= removeAuthMethods ------
+       # <run-0>
+          SC;../omi/authorizedMethodRemove.xml;2184;PASSED;
+          SC;../omi/authorizedMethodRemove.xml;2103;PASSED;
+     TC;tc/removeAuthMethods.xml;removeAuthMethods;4288;PASSED;null
+     #------ Testcase file=tc/removeDomain.xml name= removeDomain ------
+       # <run-0>
+          SC;../opi/removeDomain.xml;1760;PASSED;
+          SC;../opi/removeLogicalEntity.xml;168;PASSED;
+          SC;../opi/removeLogicalEntity.xml;167;PASSED;
+          SC;../opi/removeLogicalEntity.xml;109;PASSED;
+     TC;tc/removeDomain.xml;removeDomain;2209;PASSED;null
+     #------ Testcase file=tc/deleteSipProfile.xml name= deleteSipProfile ------
+       # <run-0>
+          SC;../omi/deleteSipProfile.xml;2389;PASSED;
+     TC;tc/deleteSipProfile.xml;deleteSipProfile;2390;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/SharedLineAppearances/test_suite.xml;SharedLineAppearances;417477;PASSED;

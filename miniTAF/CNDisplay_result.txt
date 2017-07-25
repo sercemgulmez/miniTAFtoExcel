@@ -1,0 +1,164 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/CNDisplay/test_suite.xml name= Connected Name Display Feature ------
+  # <run-0>
+     #------ Testcase file=tc/tc_Prov_Service_Node_Trusted_Setup.xml name= Prov_Service_Node_Trusted_Setup ------
+       # <run-0>
+          SC;../opi/modifySvcNode.xml;559;PASSED;
+          SC;../opi/sendUnRegister.xml;717;PASSED;
+       # <run-1>
+          SC;../opi/modifySvcNode.xml;187;PASSED;
+       # <run-2>
+          SC;../opi/modifySvcNode.xml;219;PASSED;
+     TC;tc/tc_Prov_Service_Node_Trusted_Setup.xml;Prov Service Node is set as Trusted and Logout;1753;PASSED;null
+  # <run-1>
+     #------ Testcase file=tc/tc-PBX2PBX_Basic_Call_with_PAI.xml name= PBX2PBX_Basic_Call_with_PAI ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Basic_Call_with_PAI-Orig.xml;1763;PASSED;
+          SC;scenario/sc-PBX2PBX_Basic_Call_with_PAI-Term.xml;1816;PASSED;
+     TC;tc/tc-PBX2PBX_Basic_Call_with_PAI.xml;tc1-PBX2PBX_Basic_Call_with_PAI;4092;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Basic_Call_with_PAIstring.xml name= PBX2PBX_Basic_Call_with_PAIstring ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Basic_Call_with_PAIstring-Orig.xml;1226;PASSED;
+          SC;scenario/sc-PBX2PBX_Basic_Call_with_PAIstring-Term.xml;1276;PASSED;
+     TC;tc/tc-PBX2PBX_Basic_Call_with_PAIstring.xml;tc2-PBX2PBX_Basic_Call_with_PAIstring;3516;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Reject_Call_with_PAI.xml name= PBX2PBX_Reject_Call_with_PAI ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Reject_Call_with_PAI-Term.xml;1029;PASSED;
+          SC;scenario/sc-PBX2PBX_Reject_Call_with_PAI-Orig.xml;1051;PASSED;
+     TC;tc/tc-PBX2PBX_Reject_Call_with_PAI.xml;tc3-PBX2PBX_Reject_Call_with_PAI;3282;PASSED;null
+     #------ Testcase file=tc/tc-PBX2SSL_Reject_Call_with_PAI.xml name= PBX2SSL_Reject_Call_with_PAI ------
+       # <run-0>
+          SC;scenario/sc-PBX2SSL_Reject_Call-Term.xml;1698;PASSED;
+          SC;scenario/sc-PBX2SSL_Reject_Call-Orig.xml;1746;PASSED;
+     TC;tc/tc-PBX2SSL_Reject_Call_with_PAI.xml;tc4-PBX2SSL_Reject_Call_with_PAI;3970;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consultative_Transfer_with_PAI.xml name= PBX2PBX_Consultative_Transfer_with_PAI ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Consultative_Transfer_with_PAI-Orig.xml;2678;PASSED;
+          SC;scenario/sc-PBX2PBX_Consultative_Transfer_with_PAI-Term1_Term2.xml;2964;PASSED;
+     TC;tc/tc-PBX2PBX_Consultative_Transfer_with_PAI.xml;tc5-PBX2PBX_Consultative_Transfer_with_PAI;5206;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consultative_Transfer_with_PAIstring.xml name= PBX2PBX_Consultative_Transfer_with_PAIstring ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Consultative_Transfer_with_PAIstring-Orig.xml;2780;PASSED;
+          SC;scenario/sc-PBX2PBX_Consultative_Transfer_with_PAIstring-Term1_Term2.xml;2864;PASSED;
+     TC;tc/tc-PBX2PBX_Consultative_Transfer_with_PAIstring.xml;tc6-PBX2PBX_Consultative_Transfer_with_PAIstring;5099;PASSED;null
+     #------ Testcase file=tc/tc-PBX2SSL_Basic_Call_with_NAME_Option_with_PAI.xml name= PBX2SSL_Basic_Call_with_NAME_Option_with_PAI ------
+       # <run-0>
+          SC;scenario/sc-PBX2SSL_Basic_Call_with_NAME-Orig.xml;1216;PASSED;
+          SC;scenario/sc-PBX2SSL_Basic_Call_with_NAME-Term.xml;1275;PASSED;
+     TC;tc/tc-PBX2SSL_Basic_Call_with_NAME_Option_with_PAI.xml;tc7-PBX2SSL_Basic_Call_with_NAME_Option_with_PAI;3497;PASSED;null
+     #------ Testcase file=tc/tc-PBX2SSL_Basic_Call_with_PAI.xml name= PBX2SSL_Basic_Call_with_PAI ------
+       # <run-0>
+          SC;scenario/sc-PBX2SSL_Basic_Call_with_PAI-Orig.xml;1018;PASSED;
+          SC;scenario/sc-PBX2SSL_Basic_Call_with_PAI-Term.xml;1078;PASSED;
+     TC;tc/tc-PBX2SSL_Basic_Call_with_PAI.xml;tc8-PBX2SSL_Basic_Call_with_PAI;3299;PASSED;null
+     #------ Testcase file=tc/tc-PBX2SSL_Basic_Call_with_PAIstring.xml name= PBX2SSL_Basic_Call_with_PAIString ------
+       # <run-0>
+          SC;scenario/sc-PBX2SSL_Basic_Call_with_PAIString-Orig.xml;1039;PASSED;
+          SC;scenario/sc-PBX2SSL_Basic_Call_with_PAIString-Term.xml;1177;PASSED;
+     TC;tc/tc-PBX2SSL_Basic_Call_with_PAIstring.xml;tc9-PBX2SSL_Basic_Call_with_PAIstring;3397;PASSED;null
+     #------ Testcase file=tc/tc-PBX2SSL_Basic_Call_with_SUPPRESS_Option_with_PAI.xml name= PBX2SSL_Basic_Call_with_SUPPRESS_Option_with_PAI ------
+       # <run-0>
+          SC;scenario/sc-PBX2SSL_Basic_Call_with_SUPPRESS-Orig.xml;831;PASSED;
+          SC;scenario/sc-PBX2SSL_Basic_Call_with_SUPPRESS-Term.xml;1189;PASSED;
+     TC;tc/tc-PBX2SSL_Basic_Call_with_SUPPRESS_Option_with_PAI.xml;tc10-PBX2SSL_Basic_Call_with_SUPPRESS_Option_with_PAI;3408;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Basic_Call_with_PAI_without18x.xml name= PBX2PBX_Basic_Call_with_PAI_without18x ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Basic_Call_with_PAI_without18x-Orig.xml;1149;PASSED;
+          SC;scenario/sc-PBX2PBX_Basic_Call_with_PAI_without18x-Term.xml;1180;PASSED;
+     TC;tc/tc-PBX2PBX_Basic_Call_with_PAI_without18x.xml;tc13-PBX2PBX_Basic_Call_with_PAI_without18x;3398;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Basic_Call_with_PAI_180multi.xml name= PBX2PBX_Basic_Call_with_PAI_180multi ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Basic_Call_with_PAI_180multi-Orig.xml;1355;PASSED;
+          SC;scenario/sc-PBX2PBX_Basic_Call_with_PAI_180multi-Term.xml;1407;PASSED;
+     TC;tc/tc-PBX2PBX_Basic_Call_with_PAI_180multi.xml;tc14-PBX2PBX_Basic_Call_with_PAI_180multi;3627;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Basic_Call_with_PAI_InterSesm.xml name= PBX2PBX_Basic_Call_with_PAI_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Basic_Call_with_PAI-Orig.xml;1237;PASSED;
+          SC;scenario/sc-PBX2PBX_Basic_Call_with_PAI-Term.xml;1287;PASSED;
+     TC;tc/tc-PBX2PBX_Basic_Call_with_PAI_InterSesm.xml;tc16-PBX2PBX_Basic_Call_with_PAI_InterSesm;3506;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Basic_Call_with_PAIstring_InterSesm.xml name= PBX2PBX_Basic_Call_with_PAIstring_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Basic_Call_with_PAIstring-Orig.xml;1244;PASSED;
+          SC;scenario/sc-PBX2PBX_Basic_Call_with_PAIstring-Term.xml;1278;PASSED;
+     TC;tc/tc-PBX2PBX_Basic_Call_with_PAIstring_InterSesm.xml;tc17-PBX2PBX_Basic_Call_with_PAIstring_InterSesm;3497;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Reject_Call_with_PAI_InterSesm.xml name= PBX2PBX_Reject_Call_with_PAI_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Reject_Call_with_PAI-Term.xml;907;PASSED;
+          SC;scenario/sc-PBX2PBX_Reject_Call_with_PAI-Orig.xml;962;PASSED;
+     TC;tc/tc-PBX2PBX_Reject_Call_with_PAI_InterSesm.xml;tc18-PBX2PBX_Reject_Call_with_PAI_InterSesm;3179;PASSED;null
+     #------ Testcase file=tc/tc-PBX2SSL_Basic_Call_with_NAME_Option_with_PAI_InterSesm.xml name= PBX2SSL_Basic_Call_with_NAME_Option_with_PAI_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2SSL_Basic_Call_with_NAME-Orig.xml;1104;PASSED;
+          SC;scenario/sc-PBX2SSL_Basic_Call_with_NAME-Term.xml;1165;PASSED;
+     TC;tc/tc-PBX2SSL_Basic_Call_with_NAME_Option_with_PAI_InterSesm.xml;tc19-PBX2SSL_Basic_Call_with_NAME_Option_with_PAI_InterSesm;3384;PASSED;null
+     #------ Testcase file=tc/tc-PBX2SSL_Basic_Call_with_PAI_InterSesm.xml name= PBX2SSL_Basic_Call_with_PAI_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2SSL_Basic_Call_with_PAI-Orig.xml;1100;PASSED;
+          SC;scenario/sc-PBX2SSL_Basic_Call_with_PAI-Term.xml;1183;PASSED;
+     TC;tc/tc-PBX2SSL_Basic_Call_with_PAI_InterSesm.xml;tc20-PBX2SSL_Basic_Call_with_PAI_InterSesm;3400;PASSED;null
+     #------ Testcase file=tc/tc-PBX2SSL_Basic_Call_with_PAIstring_InterSesm.xml name= PBX2SSL_Basic_Call_with_PAIString_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2SSL_Basic_Call_with_PAIString-Orig.xml;1115;PASSED;
+          SC;scenario/sc-PBX2SSL_Basic_Call_with_PAIString-Term.xml;1178;PASSED;
+     TC;tc/tc-PBX2SSL_Basic_Call_with_PAIstring_InterSesm.xml;tc21-PBX2SSL_Basic_Call_with_PAIstring_InterSesm;3394;PASSED;null
+     #------ Testcase file=tc/tc-PBX2SSL_Basic_Call_with_SUPPRESS_Option_with_PAI_InterSesm.xml name= PBX2SSL_Basic_Call_with_SUPPRESS_Option_with_PAI_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2SSL_Basic_Call_with_SUPPRESS-Orig.xml;842;PASSED;
+          SC;scenario/sc-PBX2SSL_Basic_Call_with_SUPPRESS-Term.xml;1101;PASSED;
+     TC;tc/tc-PBX2SSL_Basic_Call_with_SUPPRESS_Option_with_PAI_InterSesm.xml;tc22-PBX2SSL_Basic_Call_with_SUPPRESS_Option_with_PAI_InterSesm;3317;PASSED;null
+     #------ Testcase file=tc/tc-PBX2SSL_Reject_Call_with_PAI_InterSesm.xml name= PBX2SSL_Reject_Call_with_PAI_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2SSL_Reject_Call-Term.xml;1708;PASSED;
+          SC;scenario/sc-PBX2SSL_Reject_Call-Orig.xml;1761;PASSED;
+     TC;tc/tc-PBX2SSL_Reject_Call_with_PAI_InterSesm.xml;tc23-PBX2SSL_Reject_Call_with_PAI_InterSesm;3977;PASSED;null
+     #------ Testcase file=tc/tc-PBX2SSL_Redirect_Call_with_PAI.xml name= PBX2SSL_Redirect_Call_with_PAI ------
+       # <run-0>
+          SC;scenario/sc-PBX2SSL_Redirect_Call_with_PAI-Term1.xml;942;PASSED;
+          SC;scenario/sc-PBX2SSL_Redirect_Call_with_PAI-Term2.xml;1800;PASSED;
+          SC;scenario/sc-PBX2SSL_Redirect_Call_with_PAI-Orig.xml;1846;PASSED;
+     TC;tc/tc-PBX2SSL_Redirect_Call_with_PAI.xml;tc24-PBX2SSL_Redirect_Call_with_PAI;4078;PASSED;null
+     #------ Testcase file=tc/tc-PBX2SSL_Blind_Transfer_with_PAI.xml name= PBX2SSL_Blind_Transfer_with_PAI ------
+       # <run-0>
+          SC;scenario/sc-PBX2SSL_Blind_Transfer_with_PAI-Term1.xml;1855;PASSED;
+          SC;scenario/sc-PBX2SSL_Blind_Transfer_with_PAI-Term2.xml;2475;PASSED;
+          SC;scenario/sc-PBX2SSL_Blind_Transfer_with_PAI-Orig.xml;6564;PASSED;
+     TC;tc/tc-PBX2SSL_Blind_Transfer_with_PAI.xml;tc25-PBX2SSL_Blind_Transfer_with_PAI;8794;PASSED;null
+     TC;tc/tc-PBX2PBX_Call_Forward_Busy_with_PAI.xml;tc11-PBX2PBX_Call_Forward_Busy_with_PAI.xml;0;INACTIVE;tc/tc-PBX2PBX_Call_Forward_Busy_with_PAI.xml active parm is false, test case inactive
+     TC;tc/tc-PBX2PBX_Call_Forward_Dont_Answer_with_PAI.xml;tc12-PBX2PBX_Call_Forward_Dont_Answer_with_PAI;0;INACTIVE;tc/tc-PBX2PBX_Call_Forward_Dont_Answer_with_PAI.xml active parm is false, test case inactive
+     TC;tc/tc-PBX2PBX_Call_Forward_Unconditional_with_PAI.xml;tc15-PBX2PBX_Call_Forward_Unconditional_with_PAI;0;INACTIVE;tc/tc-PBX2PBX_Call_Forward_Unconditional_with_PAI.xml active parm is false, test case inactive
+     #------ Testcase file=tc/tc-PBX2SSL_CallWaiting_with_PAI.xml name= PBX2SSL_CallWaiting_with_PAI ------
+       # <run-0>
+          SC;scenario/sc-PBX2SSL_CallWaiting_with_PAI-Orig2.xml;6841;PASSED;
+          SC;scenario/sc-PBX2SSL_CallWaiting_with_PAI-Term.xml;8775;PASSED;
+          SC;scenario/sc-PBX2SSL_CallWaiting_with_PAI-Orig1.xml;8810;PASSED;
+     TC;tc/tc-PBX2SSL_CallWaiting_with_PAI.xml;tc29-PBX2SSL_CallWaiting_with_PAI;11036;PASSED;null
+     #------ Testcase file=tc/tc-PBX2SSL_Consultative_Transfer_with_PAI.xml name= PBX2SSL_Consultative_Transfer_with_PAI ------
+       # <run-0>
+          SC;scenario/sc-PBX2SSL_Consultative_Transfer_with_PAI-Orig.xml;2582;PASSED;
+          SC;scenario/sc-PBX2SSL_Consultative_Transfer_with_PAI-Term2-SSL.xml;2846;PASSED;
+          SC;scenario/sc-PBX2SSL_Consultative_Transfer_with_PAI-Term1-PBX.xml;6888;PASSED;
+     TC;tc/tc-PBX2SSL_Consultative_Transfer_with_PAI.xml;tc30-PBX2SSL_Consultative_Transfer_with_PAI;9124;PASSED;null
+  # <run-2>
+     #------ Testcase file=tc/tc-Prov_Multiregister.xml name= Prov_Multiregister ------
+       # <run-0>
+          SC;../opi/addSystemProfile.xml;1028;PASSED;
+          SC;../opi/addSystemProfilesForDomain.xml;137;PASSED;
+          SC;../opi/setSystemProfileForUser.xml;167;PASSED;
+     TC;tc/tc-Prov_Multiregister.xml;tc26-Prov_Multiregister;1340;PASSED;null
+     TC;tc/tc-PBX2SSL_Multiple_Register_with_PAI.xml;tc27-PBX2SSL_Multiple_Register_with_PAI;0;INACTIVE;tc/tc-PBX2SSL_Multiple_Register_with_PAI.xml active parm is false, test case inactive
+     #------ Testcase file=tc/tc-Prov_Multiregister_setToDefault.xml name= Prov_Multiregister_setToDefault ------
+       # <run-0>
+          SC;../opi/removeSystemProfileFromUser.xml;132;PASSED;
+          SC;../opi/removeSystemProfilesFromDomain.xml;83;PASSED;
+          SC;../opi/removeSystemProfile.xml;137;PASSED;
+          SC;../opi/setSystemProfileForUser.xml;143;PASSED;
+     TC;tc/tc-Prov_Multiregister_setToDefault.xml;tc28-Prov_Multiregister_setToDefault;503;PASSED;null
+  # <run-3>
+     #------ Testcase file=tc/tc_Prov_Service_Node_unTrusted_Setup.xml name= Prov_Service_Node_unTrusted_Setup ------
+       # <run-0>
+          SC;../opi/modifySvcNode.xml;115;PASSED;
+       # <run-1>
+          SC;../opi/modifySvcNode.xml;149;PASSED;
+       # <run-2>
+          SC;../opi/modifySvcNode.xml;106;PASSED;
+     TC;tc/tc_Prov_Service_Node_unTrusted_Setup.xml;Prov Service Node is set as Untrusted;384;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/CNDisplay/test_suite.xml;Connected Name Display Feature;110533;FAILED;

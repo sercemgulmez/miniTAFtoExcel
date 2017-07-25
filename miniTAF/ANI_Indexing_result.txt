@@ -1,0 +1,687 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/ANI_Indexing/test_suite.xml name= ANI_INDEXING_AUTOMATION_SUITE ------
+  # <run-0>
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_1.xml name= ANI-INDEXING_AUTOMATION_TEST_1: Basic Call Static PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;5436;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;414;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;144;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;274;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2563;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_1_CALLING.xml;1728;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;182;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;140;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;143;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;106;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5143;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;253;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_1.xml;ANI-INDEXING_AUTOMATION_TEST_1: Basic Call Static PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;19060;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_2.xml name= ANI-INDEXING_AUTOMATION_TEST_2: Basic Call Static PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;123;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;160;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;144;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;299;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2200;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_2_CALLING.xml;1270;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;159;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;99;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;216;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;124;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5123;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;252;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_2.xml;ANI-INDEXING_AUTOMATION_TEST_2: Basic Call Static PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;12616;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_3.xml name= ANI-INDEXING_AUTOMATION_TEST_3: Basic Call Dynamic PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;93;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;183;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;107;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;160;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2125;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_3_CALLING.xml;1472;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;137;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;102;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;143;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;90;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5157;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;252;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_3.xml;ANI-INDEXING_AUTOMATION_TEST_3: Basic Call Dynamic PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;12464;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_4.xml name= ANI-INDEXING_AUTOMATION_TEST_4: Basic Call Dynamic PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;99;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;149;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;129;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;183;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2141;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_4_CALLING.xml;1350;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;143;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;120;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;184;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;173;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5172;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_4.xml;ANI-INDEXING_AUTOMATION_TEST_4: Basic Call Dynamic PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;12535;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_5.xml name= ANI-INDEXING_AUTOMATION_TEST_5: Basic Call Static PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;113;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;173;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;129;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;188;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2172;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_5_CALLING.xml;2580;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_5_CALLED.xml;2608;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;186;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;101;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;184;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;209;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5140;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_5.xml;ANI-INDEXING_AUTOMATION_TEST_5: Basic Call Static PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;13896;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_6.xml name= ANI-INDEXING_AUTOMATION_TEST_6: Basic Call Static PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;114;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;131;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;155;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;155;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2142;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_6_CALLING.xml;1742;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_6_CALLED.xml;2083;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;222;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;207;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;209;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;89;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5132;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;252;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_6.xml;ANI-INDEXING_AUTOMATION_TEST_6: Basic Call Static PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;13333;PASSED;null
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_7.xml;ANI-INDEXING_AUTOMATION_TEST_7: Basic Call Dynamic PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;0;INACTIVE;tc/tc-ANI_INDEXING_AUTOMATION_TEST_7.xml active parm is false, test case inactive
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_8.xml name= ANI-INDEXING_AUTOMATION_TEST_8: Basic Call Dynamic PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;147;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;206;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;191;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;325;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2177;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_8_CALLING.xml;2636;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_8_CALLED.xml;2688;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;195;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;109;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;155;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;83;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5124;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_8.xml;ANI-INDEXING_AUTOMATION_TEST_8: Basic Call Dynamic PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;14103;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_9.xml name= ANI-INDEXING_AUTOMATION_TEST_9: Basic Call Static PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;106;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;155;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;131;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;179;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2144;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_9_CALLING.xml;1760;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_9_CALLED.xml;1819;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;137;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;80;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;171;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;119;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5195;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;252;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_9.xml;ANI-INDEXING_AUTOMATION_TEST_9: Basic Call Static PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;12925;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_10.xml name= ANI-INDEXING_AUTOMATION_TEST_10: Basic Call Static PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;153;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;185;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;195;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;224;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2136;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_10_CALLING.xml;1790;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_10_CALLED.xml;2133;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;184;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;132;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;180;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;119;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5172;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;252;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_10.xml;ANI-INDEXING_AUTOMATION_TEST_10: Basic Call Static PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;13501;PASSED;null
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_11.xml;ANI-INDEXING_AUTOMATION_TEST_11: Basic Call Dynamic PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;0;INACTIVE;tc/tc-ANI_INDEXING_AUTOMATION_TEST_11.xml active parm is false, test case inactive
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_12.xml name= ANI-INDEXING_AUTOMATION_TEST_12: Basic Call Dynamic PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;158;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;134;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;86;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;171;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2159;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_12_CALLING.xml;2201;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_12_CALLED.xml;2243;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;143;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;101;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;176;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;90;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5097;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;252;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_12.xml;ANI-INDEXING_AUTOMATION_TEST_12: Basic Call Dynamic PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;13246;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_13.xml name= ANI-INDEXING_AUTOMATION_TEST_13: Basic Call Static PBX to Static PBX After Splitting Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;112;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;162;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;359;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;203;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2172;PASSED;
+       # <run-2>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5165;PASSED;
+       # <run-3>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_13_CALLING.xml;1741;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_13_CALLED.xml;1919;PASSED;
+       # <run-4>
+          SC;../opi/modifyCS2KSipPbx.xml;136;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;104;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;146;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;98;PASSED;
+       # <run-5>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5133;PASSED;
+       # <run-6>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_13.xml;ANI-INDEXING_AUTOMATION_TEST_13: Basic Call Static PBX to Static PBX After Splitting Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;18394;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_14.xml name= ANI-INDEXING_AUTOMATION_TEST_14: Basic Call Static PBX to Dynamic PBX After Splitting Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;98;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;165;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;94;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;165;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2119;PASSED;
+       # <run-2>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5214;PASSED;
+       # <run-3>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_14_CALLING.xml;1709;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_14_CALLED.xml;2043;PASSED;
+       # <run-4>
+          SC;../opi/modifyCS2KSipPbx.xml;135;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;102;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;164;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;115;PASSED;
+       # <run-5>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5153;PASSED;
+       # <run-6>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_14.xml;ANI-INDEXING_AUTOMATION_TEST_14: Basic Call Static PBX to Dynamic PBX After Splitting Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;18256;PASSED;null
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_15.xml;ANI-INDEXING_AUTOMATION_TEST_15: Basic Call Dynamic PBX to Static PBX After Splitting Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;0;INACTIVE;tc/tc-ANI_INDEXING_AUTOMATION_TEST_15.xml active parm is false, test case inactive
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_16.xml name= ANI-INDEXING_AUTOMATION_TEST_16: Basic Call Dynamic PBX to Dynamic PBX After Splitting Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;185;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;191;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;180;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;200;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2150;PASSED;
+       # <run-2>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5186;PASSED;
+       # <run-3>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_16_CALLING.xml;2149;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_16_CALLED.xml;2176;PASSED;
+       # <run-4>
+          SC;../opi/modifyCS2KSipPbx.xml;212;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;102;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;136;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;78;PASSED;
+       # <run-5>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5104;PASSED;
+       # <run-6>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_16.xml;ANI-INDEXING_AUTOMATION_TEST_16: Basic Call Dynamic PBX to Dynamic PBX After Splitting Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;18587;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_17.xml name= ANI-INDEXING_AUTOMATION_TEST_17: Basic Call Static PBX to Static PBX After Merging Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;200;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;344;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;181;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;208;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2195;PASSED;
+       # <run-2>
+          SC;../omi/addPbxDigitBasedRoute.xml;2232;PASSED;
+       # <run-3>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_17_CALLING.xml;1774;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_17_CALLED.xml;1820;PASSED;
+       # <run-4>
+          SC;../opi/modifyCS2KSipPbx.xml;665;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;197;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;244;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;259;PASSED;
+       # <run-5>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5381;PASSED;
+       # <run-6>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;252;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_17.xml;ANI-INDEXING_AUTOMATION_TEST_17: Basic Call Static PBX to Static PBX After Merging Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;16616;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_18.xml name= ANI-INDEXING_AUTOMATION_TEST_18: Basic Call Static PBX to Dynamic PBX After Merging Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;109;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;206;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;147;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;225;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2192;PASSED;
+       # <run-2>
+          SC;../omi/addPbxDigitBasedRoute.xml;2229;PASSED;
+       # <run-3>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_18_CALLING.xml;1810;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_18_CALLED.xml;2156;PASSED;
+       # <run-4>
+          SC;../opi/modifyCS2KSipPbx.xml;169;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;96;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;149;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;115;PASSED;
+       # <run-5>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5105;PASSED;
+       # <run-6>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_18.xml;ANI-INDEXING_AUTOMATION_TEST_18: Basic Call Static PBX to Dynamic PBX After Merging Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;15695;PASSED;null
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_19.xml;ANI-INDEXING_AUTOMATION_TEST_19: Basic Call Dynamic PBX to Static PBX After Merging Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;0;INACTIVE;tc/tc-ANI_INDEXING_AUTOMATION_TEST_19.xml active parm is false, test case inactive
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_20.xml name= ANI-INDEXING_AUTOMATION_TEST_20: Basic Call Dynamic PBX to Dynamic PBX After Merging Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;89;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;146;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;87;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;162;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2231;PASSED;
+       # <run-2>
+          SC;../omi/addPbxDigitBasedRoute.xml;2141;PASSED;
+       # <run-3>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_20_CALLING.xml;2096;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_20_CALLED.xml;2150;PASSED;
+       # <run-4>
+          SC;../opi/modifyCS2KSipPbx.xml;177;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;98;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;161;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;114;PASSED;
+       # <run-5>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5099;PASSED;
+       # <run-6>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_20.xml;ANI-INDEXING_AUTOMATION_TEST_20: Basic Call Dynamic PBX to Dynamic PBX After Merging Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;15340;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_21.xml name= ANI-INDEXING_AUTOMATION_TEST_21: Redirection Static PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;132;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;233;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;92;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;169;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2139;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_21_ORIG_TERM.xml;2274;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_21_TERM2.xml;2588;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;182;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;122;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;149;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;108;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5146;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_21.xml;ANI-INDEXING_AUTOMATION_TEST_21: Redirection Static PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;13744;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_22.xml name= ANI-INDEXING_AUTOMATION_TEST_22: Redirection Static PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;124;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;152;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;89;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;191;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2112;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_22_ORIG_TERM.xml;2237;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_22_TERM2.xml;2593;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;131;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;95;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;148;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;107;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5171;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;252;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_22.xml;ANI-INDEXING_AUTOMATION_TEST_22: Redirection Static PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;13598;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_23.xml name= ANI-INDEXING_AUTOMATION_TEST_23: Redirection Dynamic PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;77;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;151;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;101;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;174;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2103;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_23_ORIG_TERM.xml;2487;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_23_TERM2.xml;2532;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;142;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;113;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;163;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;88;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5094;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;252;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_23.xml;ANI-INDEXING_AUTOMATION_TEST_23: Redirection Dynamic PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;13422;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_24.xml name= ANI-INDEXING_AUTOMATION_TEST_24: Redirection Dynamic PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;111;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;151;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;113;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;180;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2177;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_24_ORIG_TERM.xml;2567;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_24_TERM2.xml;2663;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;161;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;129;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;165;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;107;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5147;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_24.xml;ANI-INDEXING_AUTOMATION_TEST_24: Redirection Dynamic PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;13786;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_25.xml name= ANI-INDEXING_AUTOMATION_TEST_25: Redirection Static PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" False and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;133;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;167;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;114;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;183;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2106;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_25_ORIG_TERM.xml;2282;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_25_TERM2.xml;2595;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;168;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;124;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;161;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;96;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5171;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_25.xml;ANI-INDEXING_AUTOMATION_TEST_25: Redirection Static PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" False and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;13704;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_26.xml name= ANI-INDEXING_AUTOMATION_TEST_26: Redirection Static PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" False and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;99;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;132;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;93;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;170;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2129;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_26_ORIG_TERM.xml;2756;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_26_TERM2.xml;3110;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;200;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;84;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;164;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;113;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5135;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_26.xml;ANI-INDEXING_AUTOMATION_TEST_26: Redirection Static PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" False and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;14113;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_27.xml name= ANI-INDEXING_AUTOMATION_TEST_27: Redirection Dynamic PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" False and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;110;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;150;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;101;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;156;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2120;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_27_ORIG_TERM.xml;2603;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_27_TERM2.xml;2635;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;151;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;90;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;179;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;104;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5144;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_27.xml;ANI-INDEXING_AUTOMATION_TEST_27: Redirection Dynamic PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" False and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;13624;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_28.xml name= ANI-INDEXING_AUTOMATION_TEST_28: Redirection Dynamic PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" False and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;135;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;152;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;99;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;173;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2128;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_28_ORIG_TERM.xml;2611;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_28_TERM2.xml;2701;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;143;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;102;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;162;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;101;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5123;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_28.xml;ANI-INDEXING_AUTOMATION_TEST_28: Redirection Dynamic PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" False and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;13705;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_29.xml name= ANI-INDEXING_AUTOMATION_TEST_29: Transfer Static PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;106;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;150;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;101;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;170;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2129;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_29_ORIG.xml;2782;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_29_TERM1-TERM2.xml;4009;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;182;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;78;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;154;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;89;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5147;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;252;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_29.xml;ANI-INDEXING_AUTOMATION_TEST_29: Transfer Static PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;15004;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_30.xml name= ANI-INDEXING_AUTOMATION_TEST_30: Transfer Static PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;98;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;155;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;110;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;174;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2159;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_30_ORIG.xml;2683;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_30_TERM1-TERM2.xml;3955;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;149;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;119;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;157;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;119;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5112;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_30.xml;ANI-INDEXING_AUTOMATION_TEST_30: Transfer Static PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;14996;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_31.xml name= ANI-INDEXING_AUTOMATION_TEST_31: Transfer Dynamic PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;97;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;155;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;101;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;191;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2147;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_31_ORIG.xml;2763;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_31_TERM1-TERM2.xml;3945;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;153;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;83;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;149;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;95;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5130;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_31.xml;ANI-INDEXING_AUTOMATION_TEST_31: Transfer Dynamic PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;14944;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_32.xml name= ANI-INDEXING_AUTOMATION_TEST_32: Transfer Dynamic PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;143;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;185;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;95;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;299;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2158;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_32_ORIG.xml;2820;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_32_TERM1-TERM2.xml;4032;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;145;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;102;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;172;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;126;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5104;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_32.xml;ANI-INDEXING_AUTOMATION_TEST_32: Transfer Dynamic PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;15250;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_33.xml name= ANI-INDEXING_AUTOMATION_TEST_33: Transfer Static PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" False and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;100;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;138;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;126;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;175;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2129;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_33_ORIG.xml;2615;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_33_TERM1-TERM2.xml;3815;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;173;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;84;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;161;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;77;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5170;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_33.xml;ANI-INDEXING_AUTOMATION_TEST_33: Transfer Static PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" False and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;14831;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_34.xml name= ANI-INDEXING_AUTOMATION_TEST_34: Transfer Static PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" False and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;100;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;156;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;96;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;162;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2139;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_34_ORIG.xml;2655;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_34_TERM1-TERM2.xml;3928;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;138;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;106;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;138;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;103;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5164;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_34.xml;ANI-INDEXING_AUTOMATION_TEST_34: Transfer Static PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" False and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;14915;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_35.xml name= ANI-INDEXING_AUTOMATION_TEST_35: Transfer Dynamic PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" False and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;90;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;137;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;95;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;156;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2129;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_35_ORIG.xml;2809;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_35_TERM1-TERM2.xml;3959;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;209;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;114;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;143;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;132;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5210;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_35.xml;ANI-INDEXING_AUTOMATION_TEST_35: Transfer Dynamic PBX to Static PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" False and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;15061;PASSED;null
+     #------ Testcase file=tc/tc-ANI_INDEXING_AUTOMATION_TEST_36.xml name= ANI-INDEXING_AUTOMATION_TEST_36: Transfer Dynamic PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" False and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;132;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;237;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;110;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;179;PASSED;
+       # <run-1>
+          SC;../omi/addPbxDigitBasedRoute.xml;2164;PASSED;
+       # <run-2>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_36_ORIG.xml;2866;PASSED;
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_36_TERM1-TERM2.xml;4043;PASSED;
+       # <run-3>
+          SC;../opi/modifyCS2KSipPbx.xml;148;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;83;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;145;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;113;PASSED;
+       # <run-4>
+          SC;../omi/deletePbxDigitBasedRoute.xml;5138;PASSED;
+       # <run-5>
+          SC;scenario/sc-ANI_INDEXING_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-ANI_INDEXING_AUTOMATION_TEST_36.xml;ANI-INDEXING_AUTOMATION_TEST_36: Transfer Dynamic PBX to Dynamic PBX After Adding Digit Based Route When "Fail Call On Unresolved Route" False and "BChannel Limit Control" Options are True and "Routing Type: Ani Based" for a BChannel Limit set Domain;15188;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/ANI_Indexing/test_suite.xml;ANI_INDEXING_AUTOMATION_SUITE;470538;FAILED;

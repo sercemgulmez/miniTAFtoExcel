@@ -1,0 +1,632 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/UpdateMidcall/test_suite.xml name= Update MidCall Test Suite ------
+  # <run-0>
+     #------ Testcase file=tc/tc-modifySipProfileRequiredPrack.xml name= Add RequiredPrack to SipProfile ------
+       # <run-0>
+          SC;../omi/modifySipProfile.xml;2975;PASSED;
+     TC;tc/tc-modifySipProfileRequiredPrack.xml;tc-modifySipProfileRequiredPrack;3242;PASSED;null
+  # <run-1>
+     #------ Testcase file=tc/tc-PBX2PBX_Prack3_500.xml name= tc-PBX2PBX_Prack3_500 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Prack3_500-Term.xml;5870;PASSED;
+          SC;scenario/sc-PBX2PBX_Prack3_500-Orig.xml;5870;PASSED;
+     TC;tc/tc-PBX2PBX_Prack3_500.xml;tc29-PBX2PBX_Prack3_500;8171;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Prack_200.xml name= tc-PBX2PBX_Prack_200 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Prack_200-Orig.xml;1791;PASSED;
+          SC;scenario/sc-PBX2PBX_Prack_200-Term.xml;1845;PASSED;
+     TC;tc/tc-PBX2PBX_Prack_200.xml;tc26-PBX2PBX_Prack_200;4108;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Prack_500.xml name= tc-PBX2PBX_Prack_500 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Prack_500-Orig.xml;3758;PASSED;
+          SC;scenario/sc-PBX2PBX_Prack_500-Term.xml;3775;PASSED;
+     TC;tc/tc-PBX2PBX_Prack_500.xml;tc27-PBX2PBX_Prack_500.xml;6027;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Prack2_500.xml name= tc-PBX2PBX_Prack2_500 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Prack2_500-Orig.xml;5556;PASSED;
+          SC;scenario/sc-PBX2PBX_Prack2_500-Term.xml;5573;PASSED;
+     TC;tc/tc-PBX2PBX_Prack2_500.xml;tc28-PBX2PBX_Prack2_500;7804;PASSED;null
+  # <run-2>
+     #------ Testcase file=tc/tc-defaultSipProfile.xml name= set SipProfile to default values ------
+       # <run-0>
+          SC;../omi/defaultSipProfile.xml;2357;PASSED;
+     TC;tc/tc-defaultSipProfile.xml;tc-defaultSipProfile;2566;PASSED;null
+  # <run-3>
+     #------ Testcase file=tc/tc-PBX2PBX_BlindTr_Orig_200.xml name= tc-PBX2PBX_BlindTr_Orig_200 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_BlindTr_Orig_200-Orig.xml;2256;PASSED;
+          SC;scenario/sc-PBX2PBX_BlindTr_Orig_200-Term1_Term2.xml;3443;PASSED;
+     TC;tc/tc-PBX2PBX_BlindTr_Orig_200.xml;tc-PBX2PBX_BlindTr_Orig_200;5681;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_BlindTr_Orig_500_1.xml name= tc-PBX2PBX_BlindTr_Orig_500_1 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_BlindTr_Orig_500_1-Orig.xml;2244;PASSED;
+          SC;scenario/sc-PBX2PBX_BlindTr_Orig_500_1-Term1_Term2.xml;5471;PASSED;
+     TC;tc/tc-PBX2PBX_BlindTr_Orig_500_1.xml;tc-PBX2PBX_BlindTr_Orig_500_1;7704;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_BlindTr_Orig_500_2.xml name= tc-PBX2PBX_BlindTr_Orig_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_BlindTr_Orig_500_2-Orig.xml;2303;PASSED;
+          SC;scenario/sc-PBX2PBX_BlindTr_Orig_500_2-Term1_Term2.xml;7472;PASSED;
+     TC;tc/tc-PBX2PBX_BlindTr_Orig_500_2.xml;tc-PBX2PBX_BlindTr_Orig_500_2;9704;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_BlindTr_Orig_500_3.xml name= tc-PBX2PBX_BlindTr_Orig_500_3 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_BlindTr_Orig_500_3-Orig.xml;2221;PASSED;
+          SC;scenario/sc-PBX2PBX_BlindTr_Orig_500_3-Term1_Term2.xml;6918;PASSED;
+     TC;tc/tc-PBX2PBX_BlindTr_Orig_500_3.xml;tc-PBX2PBX_BlindTr_Orig_500_3;9149;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_BlindTr_Term_200.xml name= tc-PBX2PBX_BlindTr_Term_200 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_BlindTr_Term_200-Orig.xml;2329;PASSED;
+          SC;scenario/sc-PBX2PBX_BlindTr_Term_200-Term1_Term2.xml;3538;PASSED;
+     TC;tc/tc-PBX2PBX_BlindTr_Term_200.xml;tc-PBX2PBX_BlindTr_Term_200;5768;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_BlindTr_Term_500_1.xml name= tc-PBX2PBX_BlindTr_Term_500_1 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_BlindTr_Term_500_1-Orig.xml;2250;PASSED;
+          SC;scenario/sc-PBX2PBX_BlindTr_Term_500_1-Term1_Term2.xml;7426;PASSED;
+     TC;tc/tc-PBX2PBX_BlindTr_Term_500_1.xml;tc-PBX2PBX_BlindTr_Term_500_1;9658;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_BlindTr_Term_500_2.xml name= tc-PBX2PBX_BlindTr_Term_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_BlindTr_Term_500_2-Orig.xml;1940;PASSED;
+          SC;scenario/sc-PBX2PBX_BlindTr_Term_500_2-Term1_Term2.xml;11384;PASSED;
+     TC;tc/tc-PBX2PBX_BlindTr_Term_500_2.xml;tc-PBX2PBX_BlindTr_Term_500_2;13615;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_BlindTr_Term_500_3.xml name= tc-PBX2PBX_BlindTr_Term_500_3 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_BlindTr_Term_500_3-Orig.xml;1978;PASSED;
+          SC;scenario/sc-PBX2PBX_BlindTr_Term_500_3-Term1_Term2.xml;6927;PASSED;
+     TC;tc/tc-PBX2PBX_BlindTr_Term_500_3.xml;tc-PBX2PBX_BlindTr_Term_500_3;9153;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_BlindTr_Orig_Term_200.xml name= tc-PBX2PBX_BlindTr_Orig_Term_200 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_BlindTr_Orig_Term_200-Orig.xml;2261;PASSED;
+          SC;scenario/sc-PBX2PBX_BlindTr_Orig_Term_200-Term1_Term2.xml;4043;PASSED;
+     TC;tc/tc-PBX2PBX_BlindTr_Orig_Term_200.xml;ttc-PBX2PBX_BlindTr_Orig_Term_200;6286;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_BlindTr_Orig_Term_500_1.xml name= tc-PBX2PBX_BlindTr_Orig_Term_500_1 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_BlindTr_Orig_Term_500_1-Orig.xml;2220;PASSED;
+          SC;scenario/sc-PBX2PBX_BlindTr_Orig_Term_500_1-Term1_Term2.xml;11925;PASSED;
+     TC;tc/tc-PBX2PBX_BlindTr_Orig_Term_500_1.xml;tc-PBX2PBX_BlindTr_Orig_Term_500_1;14156;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_BlindTr_Orig_Term_500_2.xml name= tc-PBX2PBX_BlindTr_Orig_Term_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_BlindTr_Orig_Term_500_2-Orig.xml;2307;PASSED;
+          SC;scenario/sc-PBX2PBX_BlindTr_Orig_Term_500_2-Term1_Term2.xml;20032;PASSED;
+     TC;tc/tc-PBX2PBX_BlindTr_Orig_Term_500_2.xml;tc-PBX2PBX_BlindTr_Orig_Term_500_2;22277;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Redirect.xml name= PBX2PBX_Redirect ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Redirect-Orig.xml;1965;PASSED;
+          SC;scenario/sc-PBX2PBX_Redirect-Term1_Term2.xml;2001;PASSED;
+     TC;tc/tc-PBX2PBX_Redirect.xml;tc-PBX2PBX_Redirect;4222;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Redirect_Orig_HoldRetrieve_200.xml name= PBX2PBX_Redirect_Orig_HoldRetrieve_200 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Redirect_Orig_HoldRetrieve_200-Orig.xml;2506;PASSED;
+          SC;scenario/sc-PBX2PBX_Redirect_Orig_HoldRetrieve_200-Term1_Term2.xml;2521;PASSED;
+     TC;tc/tc-PBX2PBX_Redirect_Orig_HoldRetrieve_200.xml;tc-PBX2PBX_Redirect_Orig_HoldRetrieve_200;4745;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Redirect_Orig_HoldRetrieve_500_1.xml name= PBX2PBX_Redirect_Orig_HoldRetrieve_500_1 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Redirect_Orig_HoldRetrieve_500_1-Orig.xml;4565;PASSED;
+          SC;scenario/sc-PBX2PBX_Redirect_Orig_HoldRetrieve_500_1-Term1_Term2.xml;4610;PASSED;
+     TC;tc/tc-PBX2PBX_Redirect_Orig_HoldRetrieve_500_1.xml;tc-PBX2PBX_Redirect_Orig_HoldRetrieve_500_1;6832;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Redirect_Orig_HoldRetrieve_500_2.xml name= PBX2PBX_Redirect_Orig_HoldRetrieve_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Redirect_Orig_HoldRetrieve_500_2-Orig.xml;6552;PASSED;
+          SC;scenario/sc-PBX2PBX_Redirect_Orig_HoldRetrieve_500_2-Term1_Term2.xml;6575;PASSED;
+     TC;tc/tc-PBX2PBX_Redirect_Orig_HoldRetrieve_500_2.xml;tc-PBX2PBX_Redirect_Orig_HoldRetrieve_500_2;8796;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Redirect_Orig_HoldRetrieve_500_3.xml name= PBX2PBX_Redirect_Orig_HoldRetrieve_500_3 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Redirect_Orig_HoldRetrieve_500_3-Term1_Term2.xml;6106;PASSED;
+          SC;scenario/sc-PBX2PBX_Redirect_Orig_HoldRetrieve_500_3-Orig.xml;6117;PASSED;
+     TC;tc/tc-PBX2PBX_Redirect_Orig_HoldRetrieve_500_3.xml;tc-PBX2PBX_Redirect_Orig_HoldRetrieve_500_3;8337;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Redirect_Term_HoldRetrieve_200.xml name= PBX2PBX_Redirect_Term_HoldRetrieve_200 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Redirect_Term_HoldRetrieve_200-Term1_Term2.xml;2751;PASSED;
+          SC;scenario/sc-PBX2PBX_Redirect_Term_HoldRetrieve_200-Orig.xml;2763;PASSED;
+     TC;tc/tc-PBX2PBX_Redirect_Term_HoldRetrieve_200.xml;tc-PBX2PBX_Redirect_Term_HoldRetrieve_200;4984;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Redirect_Term_HoldRetrieve_500_1.xml name= tc-PBX2PBX_Redirect_Term_HoldRetrieve_500_1 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Redirect_Term_HoldRetrieve_500_1-Term1_Term2.xml;4750;PASSED;
+          SC;scenario/sc-PBX2PBX_Redirect_Term_HoldRetrieve_500_1-Orig.xml;4802;PASSED;
+     TC;tc/tc-PBX2PBX_Redirect_Term_HoldRetrieve_500_1.xml;tc-PBX2PBX_Redirect_Term_HoldRetrieve_500_1;7023;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Redirect_Term_HoldRetrieve_500_2.xml name= tc-PBX2PBX_Redirect_Term_HoldRetrieve_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Redirect_Term_HoldRetrieve_500_2-Term1_Term2.xml;6761;PASSED;
+          SC;scenario/sc-PBX2PBX_Redirect_Term_HoldRetrieve_500_2-Orig.xml;6791;PASSED;
+     TC;tc/tc-PBX2PBX_Redirect_Term_HoldRetrieve_500_2.xml;tc-PBX2PBX_Redirect_Term_HoldRetrieve_500_2;9021;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Redirect_Term_HoldRetrieve_500_3.xml name= tc-PBX2PBX_Redirect_Term_HoldRetrieve_500_3 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Redirect_Term_HoldRetrieve_500_3-Orig.xml;6262;PASSED;
+          SC;scenario/sc-PBX2PBX_Redirect_Term_HoldRetrieve_500_3-Term1_Term2.xml;6274;PASSED;
+     TC;tc/tc-PBX2PBX_Redirect_Term_HoldRetrieve_500_3.xml;tc-PBX2PBX_Redirect_Term_HoldRetrieve_500_3;8493;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Orig_Term_Hold_Retrieve.xml name= PBX2PBX_Orig_Term_Hold_Retrieve ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Orig_Term_Hold_Retrieve-Orig.xml;2692;PASSED;
+          SC;scenario/sc-PBX2PBX_Orig_Term_Hold_Retrieve-Term.xml;2740;PASSED;
+     TC;tc/tc-PBX2PBX_Orig_Term_Hold_Retrieve.xml;PBX2PBX_Orig_Term_Hold_Retrieve;4961;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Orig_Term_Hold_Retrieve_send_500.xml name= PBX2PBX_Orig_Term_Hold_Retrieve_send_500 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Orig_Term_Hold_Retrieve_send_500-Orig.xml;8383;PASSED;
+          SC;scenario/sc-PBX2PBX_Orig_Term_Hold_Retrieve_send_500-Term.xml;8438;PASSED;
+     TC;tc/tc-PBX2PBX_Orig_Term_Hold_Retrieve_send_500.xml;PBX2PBX_Orig_Term_Hold_Retrieve_send_500;10665;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Orig_Term_Hold_Retrieve_Send_500_2.xml name= PBX2PBX_Orig_Term_Hold_Retrieve_Send_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Orig_Term_Hold_Retrieve_Send_500_2-Orig.xml;12442;PASSED;
+          SC;scenario/sc-PBX2PBX_Orig_Term_Hold_Retrieve_Send_500_2-Term.xml;12493;PASSED;
+     TC;tc/tc-PBX2PBX_Orig_Term_Hold_Retrieve_Send_500_2.xml;PBX2PBX_Orig_Term_Hold_Retrieve_Send_500_2;14713;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_mline_change_send_200_ok.xml name= PBX2PBX_mline_change_send_200_ok ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_mline_change_send_200_ok-Orig_User.xml;1569;PASSED;
+          SC;scenario/sc-PBX2PBX_mline_change_send_200_ok-Term_User.xml;1587;PASSED;
+     TC;tc/tc-PBX2PBX_mline_change_send_200_ok.xml;PBX2PBX_mline_change_send_200_ok;3803;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_mline_change_send_500.xml name= PBX2PBX_mline_change_send_500 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_mline_change_send_500-Orig_User.xml;7165;PASSED;
+          SC;scenario/sc-PBX2PBX_mline_change_send_500-Term_User.xml;7190;PASSED;
+     TC;tc/tc-PBX2PBX_mline_change_send_500.xml;PBX2PBX_mline_change_send_500;9406;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_mline_change_send_500_2.xml name= PBX2PBX_mline_change_send_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_mline_change_send_500_2-Orig_User.xml;5591;PASSED;
+          SC;scenario/sc-PBX2PBX_mline_change_send_500_2-Term_User.xml;5635;PASSED;
+     TC;tc/tc-PBX2PBX_mline_change_send_500_2.xml;PBX2PBX_mline_change_send_500_2;7852;PASSED;null
+     TC;tc/tc-PBX2PBX_Orig_Update_500_1_Basic_Call.xml;PBX2PBX_Orig_Update_500_1_Basic_Call;0;INACTIVE;tc/tc-PBX2PBX_Orig_Update_500_1_Basic_Call.xml active parm is false, test case inactive
+     #------ Testcase file=tc/tc-PBX2PBX_Orig_Update_500_2_Basic_Call.xml name= PBX2PBX_Orig_Update_500_2_Basic_Call ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Orig_Update_500_2_Basic_Call-Orig.xml;6181;PASSED;
+          SC;scenario/sc-PBX2PBX_Orig_Update_500_2_Basic_Call-Term.xml;6234;PASSED;
+     TC;tc/tc-PBX2PBX_Orig_Update_500_2_Basic_Call.xml;PBX2PBX_Orig_Update_500_2_Basic_Call;8452;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Orig_Update_500_3_Basic_Call.xml name= PBX2PBX_Orig_Update_500_3_Basic_Call ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Orig_Update_500_3_Basic_Call-Term.xml;5491;PASSED;
+          SC;scenario/sc-PBX2PBX_Orig_Update_500_3_Basic_Call-Orig.xml;5491;PASSED;
+     TC;tc/tc-PBX2PBX_Orig_Update_500_3_Basic_Call.xml;PBX2PBX_Orig_Update_500_3_Basic_Call;7708;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Orig_Update_200_Basic_Call.xml name= PBX2PBX_Orig_Update_200_Basic_Call ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Orig_Update_200_Basic_Call-Orig.xml;2153;PASSED;
+          SC;scenario/sc-PBX2PBX_Orig_Update_200_Basic_Call-Term.xml;2214;PASSED;
+     TC;tc/tc-PBX2PBX_Orig_Update_200_Basic_Call.xml;PBX2PBX_Orig_Update_200_Basic_Call;4438;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Term_Video_Start_Basic_Call.xml name= PBX2PBX_Term_Video_Start_Basic_Call ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Term_Video_Start_Basic_Call-Orig.xml;1863;PASSED;
+          SC;scenario/sc-PBX2PBX_Term_Video_Start_Basic_Call-Term.xml;1899;PASSED;
+     TC;tc/tc-PBX2PBX_Term_Video_Start_Basic_Call.xml;PBX2PBX_Term_Video_Start_Basic_Call;4114;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Video_Start_Send_500_1.xml name= PBX2PBX_Video_Start_Send_500_1 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Video_Start_Send_500_1-Orig.xml;3762;PASSED;
+          SC;scenario/sc-PBX2PBX_Video_Start_Send_500_1-Term.xml;3775;PASSED;
+     TC;tc/tc-PBX2PBX_Video_Start_Send_500_1.xml;PBX2PBX_Video_Start_Send_500_1;5991;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Video_Start_Send_500_2.xml name= PBX2PBX_Video_Start_Send_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Video_Start_Send_500_2-Orig.xml;5774;PASSED;
+          SC;scenario/sc-PBX2PBX_Video_Start_Send_500_2-Term.xml;5822;PASSED;
+     TC;tc/tc-PBX2PBX_Video_Start_Send_500_2.xml;PBX2PBX_Video_Start_Send_500_2;8039;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Video_Start_Send_500_3.xml name= PBX2PBX_Video_Start_Send_500_3 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Video_Start_Send_500_3-Term.xml;5656;PASSED;
+          SC;scenario/sc-PBX2PBX_Video_Start_Send_500_3-Orig.xml;5664;PASSED;
+     TC;tc/tc-PBX2PBX_Video_Start_Send_500_3.xml;PBX2PBX_Video_Start_Send_500_3;7879;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Term_Video_Stop_Basic_Call.xml name= PBX2PBX_Term_Video_Stop_Basic_Call ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Term_Video_Stop_Basic_Call-Orig.xml;1552;PASSED;
+          SC;scenario/sc-PBX2PBX_Term_Video_Stop_Basic_Call-Term.xml;1593;PASSED;
+     TC;tc/tc-PBX2PBX_Term_Video_Stop_Basic_Call.xml;PBX2PBX_Term_Video_Stop_Basic_Call;3809;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Video_Stop_Send_500_1.xml name= PBX2PBX_Video_Stop_Send_500_1 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Video_Stop_Send_500_1-Orig.xml;3814;PASSED;
+          SC;scenario/sc-PBX2PBX_Video_Stop_Send_500_1-Term.xml;3850;PASSED;
+     TC;tc/tc-PBX2PBX_Video_Stop_Send_500_1.xml;PBX2PBX_Video_Stop_Send_500_1;6065;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Video_Stop_Send_500_2.xml name= PBX2PBX_Video_Stop_Send_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Video_Stop_Send_500_2-Orig.xml;5562;PASSED;
+          SC;scenario/sc-PBX2PBX_Video_Stop_Send_500_2-Term.xml;5611;PASSED;
+     TC;tc/tc-PBX2PBX_Video_Stop_Send_500_2.xml;PBX2PBX_Video_Stop_Send_500_2;7828;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_video_call_codec_change_send_500_2.xml name= PBX2PBX_video_call_codec_change_send_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_video_call_codec_change_send_500_2-Orig_User.xml;7651;PASSED;
+          SC;scenario/sc-PBX2PBX_video_call_codec_change_send_500_2-Term_User.xml;7693;PASSED;
+     TC;tc/tc-PBX2PBX_video_call_codec_change_send_500_2.xml;PBX2PBX_video_call_codec_change_send_500_2;9909;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_video_call_codec_change_with_update_send_200.xml name= PBX2PBX_video_call_codec_change_with_update_send_200 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_video_call_codec_change_with_update_send_200-Orig_User.xml;1885;PASSED;
+          SC;scenario/sc-PBX2PBX_video_call_codec_change_with_update_send_200-Term_User.xml;1901;PASSED;
+     TC;tc/tc-PBX2PBX_video_call_codec_change_with_update_send_200.xml;PBX2PBX_video_call_codec_change_with_update_send_200;4116;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_video_call_codec_change_with_update_send_500.xml name= PBX2PBX_video_call_codec_change_with_update_send_500 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_video_call_codec_change_with_update_send_500-Orig_User.xml;3614;PASSED;
+          SC;scenario/sc-PBX2PBX_video_call_codec_change_with_update_send_500-Term_User.xml;3650;PASSED;
+     TC;tc/tc-PBX2PBX_video_call_codec_change_with_update_send_500.xml;PBX2PBX_video_call_codec_change_with_update_send_500;5865;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_video_call_codec_change_send_500_3.xml name= PBX2PBX_video_call_codec_change_send_500_3 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_video_call_codec_change_send_500_3-Term_User.xml;5719;PASSED;
+          SC;scenario/sc-PBX2PBX_video_call_codec_change_send_500_3-Orig_User.xml;5738;PASSED;
+     TC;tc/tc-PBX2PBX_video_call_codec_change_send_500_3.xml;PBX2PBX_video_call_codec_change_send_500_3;7963;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Basic.xml name= tc-PBX2PBX_Consult_tr_Basic ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2897;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic_Term1_Term2.xml;3191;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Basic.xml;PBX2PBX_Consult_tr_Basic;5414;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Orig_200.xml name= tc-PBX2PBX_Consult_tr_Orig_200 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2897;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Orig_200-Term1_Term2.xml;3735;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Orig_200.xml;PBX2PBX_Consult_tr_Orig_200;5960;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Orig_500_1.xml name= tc-PBX2PBX_Consult_tr_Orig_500_1 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2898;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Orig_500_1-Term1_Term2.xml;7756;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Orig_500_1.xml;PBX2PBX_Consult_tr_Orig_500_1;9980;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Orig_500_2.xml name= tc-PBX2PBX_Consult_tr_Orig_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2968;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Orig_500_2-Term1_Term2.xml;11842;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Orig_500_2.xml;PBX2PBX_Consult_tr_Orig_500_2;14071;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Orig_500_3.xml name= tc-PBX2PBX_Consult_tr_Orig_500_3 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2816;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Orig_500_3-Term1_Term2.xml;7135;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Orig_500_3.xml;PBX2PBX_Consult_tr_Orig_500_3;9359;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Term_200.xml name= tc-PBX2PBX_Consult_tr_Term_200 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2867;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Term_200-Term1_Term2.xml;3737;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Term_200.xml;PBX2PBX_Consult_tr_Term_200;5967;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Term_500_1.xml name= tc-PBX2PBX_Consult_tr_Term_500_1 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2860;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Term_500_1-Term1_Term2.xml;5688;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Term_500_1.xml;PBX2PBX_Consult_tr_Term_500_1;7911;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Term_500_2.xml name= tc-PBX2PBX_Consult_tr_Term_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2954;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Term_500_2-Term1_Term2.xml;7536;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Term_500_2.xml;PBX2PBX_Consult_tr_Term_500_2;9759;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Term_500_3.xml name= tc-PBX2PBX_Consult_tr_Term_500_3 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2822;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Term_500_3-Term1_Term2.xml;7191;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Term_500_3.xml;PBX2PBX_Consult_tr_Term_500_3;9417;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Orig_Term_200.xml name= tc-PBX2PBX_Consult_tr_Orig_Term_200 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2940;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Orig_Term_200-Term1_Term2.xml;4304;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Orig_Term_200.xml;PBX2PBX_Consult_tr_Orig_Term_200;6529;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Orig_Term_500_1.xml name= tc-PBX2PBX_Consult_tr_Orig_Term_500_1 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2871;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Orig_Term_500_1-Term1_Term2.xml;12311;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Orig_Term_500_1.xml;PBX2PBX_Consult_tr_Orig_Term_500_1;14536;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Orig_Term_500_2.xml name= tc-PBX2PBX_Consult_tr_Orig_Term_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2903;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Orig_Term_500_2-Term1_Term2.xml;20319;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Orig_Term_500_2.xml;PBX2PBX_Consult_tr_Orig_Term_500_2;22553;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_During_Consult_tr_500_1.xml name= tc-PBX2PBX_During_Consult_tr_500_1 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;6928;PASSED;
+          SC;scenario/sc-PBX2PBX_During_ConsultTr_500_1-Term1_Term2.xml;7244;PASSED;
+     TC;tc/tc-PBX2PBX_During_Consult_tr_500_1.xml;PBX2PBX_During_Consult_tr_500_1;9465;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_During_Consult_tr_500_2.xml name= tc-PBX2PBX_During_Consult_tr_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;10862;PASSED;
+          SC;scenario/sc-PBX2PBX_During_ConsultTr_500_2-Term1_Term2.xml;11156;PASSED;
+     TC;tc/tc-PBX2PBX_During_Consult_tr_500_2.xml;PBX2PBX_During_Consult_tr_500_2;13378;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_During_Consult_tr_500_3.xml name= tc-PBX2PBX_During_Consult_tr_500_3 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_During_ConsultTr_500_3-Orig.xml;7055;PASSED;
+          SC;scenario/sc-PBX2PBX_During_ConsultTr_500_3-Term1_Term2.xml;7085;PASSED;
+     TC;tc/tc-PBX2PBX_During_Consult_tr_500_3.xml;PBX2PBX_During_Consult_tr_500_3;9304;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_SessionRefresh_Update_500_1_Basic_Call.xml name= PBX2PBX_Orig_Update_500_1_Basic_Call ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_SessionRefresh_500_1_Basic_Call-Orig.xml;3622;PASSED;
+          SC;scenario/sc-PBX2PBX_SessionRefresh_500_1_Basic_Call-Term.xml;3663;PASSED;
+     TC;tc/tc-PBX2PBX_SessionRefresh_Update_500_1_Basic_Call.xml;tc-PBX2PBX_SessionRefresh_Update_500_1_Basic_Call;5878;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_SessionRefresh_500_3_Basic_Call.xml name= PBX2PBX_Orig_Update_500_3_Basic_Call ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_SessionRefresh_500_3_Basic_Call-Term.xml;5510;PASSED;
+          SC;scenario/sc-PBX2PBX_SessionRefresh_500_3_Basic_Call-Orig.xml;5525;PASSED;
+     TC;tc/tc-PBX2PBX_SessionRefresh_500_3_Basic_Call.xml;tc-PBX2PBX_SessionRefresh_500_3_Basic_Call;7744;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Term_Hold_Retrieve_W_Update.xml name= PBX2PBX_Term_Hold_Retrieve_W_Update ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Term_Hold_Retrieve_W_Update-Orig.xml;1863;PASSED;
+          SC;scenario/sc-PBX2PBX_Term_Hold_Retrieve_W_Update-Term.xml;1922;PASSED;
+     TC;tc/tc-PBX2PBX_Term_Hold_Retrieve_W_Update.xml;tc-PBX2PBX_Term_Hold_Retrieve_W_Update;4140;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Term_Hold_Retrieve_Send_500.xml name= PBX2PBX_Term_Hold_Retrieve_Send_500 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Term_Hold_Retrieve_Send_500-Orig.xml;5934;PASSED;
+          SC;scenario/sc-PBX2PBX_Term_Hold_Retrieve_Send_500-Term.xml;5964;PASSED;
+     TC;tc/tc-PBX2PBX_Term_Hold_Retrieve_Send_500.xml;tc-PBX2PBX_Term_Hold_Retrieve_Send_500;8180;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Term_Hold_Retrieve_Send_500_2.xml name= PBX2PBX_Term_Hold_Retrieve_Send_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Term_Hold_Retrieve_Send_500_2-Orig.xml;8067;PASSED;
+          SC;scenario/sc-PBX2PBX_Term_Hold_Retrieve_Send_500_2-Term.xml;8108;PASSED;
+     TC;tc/tc-PBX2PBX_Term_Hold_Retrieve_Send_500_2.xml;tc-PBX2PBX_Term_Hold_Retrieve_Send_500_2;10325;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Term_Hold_Retrieve_Send_500_3.xml name= PBX2PBX_Term_Hold_Retrieve_Send_500_3 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Term_Hold_Retrieve_Send_500_3-Term.xml;7661;PASSED;
+          SC;scenario/sc-PBX2PBX_Term_Hold_Retrieve_Send_500_3-Orig.xml;7661;PASSED;
+     TC;tc/tc-PBX2PBX_Term_Hold_Retrieve_Send_500_3.xml;tc-PBX2PBX_Term_Hold_Retrieve_Send_500_3;9878;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Basic_Call_RetryAfter_0.xml name= tc-PBX2PBX_Basic_Call_RetryAfter_0 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Basic_Call_RetryAfter_0-Term.xml;1705;PASSED;
+          SC;scenario/sc-PBX2PBX_Basic_Call_RetryAfter_0-Orig.xml;1721;PASSED;
+     TC;tc/tc-PBX2PBX_Basic_Call_RetryAfter_0.xml;tc-PBX2PBX_Basic_Call_RetryAfter_0;3936;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Basic_Call_RetryAfter_1.xml name= tc-PBX2PBX_Basic_Call_RetryAfter_1 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Basic_Call_RetryAfter_1-Orig.xml;4158;PASSED;
+          SC;scenario/sc-PBX2PBX_Basic_Call_RetryAfter_1-Term.xml;4170;PASSED;
+     TC;tc/tc-PBX2PBX_Basic_Call_RetryAfter_1.xml;tc-PBX2PBX_Basic_Call_RetryAfter_1;6386;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Basic_Call_RetryAfter_10.xml name= tc-PBX2PBX_Basic_Call_RetryAfter_10 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Basic_Call_RetryAfter_10-Orig.xml;6071;PASSED;
+          SC;scenario/sc-PBX2PBX_Basic_Call_RetryAfter_10-Term.xml;6122;PASSED;
+     TC;tc/tc-PBX2PBX_Basic_Call_RetryAfter_10.xml;tc-PBX2PBX_Basic_Call_RetryAfter_10;8344;PASSED;null
+     #------ Testcase file=tc/tc-PBX2SSL_Update_Mid_Call_Send_500.xml name= PBX2SSL_Update_Mid_Call_Send_500 ------
+       # <run-0>
+          SC;scenario/sc-PBX2SSL_Update_Mid_Call_Send_500-Term.xml;1037;PASSED;
+          SC;scenario/sc-PBX2SSL_Update_Mid_Call_Send_500-Orig.xml;1049;PASSED;
+     TC;tc/tc-PBX2SSL_Update_Mid_Call_Send_500.xml;tc-PBX2SSL_Update_Mid_Call_Send_500;3263;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Basic_Call_without_RetryAfter.xml name= tc-PBX2PBX_Basic_Call_RetryAfter_0 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Basic_Call_without_RetryAfter-Term.xml;1643;PASSED;
+          SC;scenario/sc-PBX2PBX_Basic_Call_without_RetryAfter-Orig.xml;1649;PASSED;
+     TC;tc/tc-PBX2PBX_Basic_Call_without_RetryAfter.xml;tc-PBX2PBX_Basic_Call_without_RetryAfter;3863;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_mline_change_send_500_3.xml name= PBX2PBX_mline_change_send_500_3 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_mline_change_send_500_3-Term_User.xml;5348;PASSED;
+          SC;scenario/sc-PBX2PBX_mline_change_send_500_3-Orig_User.xml;5360;PASSED;
+     TC;tc/tc-PBX2PBX_mline_change_send_500_3.xml;tc-PBX2PBX_mline_change_send_500_3;7581;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_SessionRefresh_500_2_Basic_Call.xml name= PBX2PBX_Orig_Update_500_3_Basic_Call ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_SessionRefresh_500_2_Basic_Call-Orig.xml;5650;PASSED;
+          SC;scenario/sc-PBX2PBX_SessionRefresh_500_2_Basic_Call-Term.xml;5668;PASSED;
+     TC;tc/tc-PBX2PBX_SessionRefresh_500_2_Basic_Call.xml;tc-PBX2PBX_SessionRefresh_500_2_Basic_Call;7882;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Video_Stop_Send_500_3.xml name= PBX2PBX_Video_Stop_Send_500_3 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Video_Stop_Send_500_3-Term.xml;5666;PASSED;
+          SC;scenario/sc-PBX2PBX_Video_Stop_Send_500_3-Orig.xml;5691;PASSED;
+     TC;tc/tc-PBX2PBX_Video_Stop_Send_500_3.xml;tc-PBX2PBX_Video_Stop_Send_500_3;7906;PASSED;null
+     #------ Testcase file=tc/tc-SSL2PBX_Update_Mid_Call_Send_500.xml name= SSL2PBX_Update_Mid_Call_Send_500 ------
+       # <run-0>
+          SC;scenario/sc-SSL2PBX_Update_Mid_Call_Send_500-Term.xml;4284;PASSED;
+          SC;scenario/sc-SSL2PBX_Update_Mid_Call_Send_500-Orig.xml;51051;PASSED;
+     TC;tc/tc-SSL2PBX_Update_Mid_Call_Send_500.xml;tc-SSL2PBX_Update_Mid_Call_Send_500;53270;PASSED;null
+  # <run-4>
+     #------ Testcase file=tc/tc-PBX2PBX_Basic_Call_without_RetryAfter_InterSesm.xml name= tc-PBX2PBX_Basic_Call_RetryAfter_0_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Basic_Call_without_RetryAfter-Term.xml;1617;PASSED;
+          SC;scenario/sc-PBX2PBX_Basic_Call_without_RetryAfter-Orig.xml;1634;PASSED;
+     TC;tc/tc-PBX2PBX_Basic_Call_without_RetryAfter_InterSesm.xml;tc-PBX2PBX_Basic_Call_without_RetryAfter_InterSesm;3849;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_mline_change_send_500_3_InterSesm.xml name= PBX2PBX_mline_change_send_500_3_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_mline_change_send_500_3-Term_User.xml;5380;PASSED;
+          SC;scenario/sc-PBX2PBX_mline_change_send_500_3-Orig_User.xml;5397;PASSED;
+     TC;tc/tc-PBX2PBX_mline_change_send_500_3_InterSesm.xml;tc-PBX2PBX_mline_change_send_500_3_InterSesm;7611;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_SessionRefresh_500_2_Basic_Call_InterSesm.xml name= PBX2PBX_Orig_Update_500_3_Basic_Call_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_SessionRefresh_500_2_Basic_Call-Orig.xml;5607;PASSED;
+          SC;scenario/sc-PBX2PBX_SessionRefresh_500_2_Basic_Call-Term.xml;5625;PASSED;
+     TC;tc/tc-PBX2PBX_SessionRefresh_500_2_Basic_Call_InterSesm.xml;tc-PBX2PBX_SessionRefresh_500_2_Basic_Call_InterSesm;7841;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Video_Stop_Send_500_3_InterSesm.xml name= PBX2PBX_Video_Stop_Send_500_3_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Video_Stop_Send_500_3-Term.xml;5770;PASSED;
+          SC;scenario/sc-PBX2PBX_Video_Stop_Send_500_3-Orig.xml;5793;PASSED;
+     TC;tc/tc-PBX2PBX_Video_Stop_Send_500_3_InterSesm.xml;tc-PBX2PBX_Video_Stop_Send_500_3_InterSesm;8012;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Basic_InterSesm.xml name= tc-PBX2PBX_Consult_tr_Basic_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2978;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic_Term1_Term2.xml;3310;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Basic_InterSesm.xml;tc-PBX2PBX_Consult_tr_Basic_InterSesm;5531;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Orig_200_InterSesm.xml name= tc-PBX2PBX_Consult_tr_Orig_200_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2869;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Orig_200-Term1_Term2.xml;3713;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Orig_200_InterSesm.xml;tc-PBX2PBX_Consult_tr_Orig_200_InterSesm;5936;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Orig_500_1_InterSesm.xml name= tc-PBX2PBX_Consult_tr_Orig_500_1_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2839;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Orig_500_1-Term1_Term2.xml;7680;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Orig_500_1_InterSesm.xml;tc-PBX2PBX_Consult_tr_Orig_500_1_InterSesm;9909;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Orig_500_2_InterSesm.xml name= tc-PBX2PBX_Consult_tr_Orig_500_2_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2874;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Orig_500_2-Term1_Term2.xml;11706;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Orig_500_2_InterSesm.xml;tc-PBX2PBX_Consult_tr_Orig_500_2_InterSesm;13935;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Orig_500_3_InterSesm.xml name= tc-PBX2PBX_Consult_tr_Orig_500_3_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2966;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Orig_500_3-Term1_Term2.xml;7290;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Orig_500_3_InterSesm.xml;tc-PBX2PBX_Consult_tr_Orig_500_3_InterSesm;9516;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Term_200_InterSesm.xml name= tc-PBX2PBX_Consult_tr_Term_200_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2868;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Term_200-Term1_Term2.xml;3716;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Term_200_InterSesm.xml;tc-PBX2PBX_Consult_tr_Term_200_InterSesm;5944;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Term_500_1_InterSesm.xml name= tc-PBX2PBX_Consult_tr_Term_500_1_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2861;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Term_500_1-Term1_Term2.xml;5713;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Term_500_1_InterSesm.xml;tc-PBX2PBX_Consult_tr_Term_500_1_InterSesm;7936;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Term_500_2_InterSesm.xml name= tc-PBX2PBX_Consult_tr_Term_500_2_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2822;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Term_500_2-Term1_Term2.xml;7416;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Term_500_2_InterSesm.xml;tc-PBX2PBX_Consult_tr_Term_500_2_InterSesm;9639;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Term_500_3_InterSesm.xml name= tc-PBX2PBX_Consult_tr_Term_500_3_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;3088;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Term_500_3-Term1_Term2.xml;7382;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Term_500_3_InterSesm.xml;tc-PBX2PBX_Consult_tr_Term_500_3_InterSesm;9605;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Orig_Term_200_InterSesm.xml name= tc-PBX2PBX_Consult_tr_Orig_Term_200_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2855;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Orig_Term_200-Term1_Term2.xml;4221;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Orig_Term_200_InterSesm.xml;tc-PBX2PBX_Consult_tr_Orig_Term_200_InterSesm;6446;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Orig_Term_500_1_InterSesm.xml name= tc-PBX2PBX_Consult_tr_Orig_Term_500_1_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;2862;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Orig_Term_500_1-Term1_Term2.xml;12290;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Orig_Term_500_1_InterSesm.xml;tc-PBX2PBX_Consult_tr_Orig_Term_500_1_InterSesm;14521;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Consult_tr_Orig_Term_500_2_InterSesm.xml name= tc-PBX2PBX_Consult_tr_Orig_Term_500_2_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;3037;PASSED;
+          SC;scenario/sc-PBX2PBX_ConsultTr_Orig_Term_500_2-Term1_Term2.xml;20391;PASSED;
+     TC;tc/tc-PBX2PBX_Consult_tr_Orig_Term_500_2_InterSesm.xml;tc-PBX2PBX_Consult_tr_Orig_Term_500_2_InterSesm;22623;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_During_Consult_tr_500_1_InterSesm.xml name= tc-PBX2PBX_During_Consult_tr_500_1_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;6830;PASSED;
+          SC;scenario/sc-PBX2PBX_During_ConsultTr_500_1-Term1_Term2.xml;7166;PASSED;
+     TC;tc/tc-PBX2PBX_During_Consult_tr_500_1_InterSesm.xml;tc-PBX2PBX_During_Consult_tr_500_1_InterSesm;9386;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_During_Consult_tr_500_2_InterSesm.xml name= tc-PBX2PBX_During_Consult_tr_500_2_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_ConsultTr_Basic-Orig.xml;10907;PASSED;
+          SC;scenario/sc-PBX2PBX_During_ConsultTr_500_2-Term1_Term2.xml;11220;PASSED;
+     TC;tc/tc-PBX2PBX_During_Consult_tr_500_2_InterSesm.xml;tc-PBX2PBX_During_Consult_tr_500_2_InterSesm;13442;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_During_Consult_tr_500_3_InterSesm.xml name= tc-PBX2PBX_During_Consult_tr_500_3_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_During_ConsultTr_500_3-Orig.xml;7120;PASSED;
+          SC;scenario/sc-PBX2PBX_During_ConsultTr_500_3-Term1_Term2.xml;7152;PASSED;
+     TC;tc/tc-PBX2PBX_During_Consult_tr_500_3_InterSesm.xml;tc-PBX2PBX_During_Consult_tr_500_3_InterSesm;9370;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_SessionRefresh_Update_500_1_Basic_Call_InterSesm.xml name= PBX2PBX_Orig_Update_500_1_Basic_Call_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_SessionRefresh_500_1_Basic_Call-Orig.xml;3615;PASSED;
+          SC;scenario/sc-PBX2PBX_SessionRefresh_500_1_Basic_Call-Term.xml;3675;PASSED;
+     TC;tc/tc-PBX2PBX_SessionRefresh_Update_500_1_Basic_Call_InterSesm.xml;tc-PBX2PBX_SessionRefresh_Update_500_1_Basic_Call_InterSesm;5895;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_SessionRefresh_500_3_Basic_Call_InterSesm.xml name= PBX2PBX_Orig_Update_500_3_Basic_Call_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_SessionRefresh_500_3_Basic_Call-Term.xml;5429;PASSED;
+          SC;scenario/sc-PBX2PBX_SessionRefresh_500_3_Basic_Call-Orig.xml;5440;PASSED;
+     TC;tc/tc-PBX2PBX_SessionRefresh_500_3_Basic_Call_InterSesm.xml;tc-PBX2PBX_SessionRefresh_500_3_Basic_Call_InterSesm;7654;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Term_Hold_Retrieve_W_Update_InterSesm.xml name= PBX2PBX_Term_Hold_Retrieve_W_Update_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Term_Hold_Retrieve_W_Update-Orig.xml;1899;PASSED;
+          SC;scenario/sc-PBX2PBX_Term_Hold_Retrieve_W_Update-Term.xml;1953;PASSED;
+     TC;tc/tc-PBX2PBX_Term_Hold_Retrieve_W_Update_InterSesm.xml;tc-PBX2PBX_Term_Hold_Retrieve_W_Update_InterSesm;4169;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Term_Hold_Retrieve_Send_500_InterSesm.xml name= PBX2PBX_Term_Hold_Retrieve_Send_500_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Term_Hold_Retrieve_Send_500-Orig.xml;5852;PASSED;
+          SC;scenario/sc-PBX2PBX_Term_Hold_Retrieve_Send_500-Term.xml;5945;PASSED;
+     TC;tc/tc-PBX2PBX_Term_Hold_Retrieve_Send_500_InterSesm.xml;tc-PBX2PBX_Term_Hold_Retrieve_Send_500_InterSesm;8163;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Term_Hold_Retrieve_Send_500_2_InterSesm.xml name= PBX2PBX_Term_Hold_Retrieve_Send_500_2_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Term_Hold_Retrieve_Send_500_2-Orig.xml;7994;PASSED;
+          SC;scenario/sc-PBX2PBX_Term_Hold_Retrieve_Send_500_2-Term.xml;8060;PASSED;
+     TC;tc/tc-PBX2PBX_Term_Hold_Retrieve_Send_500_2_InterSesm.xml;tc-PBX2PBX_Term_Hold_Retrieve_Send_500_2_InterSesm;10277;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Term_Hold_Retrieve_Send_500_3_InterSesm.xml name= PBX2PBX_Term_Hold_Retrieve_Send_500_3_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Term_Hold_Retrieve_Send_500_3-Orig.xml;7657;PASSED;
+          SC;scenario/sc-PBX2PBX_Term_Hold_Retrieve_Send_500_3-Term.xml;7669;PASSED;
+     TC;tc/tc-PBX2PBX_Term_Hold_Retrieve_Send_500_3_InterSesm.xml;tc-PBX2PBX_Term_Hold_Retrieve_Send_500_3_InterSesm;9886;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Basic_Call_RetryAfter_0_InterSesm.xml name= tc-PBX2PBX_Basic_Call_RetryAfter_0 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Basic_Call_RetryAfter_0-Term.xml;1682;PASSED;
+          SC;scenario/sc-PBX2PBX_Basic_Call_RetryAfter_0-Orig.xml;1695;PASSED;
+     TC;tc/tc-PBX2PBX_Basic_Call_RetryAfter_0_InterSesm.xml;tc-PBX2PBX_Basic_Call_RetryAfter_0_InterSesm;3914;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Basic_Call_RetryAfter_1_InterSesm.xml name= tc-PBX2PBX_Basic_Call_RetryAfter_1_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Basic_Call_RetryAfter_1-Orig.xml;4042;PASSED;
+          SC;scenario/sc-PBX2PBX_Basic_Call_RetryAfter_1-Term.xml;4085;PASSED;
+     TC;tc/tc-PBX2PBX_Basic_Call_RetryAfter_1_InterSesm.xml;tc-PBX2PBX_Basic_Call_RetryAfter_1_InterSesm;6301;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Basic_Call_RetryAfter_10_InterSesm.xml name= tc-PBX2PBX_Basic_Call_RetryAfter_10_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Basic_Call_RetryAfter_10-Orig.xml;6210;PASSED;
+          SC;scenario/sc-PBX2PBX_Basic_Call_RetryAfter_10-Term.xml;6228;PASSED;
+     TC;tc/tc-PBX2PBX_Basic_Call_RetryAfter_10_InterSesm.xml;tc-PBX2PBX_Basic_Call_RetryAfter_10_InterSesm;8443;PASSED;null
+     #------ Testcase file=tc/tc-PBX2SSL_Update_Mid_Call_Send_500_InterSesm.xml name= PBX2SSL_Update_Mid_Call_Send_500_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2SSL_Update_Mid_Call_Send_500-Term.xml;1059;PASSED;
+          SC;scenario/sc-PBX2SSL_Update_Mid_Call_Send_500-Orig.xml;1063;PASSED;
+     TC;tc/tc-PBX2SSL_Update_Mid_Call_Send_500_InterSesm.xml;tc-PBX2SSL_Update_Mid_Call_Send_500_InterSesm;3287;PASSED;null
+     TC;tc/tc-PBX2PBX_Orig_Update_500_1_Basic_Call_InterSesm.xml;PBX2PBX_Orig_Update_500_1_Basic_Call;0;INACTIVE;tc/tc-PBX2PBX_Orig_Update_500_1_Basic_Call_InterSesm.xml active parm is false, test case inactive
+     #------ Testcase file=tc/tc-PBX2PBX_Orig_Update_500_2_Basic_Call_InterSesm.xml name= PBX2PBX_Orig_Update_500_2_Basic_Call ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Orig_Update_500_2_Basic_Call-Orig.xml;6164;PASSED;
+          SC;scenario/sc-PBX2PBX_Orig_Update_500_2_Basic_Call-Term.xml;6195;PASSED;
+     TC;tc/tc-PBX2PBX_Orig_Update_500_2_Basic_Call_InterSesm.xml;PBX2PBX_Orig_Update_500_2_Basic_Call;8411;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Orig_Update_500_3_Basic_Call_InterSesm.xml name= PBX2PBX_Orig_Update_500_3_Basic_Call ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Orig_Update_500_3_Basic_Call-Term.xml;5515;PASSED;
+          SC;scenario/sc-PBX2PBX_Orig_Update_500_3_Basic_Call-Orig.xml;5540;PASSED;
+     TC;tc/tc-PBX2PBX_Orig_Update_500_3_Basic_Call_InterSesm.xml;PBX2PBX_Orig_Update_500_3_Basic_Call;7754;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Orig_Update_200_Basic_Call_InterSesm.xml name= PBX2PBX_Orig_Update_200_Basic_Call ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Orig_Update_200_Basic_Call-Orig.xml;2133;PASSED;
+          SC;scenario/sc-PBX2PBX_Orig_Update_200_Basic_Call-Term.xml;2175;PASSED;
+     TC;tc/tc-PBX2PBX_Orig_Update_200_Basic_Call_InterSesm.xml;PBX2PBX_Orig_Update_200_Basic_Call;4398;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Term_Video_Start_Basic_Call_InterSesm.xml name= PBX2PBX_Term_Video_Start_Basic_Call ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Term_Video_Start_Basic_Call-Orig.xml;1898;PASSED;
+          SC;scenario/sc-PBX2PBX_Term_Video_Start_Basic_Call-Term.xml;1920;PASSED;
+     TC;tc/tc-PBX2PBX_Term_Video_Start_Basic_Call_InterSesm.xml;PBX2PBX_Term_Video_Start_Basic_Call;4133;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Video_Start_Send_500_1_InterSesm.xml name= PBX2PBX_Video_Start_Send_500_1 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Video_Start_Send_500_1-Orig.xml;3966;PASSED;
+          SC;scenario/sc-PBX2PBX_Video_Start_Send_500_1-Term.xml;4006;PASSED;
+     TC;tc/tc-PBX2PBX_Video_Start_Send_500_1_InterSesm.xml;PBX2PBX_Video_Start_Send_500_1;6220;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Video_Start_Send_500_2_InterSesm.xml name= PBX2PBX_Video_Start_Send_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Video_Start_Send_500_2-Orig.xml;5872;PASSED;
+          SC;scenario/sc-PBX2PBX_Video_Start_Send_500_2-Term.xml;5901;PASSED;
+     TC;tc/tc-PBX2PBX_Video_Start_Send_500_2_InterSesm.xml;PBX2PBX_Video_Start_Send_500_2;8122;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Video_Start_Send_500_3_InterSesm.xml name= PBX2PBX_Video_Start_Send_500_3 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Video_Start_Send_500_3-Term.xml;5645;PASSED;
+          SC;scenario/sc-PBX2PBX_Video_Start_Send_500_3-Orig.xml;5655;PASSED;
+     TC;tc/tc-PBX2PBX_Video_Start_Send_500_3_InterSesm.xml;PBX2PBX_Video_Start_Send_500_3;7870;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Term_Video_Stop_Basic_Call_InterSesm.xml name= PBX2PBX_Term_Video_Stop_Basic_Call ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Term_Video_Stop_Basic_Call-Orig.xml;1664;PASSED;
+          SC;scenario/sc-PBX2PBX_Term_Video_Stop_Basic_Call-Term.xml;1691;PASSED;
+     TC;tc/tc-PBX2PBX_Term_Video_Stop_Basic_Call_InterSesm.xml;PBX2PBX_Term_Video_Stop_Basic_Call;3904;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Video_Stop_Send_500_1_InterSesm.xml name= PBX2PBX_Video_Stop_Send_500_1 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Video_Stop_Send_500_1-Orig.xml;3899;PASSED;
+          SC;scenario/sc-PBX2PBX_Video_Stop_Send_500_1-Term.xml;3974;PASSED;
+     TC;tc/tc-PBX2PBX_Video_Stop_Send_500_1_InterSesm.xml;PBX2PBX_Video_Stop_Send_500_1;6194;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Video_Stop_Send_500_2_InterSesm.xml name= PBX2PBX_Video_Stop_Send_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Video_Stop_Send_500_2-Orig.xml;5620;PASSED;
+          SC;scenario/sc-PBX2PBX_Video_Stop_Send_500_2-Term.xml;5672;PASSED;
+     TC;tc/tc-PBX2PBX_Video_Stop_Send_500_2_InterSesm.xml;PBX2PBX_Video_Stop_Send_500_2;7889;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_video_call_codec_change_send_500_2_InterSesm.xml name= PBX2PBX_video_call_codec_change_send_500_2 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_video_call_codec_change_send_500_2-Orig_User.xml;7670;PASSED;
+          SC;scenario/sc-PBX2PBX_video_call_codec_change_send_500_2-Term_User.xml;7712;PASSED;
+     TC;tc/tc-PBX2PBX_video_call_codec_change_send_500_2_InterSesm.xml;PBX2PBX_video_call_codec_change_send_500_2;9926;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_video_call_codec_change_with_update_send_200_InterSesm.xml name= PBX2PBX_video_call_codec_change_with_update_send_200 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_video_call_codec_change_with_update_send_200-Orig_User.xml;1859;PASSED;
+          SC;scenario/sc-PBX2PBX_video_call_codec_change_with_update_send_200-Term_User.xml;1902;PASSED;
+     TC;tc/tc-PBX2PBX_video_call_codec_change_with_update_send_200_InterSesm.xml;PBX2PBX_video_call_codec_change_with_update_send_200;4116;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_video_call_codec_change_with_update_send_500_InterSesm.xml name= PBX2PBX_video_call_codec_change_with_update_send_500 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_video_call_codec_change_with_update_send_500-Orig_User.xml;3586;PASSED;
+          SC;scenario/sc-PBX2PBX_video_call_codec_change_with_update_send_500-Term_User.xml;3629;PASSED;
+     TC;tc/tc-PBX2PBX_video_call_codec_change_with_update_send_500_InterSesm.xml;PBX2PBX_video_call_codec_change_with_update_send_500;5848;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_video_call_codec_change_send_500_3_InterSesm.xml name= PBX2PBX_video_call_codec_change_send_500_3 ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_video_call_codec_change_send_500_3-Term_User.xml;5608;PASSED;
+          SC;scenario/sc-PBX2PBX_video_call_codec_change_send_500_3-Orig_User.xml;5620;PASSED;
+     TC;tc/tc-PBX2PBX_video_call_codec_change_send_500_3_InterSesm.xml;PBX2PBX_video_call_codec_change_send_500_3;7834;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Orig_Term_Hold_Retrieve_InterSesm.xml name= PBX2PBX_Orig_Term_Hold_Retrieve_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Orig_Term_Hold_Retrieve-Orig.xml;2574;PASSED;
+          SC;scenario/sc-PBX2PBX_Orig_Term_Hold_Retrieve-Term.xml;2646;PASSED;
+     TC;tc/tc-PBX2PBX_Orig_Term_Hold_Retrieve_InterSesm.xml;PBX2PBX_Orig_Term_Hold_Retrieve_InterSesm;4864;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Orig_Term_Hold_Retrieve_send_500_InterSesm.xml name= PBX2PBX_Orig_Term_Hold_Retrieve_send_500_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Orig_Term_Hold_Retrieve_send_500-Orig.xml;8387;PASSED;
+          SC;scenario/sc-PBX2PBX_Orig_Term_Hold_Retrieve_send_500-Term.xml;8430;PASSED;
+     TC;tc/tc-PBX2PBX_Orig_Term_Hold_Retrieve_send_500_InterSesm.xml;PBX2PBX_Orig_Term_Hold_Retrieve_send_500_InterSesm;10648;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_Orig_Term_Hold_Retrieve_Send_500_2_InterSesm.xml name= PBX2PBX_Orig_Term_Hold_Retrieve_Send_500_2_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_Orig_Term_Hold_Retrieve_Send_500_2-Orig.xml;12462;PASSED;
+          SC;scenario/sc-PBX2PBX_Orig_Term_Hold_Retrieve_Send_500_2-Term.xml;12505;PASSED;
+     TC;tc/tc-PBX2PBX_Orig_Term_Hold_Retrieve_Send_500_2_InterSesm.xml;PBX2PBX_Orig_Term_Hold_Retrieve_Send_500_2_InterSesm;14723;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_mline_change_send_200_ok_InterSesm.xml name= PBX2PBX_mline_change_send_200_ok_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_mline_change_send_200_ok-Orig_User.xml;1605;PASSED;
+          SC;scenario/sc-PBX2PBX_mline_change_send_200_ok-Term_User.xml;1632;PASSED;
+     TC;tc/tc-PBX2PBX_mline_change_send_200_ok_InterSesm.xml;PBX2PBX_mline_change_send_200_ok_InterSesm;3846;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_mline_change_send_500_InterSesm.xml name= PBX2PBX_mline_change_send_500_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_mline_change_send_500-Orig_User.xml;7133;PASSED;
+          SC;scenario/sc-PBX2PBX_mline_change_send_500-Term_User.xml;7193;PASSED;
+     TC;tc/tc-PBX2PBX_mline_change_send_500_InterSesm.xml;PBX2PBX_mline_change_send_500_InterSesm;9408;PASSED;null
+     #------ Testcase file=tc/tc-PBX2PBX_mline_change_send_500_2_InterSesm.xml name= PBX2PBX_mline_change_send_500_2_InterSesm ------
+       # <run-0>
+          SC;scenario/sc-PBX2PBX_mline_change_send_500_2-Orig_User.xml;5571;PASSED;
+          SC;scenario/sc-PBX2PBX_mline_change_send_500_2-Term_User.xml;5590;PASSED;
+     TC;tc/tc-PBX2PBX_mline_change_send_500_2_InterSesm.xml;PBX2PBX_mline_change_send_500_2_InterSesm;7805;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/UpdateMidcall/test_suite.xml;Update MidCall Test Suite;1046366;FAILED;

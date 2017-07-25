@@ -1,0 +1,168 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/CLID/test_suite.xml name= CLID TestSuite ------
+  # <run-0>
+     #------ Testcase file=tc/updateConfigParm_true.xml name= set_clid_conf_parm_true ------
+       # <run-0>
+          SC;../omi/updateConfigParm.xml;2552;PASSED;
+     TC;tc/updateConfigParm_true.xml;updateConfigParmSetTrue;2821;PASSED;null
+  # <run-1>
+     #------ Testcase file=tc/blind_transfer_A2.xml name= CLID_Blind_Transfer_Term_Gencom_PCC ------
+       # <run-0>
+          SC;scenario/blind_tr/blind_transfer_user2.xml;2008;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user3.xml;2721;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user1.xml;2726;PASSED;
+     TC;tc/blind_transfer_A2.xml;1. blind_transfer_A2;5076;PASSED;null
+     #------ Testcase file=tc/blind_transfer_Avaya_1120.xml name= CLID_Blind_Transfer_Term_Avaya_1120 ------
+       # <run-0>
+          SC;scenario/blind_tr/blind_transfer_user2.xml;1576;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user3.xml;2284;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user1.xml;2320;PASSED;
+     TC;tc/blind_transfer_Avaya_1120.xml;2. blind_transfer_Avaya_1120;4611;PASSED;null
+     #------ Testcase file=tc/blind_transfer_Avaya_1140.xml name= CLID_Blind_Transfer_Term_Avaya_1140 ------
+       # <run-0>
+          SC;scenario/blind_tr/blind_transfer_user2.xml;1611;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user3.xml;2319;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user1.xml;2337;PASSED;
+     TC;tc/blind_transfer_Avaya_1140.xml;3. blind_transfer_Avaya_1140;4596;PASSED;null
+     #------ Testcase file=tc/blind_transfer_Yealink.xml name= CLID_Blind_Transfer_Term_Yealink ------
+       # <run-0>
+          SC;scenario/blind_tr/blind_transfer_user2.xml;1724;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user3.xml;2414;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user1.xml;2448;PASSED;
+     TC;tc/blind_transfer_Yealink.xml;4. blind_transfer_Yealink;4688;PASSED;null
+     #------ Testcase file=tc/blind_transfer_Advatel.xml name= CLID_Blind_Transfer_Term_Advatel ------
+       # <run-0>
+          SC;scenario/blind_tr/blind_transfer_user2.xml;1651;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user3.xml;2342;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user1.xml;2391;PASSED;
+     TC;tc/blind_transfer_Advatel.xml;5. blind_transfer_Advatel;4626;PASSED;null
+     #------ Testcase file=tc/blind_transfer_IP6000.xml name= CLID_Blind_Transfer_Term_IP6000 ------
+       # <run-0>
+          SC;scenario/blind_tr/blind_transfer_user2.xml;1617;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user3.xml;2300;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user1.xml;2346;PASSED;
+     TC;tc/blind_transfer_IP6000.xml;6. blind_transfer_IP6000;4581;PASSED;null
+     #------ Testcase file=tc/blind_transfer_Mac.xml name= CLID_Blind_Transfer_Term_Mac ------
+       # <run-0>
+          SC;scenario/blind_tr/blind_transfer_user2.xml;1629;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user3_Invite_method.xml;2326;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user1.xml;2345;PASSED;
+     TC;tc/blind_transfer_Mac.xml;7. blind_transfer_Mac;4588;PASSED;null
+     #------ Testcase file=tc/blind_transfer_Android.xml name= CLID_Blind_Transfer_Term_Android ------
+       # <run-0>
+          SC;scenario/blind_tr/blind_transfer_user2.xml;1637;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user3_Invite_method.xml;2328;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user1.xml;2366;PASSED;
+     TC;tc/blind_transfer_Android.xml;8. blind_transfer_Android;4609;PASSED;null
+     #------ Testcase file=tc/blind_transfer_Ipad.xml name= CLID_Blind_Transfer_Term_Ipad ------
+       # <run-0>
+          SC;scenario/blind_tr/blind_transfer_user2.xml;1534;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user3_Invite_method.xml;2248;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user1.xml;2275;PASSED;
+     TC;tc/blind_transfer_Ipad.xml;9. blind_transfer_Ipad;4508;PASSED;null
+     #------ Testcase file=tc/blind_transfer_Iphone.xml name= CLID_Blind_Transfer_Term_Iphone ------
+       # <run-0>
+          SC;scenario/blind_tr/blind_transfer_user2.xml;1631;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user3_Invite_method.xml;2347;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user1.xml;2353;PASSED;
+     TC;tc/blind_transfer_Iphone.xml;10. blind_transfer_Iphone;4585;PASSED;null
+     #------ Testcase file=tc/blind_transfer_Polycom_310.xml name= CLID_Blind_Transfer_Term_Polycom_310 ------
+       # <run-0>
+          SC;scenario/blind_tr/blind_transfer_user2.xml;1533;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user3.xml;2244;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user1.xml;2277;PASSED;
+     TC;tc/blind_transfer_Polycom_310.xml;11. blind_transfer_Polycom_310;4507;PASSED;null
+     #------ Testcase file=tc/blind_transfer_Polycom_321.xml name= CLID_Blind_Transfer_Term_Polycom_321 ------
+       # <run-0>
+          SC;scenario/blind_tr/blind_transfer_user2.xml;1615;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user3.xml;2320;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user1.xml;2361;PASSED;
+     TC;tc/blind_transfer_Polycom_321.xml;12. blind_transfer_Polycom_321;4596;PASSED;null
+     #------ Testcase file=tc/blind_transfer_Polycom_331.xml name= CLID_Blind_Transfer_Term_Polycom_331 ------
+       # <run-0>
+          SC;scenario/blind_tr/blind_transfer_user2.xml;1542;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user3.xml;2235;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user1.xml;2271;PASSED;
+     TC;tc/blind_transfer_Polycom_331.xml;13. blind_transfer_Polycom_331;4505;PASSED;null
+     #------ Testcase file=tc/blind_transfer_PolycomVVX.xml name= CLID_Blind_Transfer_Term_PolycomVVX ------
+       # <run-0>
+          SC;scenario/blind_tr/blind_transfer_user2.xml;1535;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user3.xml;2228;PASSED;
+          SC;scenario/blind_tr/blind_transfer_user1.xml;2271;PASSED;
+     TC;tc/blind_transfer_PolycomVVX.xml;14. blind_transfer_PolycomVVX;4498;PASSED;null
+     #------ Testcase file=tc/consultative_transfer_A2.xml name= CLID_Consultative_Transfer_Term_GencomPCC ------
+       # <run-0>
+          SC;scenario/consultative_tr/consultative_transfer_user1.xml;3911;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user3.xml;3964;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user2.xml;4590;PASSED;
+     TC;tc/consultative_transfer_A2.xml;1. consultative_transfer_A2;6823;PASSED;null
+     #------ Testcase file=tc/consultative_transfer_IP6000.xml name= CLID_Consultative_Transfer_IP6000 ------
+       # <run-0>
+          SC;scenario/consultative_tr/consultative_transfer_user1.xml;3879;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user3.xml;3910;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user2.xml;4546;PASSED;
+     TC;tc/consultative_transfer_IP6000.xml;2. consultative_transfer_IP6000;6782;PASSED;null
+     #------ Testcase file=tc/consultative_transfer_Mac.xml name= CLID_Consultative_Transfer_Term_Mac ------
+       # <run-0>
+          SC;scenario/consultative_tr/consultative_transfer_user1.xml;4019;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user3_Invite_method.xml;4262;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user2.xml;4873;PASSED;
+     TC;tc/consultative_transfer_Mac.xml;3. consultative_transfer_Mac;7110;PASSED;null
+     #------ Testcase file=tc/consultative_transfer_Android.xml name= CLID_Consultative_Transfer_Term_Android ------
+       # <run-0>
+          SC;scenario/consultative_tr/consultative_transfer_user1.xml;3987;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user3_Invite_method.xml;4234;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user2.xml;4844;PASSED;
+     TC;tc/consultative_transfer_Android.xml;4. consultative_transfer_Android;7082;PASSED;null
+     #------ Testcase file=tc/consultative_transfer_Ipad.xml name= CLID_Consultative_Transfer_Ipad ------
+       # <run-0>
+          SC;scenario/consultative_tr/consultative_transfer_user1.xml;3917;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user3_Invite_method.xml;4169;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user2.xml;4774;PASSED;
+     TC;tc/consultative_transfer_Ipad.xml;5. consultative_transfer_Ipad;7012;PASSED;null
+     #------ Testcase file=tc/consultative_transfer_Iphone.xml name= CLID_Consultative_Transfer_Iphone ------
+       # <run-0>
+          SC;scenario/consultative_tr/consultative_transfer_user1.xml;4013;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user3_Invite_method.xml;4246;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user2.xml;4865;PASSED;
+     TC;tc/consultative_transfer_Iphone.xml;6. consultative_transfer_Iphone;7096;PASSED;null
+     #------ Testcase file=tc/consultative_transfer_Polycom_310.xml name= CLID_Consultative_Transfer_Term_Polycom_310 ------
+       # <run-0>
+          SC;scenario/consultative_tr/consultative_transfer_user1.xml;4012;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user3.xml;4048;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user2.xml;4660;PASSED;
+     TC;tc/consultative_transfer_Polycom_310.xml;7. consultative_transfer_Polycom_310;6891;PASSED;null
+     #------ Testcase file=tc/consultative_transfer_Polycom_321.xml name= CLID_Consultative_Transfer_Term_Polycom_321 ------
+       # <run-0>
+          SC;scenario/consultative_tr/consultative_transfer_user1.xml;3979;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user3.xml;4033;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user2.xml;4697;PASSED;
+     TC;tc/consultative_transfer_Polycom_321.xml;8. consultative_transfer_Polycom_321;6932;PASSED;null
+     #------ Testcase file=tc/consultative_transfer_Polycom_331.xml name= CLID_Consultative_Transfer_Term_Polycom_331 ------
+       # <run-0>
+          SC;scenario/consultative_tr/consultative_transfer_user1.xml;4071;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user3.xml;4140;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user2.xml;4733;PASSED;
+     TC;tc/consultative_transfer_Polycom_331.xml;9. consultative_transfer_Polycom_331;6969;PASSED;null
+     #------ Testcase file=tc/consultative_transfer_PolycomVVX.xml name= CLID_Consultative_Transfer_Term_PolycomVVX ------
+       # <run-0>
+          SC;scenario/consultative_tr/consultative_transfer_user1.xml;4012;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user3.xml;4054;PASSED;
+          SC;scenario/consultative_tr/consultative_transfer_user2.xml;4677;PASSED;
+     TC;tc/consultative_transfer_PolycomVVX.xml;10. consultative_transfer_PolycomVVX;6907;PASSED;null
+  # <run-2>
+     TC;tc/early_consultative_transfer_A2.xml;1. early_consultative_transfer_A2;0;INACTIVE;tc/early_consultative_transfer_A2.xml active parm is false, test case inactive
+     TC;tc/early_consultative_transfer_IP6000.xml;2. early_consultative_transfer_IP6000;0;INACTIVE;tc/early_consultative_transfer_IP6000.xml active parm is false, test case inactive
+     TC;tc/early_consultative_transfer_Mac.xml;3. early_consultative_transfer_Mac;0;INACTIVE;tc/early_consultative_transfer_Mac.xml active parm is false, test case inactive
+     TC;tc/early_consultative_transfer_Android.xml;4. early_consultative_transfer_Android;0;INACTIVE;tc/early_consultative_transfer_Android.xml active parm is false, test case inactive
+     TC;tc/early_consultative_transfer_Ipad.xml;5. early_consultative_transfer_Ipad;0;INACTIVE;tc/early_consultative_transfer_Ipad.xml active parm is false, test case inactive
+     TC;tc/early_consultative_transfer_Iphone.xml;6. early_consultative_transfer_Iphone;0;INACTIVE;tc/early_consultative_transfer_Iphone.xml active parm is false, test case inactive
+     TC;tc/early_consultative_transfer_Polycom_310.xml;7. early_consultative_transfer_Polycom_310;0;INACTIVE;tc/early_consultative_transfer_Polycom_310.xml active parm is false, test case inactive
+     TC;tc/early_consultative_transfer_Polycom_321.xml;8. early_consultative_transfer_Polycom_321;0;INACTIVE;tc/early_consultative_transfer_Polycom_321.xml active parm is false, test case inactive
+     TC;tc/early_consultative_transfer_Polycom_331.xml;9. early_consultative_transfer_Polycom_331;0;INACTIVE;tc/early_consultative_transfer_Polycom_331.xml active parm is false, test case inactive
+     TC;tc/early_consultative_transfer_PolycomVVX.xml;10. early_consultative_transfer_PolycomVVX;0;INACTIVE;tc/early_consultative_transfer_PolycomVVX.xml active parm is false, test case inactive
+  # <run-3>
+     #------ Testcase file=tc/updateConfigParm_false.xml name= set_clid_conf_parm_false ------
+       # <run-0>
+          SC;../omi/updateConfigParm.xml;2093;PASSED;
+     TC;tc/updateConfigParm_false.xml;updateConfigParmSetFalse;2300;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/CLID/test_suite.xml;CLID TestSuite;139379;FAILED;

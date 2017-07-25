@@ -1,0 +1,50 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/AuthCodeDisplay/test_suite.xml name= Authorization Code Display Test Suite ------
+  # <run-0>
+     #------ Testcase file=tc/tc1_CreateDomain.xml name= Create Domain and User, Assign Services and Resources ------
+       # <run-0>
+          SC;scenario/addRootDomain.xml;713;PASSED;
+          SC;scenario/setServicesForDomain.xml;122;PASSED;
+          SC;scenario/setDomainResources.xml;231;PASSED;
+          SC;scenario/addSingleUser.xml;372;PASSED;
+          SC;scenario/addServicesForUser.xml;202;PASSED;
+     TC;tc/tc1_CreateDomain.xml;Create Domain and User, Assign Services and Resources;1700;PASSED;null
+     #------ Testcase file=tc/tc2_CreateAuthCodeandSysPrf.xml name= Create Authorization Code and System Profile, Assign System Profile to User, Modify Authorization Code and System Profile ------
+       # <run-0>
+          SC;scenario/VerifyThatAuthCodeCanBeAddedSuccessfully+LengthSuccess.xml;1673;PASSED;
+          SC;scenario/VerifyThatAuthCodeCanBeAddedSuccessfully+LengthSuccess.xml;179;PASSED;
+          SC;scenario/VerifyThatAuthCodeCanBeAddedSuccessfully+LengthSuccess.xml;215;PASSED;
+          SC;scenario/VerifyThatAuthCodeCanBeAddedSuccessfully+LengthFail.xml;259;PASSED;
+          SC;scenario/VerifyThatAuthCodeCanBeAddedSuccessfully+LengthFail.xml;87;PASSED;
+          SC;scenario/VerifySystemProfileIsAddedSuccessfully.xml;1235;PASSED;
+          SC;scenario/getSystemProfileNamesForAuthCode.xml;68;PASSED;
+          SC;scenario/VerifyDomainIsAssignedToSystemProfile+CannotDeleteSysPrf.xml;1371;PASSED;
+          SC;scenario/VerifySystemProfileIsSetToSelectedUser.xml;766;PASSED;
+          SC;scenario/VerifyGetAllUsersForSystemProfileWorks.xml;93;PASSED;
+          SC;scenario/VerifyAuthCodeCanBeModifiedSuccessfully.xml;647;PASSED;
+          SC;scenario/VerifyAuthCodeCanBeModifiedSuccessfully.xml;687;PASSED;
+          SC;scenario/VerifySystemProfileCanBeModifiedSuccessfully.xml;718;PASSED;
+          SC;scenario/VerifySystemProfileCanBeModifiedSuccessfully.xml;659;PASSED;
+     TC;tc/tc2_CreateAuthCodeandSysPrf.xml;Create Auth Code and System Profile, Assign System Profile to User, Modify Auth Code and System Profile;8692;PASSED;null
+     #------ Testcase file=tc/tc3_CheckSystemData.xml name= Enable and Disable Auth Code Display ------
+       # <run-0>
+          SC;scenario/VerifyDisplayAuthCodesCanBeDisabled.xml;2861;PASSED;
+          SC;scenario/VerifyDisplayAuthCodesCanBeEnabled.xml;744;PASSED;
+     TC;tc/tc3_CheckSystemData.xml;Enable and Disable Auth Code Display;3612;PASSED;null
+     #------ Testcase file=tc/tc4_RemoveAuthCodeandSysPrf.xml name= Unassign and Delete Authorization Code and System Profile ------
+       # <run-0>
+          SC;scenario/VerifySystemProfileIsRemovedFromSelectedUser.xml;90;PASSED;
+          SC;scenario/VerifyDomainIsRemovedFromSystemProfile.xml;131;PASSED;
+          SC;scenario/VerifySystemProfileCanBeDeletedSuccessfully.xml;687;PASSED;
+          SC;scenario/VerifyAuthCodeCanBeDeletedSuccessfully.xml;343;PASSED;
+          SC;scenario/VerifyAuthCodeCanBeDeletedSuccessfully.xml;102;PASSED;
+          SC;scenario/VerifyAuthCodeCanBeDeletedSuccessfully.xml;113;PASSED;
+     TC;tc/tc4_RemoveAuthCodeandSysPrf.xml;Unassign and Delete Authorization Code and System Profile;1481;PASSED;null
+     #------ Testcase file=tc/tc5_DeleteDomain.xml name= Remove Services, Delete User and Domain ------
+       # <run-0>
+          SC;scenario/removeServicesFromUser.xml;304;PASSED;
+          SC;scenario/removeAllServicesFromDomain.xml;185;PASSED;
+          SC;scenario/removeUser.xml;344;PASSED;
+          SC;scenario/removeDomainResources.xml;251;PASSED;
+          SC;scenario/removeDomain.xml;800;PASSED;
+     TC;tc/tc5_DeleteDomain.xml;Remove Services, Delete User and Domain;1896;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/AuthCodeDisplay/test_suite.xml;Authorization Code Display Test Suite;17441;PASSED;

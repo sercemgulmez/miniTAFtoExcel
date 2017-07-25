@@ -1,0 +1,63 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/BChannel_Prov_Suite/test_suite.xml name= BCHANNEL_AUTOMATION_PROVISIONING_SUITE ------
+  # <run-0>
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_51.xml name= BCHANNEL_AUTOMATION_TEST_51: Set BCHANNEL Limit Zero For Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;507;PASSED;
+          SC;opi/getBchLimitForDomain.xml;1636;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;201;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_51.xml;BCHANNEL_AUTOMATION_TEST_51: Set BCHANNEL Limit Zero For Domain;2402;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_52.xml name= BCHANNEL_AUTOMATION_TEST_52: Set BCHANNEL Limit 100 For Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;152;PASSED;
+          SC;opi/getBchLimitForDomain.xml;1584;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;142;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_52.xml;BCHANNEL_AUTOMATION_TEST_52: Set BCHANNEL Limit 100 For Domain;1898;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_53.xml name= BCHANNEL_AUTOMATION_TEST_53: Get All BCHANNEL Limits ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;129;PASSED;
+          SC;opi/getAllBchLimitsForTwoDomains.xml;1579;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;151;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_53.xml;BCHANNEL_AUTOMATION_TEST_53: Get All BCHANNEL Limits;1876;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_54.xml name= BCHANNEL_AUTOMATION_TEST_54: Get All BCHANNEL Counts For Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;219;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;148;PASSED;
+          SC;opi/getAllBchsCountForDomain.xml;1573;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;126;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;148;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_54.xml;BCHANNEL_AUTOMATION_TEST_54: Get All BCHANNEL Counts For Domain;2233;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_55.xml name= BCHANNEL_AUTOMATION_TEST_55: Get All BCHANNELS In Range Sort By ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;111;PASSED;
+          SC;opi/getAllBchsInRangeSortBy.xml;1570;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;120;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_55.xml;BCHANNEL_AUTOMATION_TEST_55: Get All BCHANNELS In Range Sort By;1811;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_56.xml name= BCHANNEL_AUTOMATION_TEST_56: Get BCHANNEL Limit For Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;106;PASSED;
+          SC;opi/getBchLimitForDomain.xml;1601;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;109;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_56.xml;BCHANNEL_AUTOMATION_TEST_56: Get BCHANNEL Limit For Domain;1825;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_57.xml name= BCHANNEL_AUTOMATION_TEST_57: Enable BCHANNEL Option For PBX ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;138;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;175;PASSED;
+          SC;opi/getCS2KSipPbxForBchannelTrue.xml;1642;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;182;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;98;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_57.xml;BCHANNEL_AUTOMATION_TEST_57: Enable BCHANNEL Option For PBX;2258;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_58.xml name= BCHANNEL_AUTOMATION_TEST_58: Disable BCHANNEL Option For PBX ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;103;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;119;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;192;PASSED;
+          SC;opi/getCS2KSipPbxForBchannelFalse.xml;1590;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;173;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_58.xml;BCHANNEL_AUTOMATION_TEST_58: Disable BCHANNEL Option For PBX;2192;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_59.xml name= BCHANNEL_AUTOMATION_TEST_59: Remove BCHANNEL Limit From Domain ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;85;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;95;PASSED;
+          SC;../opi/getBchLimitForDomain.xml;55;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_59.xml;BCHANNEL_AUTOMATION_TEST_59: Remove BCHANNEL Limit From Domain;245;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/BChannel_Prov_Suite/test_suite.xml;BCHANNEL_AUTOMATION_PROVISIONING_SUITE;16807;PASSED;

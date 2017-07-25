@@ -1,0 +1,85 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/CallTypeBasedScreening_AuthorizationCodes_VSC/test_suite.xml name= CallTypeBasedScreening, AuthorizationCodes, VSC ------
+  # <run-0>
+     #------ Testcase file=tc/Opi_Provisioning.xml name= Opi_Provisioning ------
+       # <run-0>
+          SC;../opi/addRootDomain.xml;669;PASSED;
+          SC;../opi/setSystemProfilesForDomain.xml;119;PASSED;
+          SC;opi/set2ServicesForDomain.xml;152;PASSED;
+          SC;opi/setDomainResources3.xml;224;PASSED;
+          SC;../opi/addVSCFeatureXLA.xml;617;PASSED;
+          SC;../opi/addVSCFeatureXLA.xml;147;PASSED;
+          SC;../opi/addVSCFeatureXLA.xml;112;PASSED;
+          SC;../opi/addVSCFeatureXLA.xml;190;PASSED;
+          SC;../opi/addVSCFeatureXLA.xml;95;PASSED;
+          SC;../opi/callTypeBasedScreening_setSystemProfilesForDomain.xml;1105;PASSED;
+          SC;../opi/addAuthCode.xml;108;PASSED;
+          SC;../opi/authCode_addSystemProfile.xml;156;PASSED;
+          SC;../opi/authCode_setSystemProfilesForDomain.xml;107;PASSED;
+          SC;../opi/addCallScrFeatureXLA.xml;437;PASSED;
+          SC;../opi/addCallScrFeatureXLA.xml;143;PASSED;
+       # <run-1>
+          SC;../opi/addSingleUser.xml;3765;PASSED;
+          SC;../opi/addSingleUser.xml;3770;PASSED;
+       # <run-2>
+          SC;../opi/setUserDirectoryNumber.xml;293;PASSED;
+          SC;../opi/setUserDirectoryNumber.xml;305;PASSED;
+       # <run-3>
+          SC;../opi/setLocationForUser.xml;722;PASSED;
+          SC;../opi/setLocationForUser.xml;728;PASSED;
+       # <run-4>
+          SC;../opi/addServiceForUser.xml;153;PASSED;
+          SC;../opi/addServiceForUser.xml;165;PASSED;
+       # <run-5>
+          SC;../opi/addServiceForUser.xml;142;PASSED;
+          SC;../opi/addServiceForUser.xml;153;PASSED;
+       # <run-6>
+          SC;../opi/callTypeBasedScreening_setSystemProfileForUser.xml;134;PASSED;
+          SC;../opi/callTypeBasedScreening_setSystemProfileForUser.xml;134;PASSED;
+       # <run-7>
+          SC;../opi/authCode_setSystemProfileForUser.xml;127;PASSED;
+          SC;../opi/authCode_setSystemProfileForUser.xml;133;PASSED;
+       # <run-8>
+          SC;../opi/setAdminProvisionedCallTypeBasedData.xml;379;PASSED;
+          SC;../opi/setAdminProvisionedCallTypeBasedData.xml;380;PASSED;
+       # <run-9>
+          SC;../opi/changeUserStarcodePIN.xml;322;PASSED;
+          SC;../opi/changeUserStarcodePIN.xml;337;PASSED;
+       # <run-10>
+          SC;scenario/pause60.xml;60002;PASSED;
+     TC;tc/Opi_Provisioning.xml;Opi_Provisioning;72709;PASSED;null
+  # <run-1>
+     #------ Testcase file=tc/1_International_call_forbidden.xml name= 1- International call forbidden ------
+       # <run-0>
+          SC;scenario/tc1_orig.xml;6265;PASSED;
+     TC;tc/1_International_call_forbidden.xml;1- International call forbidden;8486;PASSED;null
+     #------ Testcase file=tc/2_International_call_forbidden_but_call_can_be_made_with_auth_code.xml name= 2- International call forbidden but call can be made with auth code ------
+       # <run-0>
+          SC;scenario/tc2_term.xml;282;PASSED;
+          SC;scenario/tc2_orig.xml;301;PASSED;
+     TC;tc/2_International_call_forbidden_but_call_can_be_made_with_auth_code.xml;2- International call forbidden but call can be made with auth code;2529;PASSED;null
+     #------ Testcase file=tc/3_International_call_not_forbidden.xml name= 3- International call not forbidden ------
+       # <run-0>
+          SC;scenario/tc3_orig.xml;921;PASSED;
+          SC;scenario/tc3_term.xml;921;PASSED;
+     TC;tc/3_International_call_not_forbidden.xml;3- International call not forbidden;3145;PASSED;null
+     #------ Testcase file=tc/4_Premium_call_forbidden.xml name= 4- Premium call forbidden ------
+       # <run-0>
+          SC;scenario/tc4_orig.xml;788;PASSED;
+     TC;tc/4_Premium_call_forbidden.xml;4- Premium call forbidden;3003;PASSED;null
+     #------ Testcase file=tc/5_Premium_call_forbidden_and_call_cannot_be_made_with_auth_code.xml name= 5- Premium call forbidden and call cannot be made with auth code ------
+       # <run-0>
+          SC;scenario/tc5_orig.xml;139;PASSED;
+     TC;tc/5_Premium_call_forbidden_and_call_cannot_be_made_with_auth_code.xml;5- Premium call forbidden and call cannot be made with auth code;2350;PASSED;null
+     #------ Testcase file=tc/6_Premium_call_not_forbidden.xml name= 6- Premium call not forbidden ------
+       # <run-0>
+          SC;scenario/tc6_term.xml;807;PASSED;
+          SC;scenario/tc6_orig.xml;819;PASSED;
+     TC;tc/6_Premium_call_not_forbidden.xml;6- Premium call not forbidden;3049;PASSED;null
+  # <run-2>
+     #------ Testcase file=tc/Clear_Opi_Provisioning.xml name= Clear_Opi_Provisioning ------
+       # <run-0>
+          SC;../opi/removeDomain.xml;1950;PASSED;
+          SC;../opi/removeAuthCode.xml;155;PASSED;
+          SC;../opi/authCode_removeSystemProfile.xml;130;PASSED;
+     TC;tc/Clear_Opi_Provisioning.xml;Clear_Opi_Provisioning;2243;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/CallTypeBasedScreening_AuthorizationCodes_VSC/test_suite.xml;CallTypeBasedScreening, AuthorizationCodes, VSC;97594;PASSED;

@@ -1,0 +1,410 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/RFC3261/test_suite.xml name= RFC3261 SA ------
+  # <run-0>
+     #------ Testcase file=tc/tc0_rfc_setup.xml name= RFC suite setup ------
+       # <run-0>
+          SC;../opi2/addRootDomain.xml;818;PASSED;
+          SC;../opi2/setSystemProfilesForDomain.xml;167;PASSED;
+          SC;../opi2/setServicesForDomain.xml;375;PASSED;
+          SC;../opi2/setDomainResources.xml;224;PASSED;
+       # <run-1>
+          SC;scenario/pause10.xml;10005;PASSED;
+     TC;tc/tc0_rfc_setup.xml;RFC suite setup;11643;PASSED;null
+  # <run-1>
+     #------ Testcase file=tc/tc1_basic_call.xml name= SA client 1 to SA client 2 inter-sesm call using user s username ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3710;PASSED;
+          SC;../opi2/addSingleUser.xml;3714;PASSED;
+       # <run-1>
+          SC;scenario/tc1_orig_basic_call.xml;1942;PASSED;
+          SC;scenario/tc1_term_basic_call.xml;1947;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;814;PASSED;
+          SC;../opi2/removeUser.xml;816;PASSED;
+     TC;tc/tc1_basic_call.xml;1. Add SA clients, Basic call, Remove SA clients;9194;PASSED;null
+     #------ Testcase file=tc/tc2_basic_call_compact.xml name= SA client 1 to SA client 2 intersesm call using DN compact ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3490;PASSED;
+          SC;../opi2/addSingleUser.xml;3539;PASSED;
+       # <run-1>
+          SC;scenario/orig_basic_call_compact.xml;2525;PASSED;
+          SC;scenario/term_basic_call_compact.xml;2531;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;751;PASSED;
+          SC;../opi2/removeUser.xml;757;PASSED;
+     TC;tc/tc2_basic_call_compact.xml;2. Add SA clients, Basic call with compact headers;9514;PASSED;null
+     #------ Testcase file=tc/tc3_basic_info_call.xml name= SA client 1 to SA client 2 inter-sesm basic Prack call using user s DN ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3403;PASSED;
+          SC;../opi2/addSingleUser.xml;3424;PASSED;
+       # <run-1>
+          SC;scenario/orig_info_call.xml;7548;PASSED;
+          SC;scenario/term_info_call.xml;7558;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;677;PASSED;
+          SC;../opi2/removeUser.xml;738;PASSED;
+     TC;tc/tc3_basic_info_call.xml;3. Basic Info Call;14370;PASSED;null
+     #------ Testcase file=tc/tc4_cancel_call_after100.xml name= Add SA clients, Orig cancels the call before 180 ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3405;PASSED;
+          SC;../opi2/addSingleUser.xml;3517;PASSED;
+       # <run-1>
+          SC;scenario/orig_cancel_call_after_100.xml;721;PASSED;
+          SC;scenario/term_cancel_call_after_100.xml;801;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;532;PASSED;
+          SC;../opi2/removeUser.xml;534;PASSED;
+     TC;tc/tc4_cancel_call_after100.xml;4. Add SA clients, Orig cancels the call before 180;7493;PASSED;null
+     #------ Testcase file=tc/tc5_cancel_call_after180.xml name= SA client 1 to SA client 2. Client 1 cancels the call after 18x. ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3324;PASSED;
+          SC;../opi2/addSingleUser.xml;3397;PASSED;
+       # <run-1>
+          SC;scenario/orig_cancel_call_after_18x.xml;653;PASSED;
+          SC;scenario/term_cancel_call_after_18x.xml;693;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;202;PASSED;
+          SC;../opi2/removeUser.xml;210;PASSED;
+     TC;tc/tc5_cancel_call_after180.xml;5. Add SA clients, Orig cancels the call after 180;6937;PASSED;null
+     #------ Testcase file=tc/tc6_reject_call_via_403.xml name= SA client 1 to SA client 2 intersesm call using DN ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3254;PASSED;
+          SC;../opi2/addSingleUser.xml;3300;PASSED;
+       # <run-1>
+          SC;scenario/term_basic_reject_call_403.xml;1385;PASSED;
+          SC;scenario/orig_basic_reject_call_403.xml;1397;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;151;PASSED;
+          SC;../opi2/removeUser.xml;163;PASSED;
+     TC;tc/tc6_reject_call_via_403.xml;6. Add SA clients, Term rejects via 403;7494;PASSED;null
+     #------ Testcase file=tc/tc7_reject_call_via_480.xml name= SA client 1 to SA client 2 intersesm call using DN ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3302;PASSED;
+          SC;../opi2/addSingleUser.xml;3367;PASSED;
+       # <run-1>
+          SC;scenario/term_basic_reject_call_480.xml;2113;PASSED;
+          SC;scenario/orig_basic_reject_call_480.xml;2125;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;190;PASSED;
+          SC;../opi2/removeUser.xml;197;PASSED;
+     TC;tc/tc7_reject_call_via_480.xml;7. Add SA clients, Term rejects via 480;8321;PASSED;null
+     #------ Testcase file=tc/tc8_reject_call_via_486.xml name= SA client 1 to SA client 2 intersesm call using DN ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3315;PASSED;
+          SC;../opi2/addSingleUser.xml;3382;PASSED;
+       # <run-1>
+          SC;scenario/term_basic_reject_call_486.xml;1403;PASSED;
+          SC;scenario/orig_basic_reject_call_486.xml;1432;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;148;PASSED;
+          SC;../opi2/removeUser.xml;152;PASSED;
+     TC;tc/tc8_reject_call_via_486.xml;8. Add SA clients, Term rejects via 486;7598;PASSED;null
+     #------ Testcase file=tc/tc9_reject_call_via_488.xml name= SA client 1 to SA client 2 intersesm call using DN ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3305;PASSED;
+          SC;../opi2/addSingleUser.xml;3334;PASSED;
+       # <run-1>
+          SC;scenario/term_basic_reject_call_488.xml;1386;PASSED;
+          SC;scenario/orig_basic_reject_call_488.xml;1402;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;208;PASSED;
+          SC;../opi2/removeUser.xml;219;PASSED;
+     TC;tc/tc9_reject_call_via_488.xml;9. Add SA clients, Term rejects via 488;7588;PASSED;null
+     #------ Testcase file=tc/tc10_reject_call_via_603_after_100.xml name= SA client 1 to SA client 2 intersesm call using DN ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3392;PASSED;
+          SC;../opi2/addSingleUser.xml;3470;PASSED;
+       # <run-1>
+          SC;scenario/term_basic_reject_call_603_after_100.xml;609;PASSED;
+          SC;scenario/orig_basic_reject_call_603_after_100.xml;1371;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;159;PASSED;
+          SC;../opi2/removeUser.xml;175;PASSED;
+     TC;tc/tc10_reject_call_via_603_after_100.xml;10. Add SA clients, Term rejects via 603 after 100;7661;PASSED;null
+     #------ Testcase file=tc/tc11_reject_call_via_603_after_180.xml name= SA client 1 to SA client 2 intersesm call using DN ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3238;PASSED;
+          SC;../opi2/addSingleUser.xml;3298;PASSED;
+       # <run-1>
+          SC;scenario/term_basic_reject_call_603_after_180.xml;1407;PASSED;
+          SC;scenario/orig_basic_reject_call_603_after_180.xml;2431;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;190;PASSED;
+          SC;../opi2/removeUser.xml;195;PASSED;
+     TC;tc/tc11_reject_call_via_603_after_180.xml;11. Add SA clients, Term rejects via 603 after 180;8556;PASSED;null
+     #------ Testcase file=tc/tc12_unknown_register_reject_404.xml name= unknown register reject 404 ------
+       # <run-0>
+          SC;scenario/tc12_unknown_register_reject_404.xml;18;PASSED;
+     TC;tc/tc12_unknown_register_reject_404.xml;12. Reject unknow user's register;2227;PASSED;null
+     #------ Testcase file=tc/tc13_unregister_basic_call_reject_480.xml name= Add SA client, Reject Unregistered user's call ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3366;PASSED;
+          SC;../opi2/addSingleUser.xml;3394;PASSED;
+       # <run-1>
+          SC;scenario/unregister_basic_call_reject_480_term.xml;25;PASSED;
+          SC;scenario/unregister_basic_call_reject_480.xml;2045;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;185;PASSED;
+          SC;../opi2/removeUser.xml;201;PASSED;
+     TC;tc/tc13_unregister_basic_call_reject_480.xml;13. Add SA client, Reject Unregistered user's call;8266;PASSED;null
+     #------ Testcase file=tc/tc14_basic_subscribe.xml name= SA client 1 to SA client 2 inter-sesm call using user s DN ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3235;PASSED;
+       # <run-1>
+          SC;scenario/tc14_orig_basic_subscribe.xml;884;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;149;PASSED;
+     TC;tc/tc14_basic_subscribe.xml;14. Add SA client, Basic Subscribe and Notify;6891;PASSED;null
+     #------ Testcase file=tc/tc15_basic_call_with_dtmf_check.xml name= SA client 1 to SA client 2 inter-sesm call using user s DN ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3338;PASSED;
+          SC;../opi2/addSingleUser.xml;3344;PASSED;
+       # <run-1>
+          SC;scenario/orig_basic_call_with_dtmf_check.xml;1132;PASSED;
+          SC;scenario/term_basic_call_with_dtmf_check.xml;1257;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;246;PASSED;
+          SC;../opi2/removeUser.xml;250;PASSED;
+     TC;tc/tc15_basic_call_with_dtmf_check.xml;15. Add SA client, Basic Call with DTMF check;7484;PASSED;null
+     #------ Testcase file=tc/tc16_basic_prack.xml name= SA client 1 to SA client 2 inter-sesm basic Prack call using user s DN ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3338;PASSED;
+          SC;../opi2/addSingleUser.xml;3377;PASSED;
+       # <run-1>
+          SC;scenario/orig_prack_call.xml;1908;PASSED;
+          SC;scenario/term_prack_call.xml;1920;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;139;PASSED;
+          SC;../opi2/removeUser.xml;145;PASSED;
+     TC;tc/tc16_basic_prack.xml;16. SA client 1 to SA client 2 inter-sesm basic Prack call using user s DN;8075;PASSED;null
+     #------ Testcase file=tc/tc17_max_forward_0.xml name= Unsuccessfully call with max fwd 0 ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3252;PASSED;
+          SC;../opi2/addSingleUser.xml;3287;PASSED;
+       # <run-1>
+          SC;scenario/orig_max_forward_0.xml;319;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;177;PASSED;
+          SC;../opi2/removeUser.xml;194;PASSED;
+     TC;tc/tc17_max_forward_0.xml;17. Unsuccessfully call with max fwd 0;6423;PASSED;null
+     #------ Testcase file=tc/tc18_slow_start_call.xml name= SA client 1 to SA client 2 inter-sesm slow start ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3305;PASSED;
+          SC;../opi2/addSingleUser.xml;3370;PASSED;
+       # <run-1>
+          SC;scenario/orig_slow_start_call.xml;1081;PASSED;
+          SC;scenario/term_slow_start_call.xml;1088;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;166;PASSED;
+          SC;../opi2/removeUser.xml;171;PASSED;
+     TC;tc/tc18_slow_start_call.xml;18. SA client 1 to SA client 2 inter-sesm slow start;7259;PASSED;null
+     #------ Testcase file=tc/tc19_basic_call_mlines.xml name= Add SA clients, Basic call with m-lines, Remove SA clients ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3263;PASSED;
+          SC;../opi2/addSingleUser.xml;3317;PASSED;
+       # <run-1>
+          SC;scenario/orig_mlines_call.xml;991;PASSED;
+          SC;scenario/term_mlines_call.xml;1040;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;192;PASSED;
+          SC;../opi2/removeUser.xml;199;PASSED;
+     TC;tc/tc19_basic_call_mlines.xml;19. Add SA clients, Basic call with m=lines, Remove SA clients;7184;PASSED;null
+     #------ Testcase file=tc/tc20_basic_call_term_ends.xml name= 20. Add SA clients, Basic call Term ends, Remove SA clients ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3316;PASSED;
+          SC;../opi2/addSingleUser.xml;3362;PASSED;
+       # <run-1>
+          SC;scenario/term_basic_call_term_ends.xml;1080;PASSED;
+          SC;scenario/orig_basic_call_term_ends.xml;1337;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;142;PASSED;
+          SC;../opi2/removeUser.xml;148;PASSED;
+     TC;tc/tc20_basic_call_term_ends.xml;20. Add SA clients, Basic call Term ends, Remove SA clients;7476;PASSED;null
+     #------ Testcase file=tc/tc21_orig_holds_call.xml name= Add SA clients, Orig holds call ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3264;PASSED;
+          SC;../opi2/addSingleUser.xml;3326;PASSED;
+       # <run-1>
+          SC;scenario/orig_orig_holds.xml;1254;PASSED;
+          SC;scenario/term_orig_holds.xml;1268;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;228;PASSED;
+          SC;../opi2/removeUser.xml;234;PASSED;
+     TC;tc/tc21_orig_holds_call.xml;21. Add SA clients, Orig holds call and posts bye, Remove SA clients;7470;PASSED;null
+     #------ Testcase file=tc/tc22_term_holds_call.xml name= SA client 1 to SA client 2 inter-sesm call using user s DN ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3311;PASSED;
+          SC;../opi2/addSingleUser.xml;3317;PASSED;
+       # <run-1>
+          SC;scenario/term_term_holds_call.xml;1220;PASSED;
+          SC;scenario/orig_term_holds_call.xml;2977;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;147;PASSED;
+          SC;../opi2/removeUser.xml;151;PASSED;
+     TC;tc/tc22_term_holds_call.xml;22. Add SA clients, term holds call and posts bye, Remove SA clients;9077;PASSED;null
+     #------ Testcase file=tc/tc23_contact_port.xml name= Add SA clients, Term changes contact port in 200 OK ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3277;PASSED;
+          SC;../opi2/addSingleUser.xml;3320;PASSED;
+       # <run-1>
+          SC;scenario/term2_contact_port.xml;948;PASSED;
+          SC;scenario/term1_contact_port.xml;2536;PASSED;
+          SC;scenario/orig_contact_port.xml;1245;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;354;PASSED;
+          SC;../opi2/removeUser.xml;360;PASSED;
+     TC;tc/tc23_contact_port.xml;23. Add SA clients, Term changes contact port in 200 OK;7556;PASSED;null
+     #------ Testcase file=tc/tc24_basic_call_with_totag.xml name= SA client 1 to SA client 2 inter-sesm call using user s DN ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3294;PASSED;
+          SC;../opi2/addSingleUser.xml;3336;PASSED;
+       # <run-1>
+          SC;scenario/orig_basic_call_with_totag.xml;593;PASSED;
+          SC;scenario/term_basic_call_with_totag.xml;2095;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;143;PASSED;
+          SC;../opi2/removeUser.xml;149;PASSED;
+     TC;tc/tc24_basic_call_with_totag.xml;24. Add SA clients, Orig with To tag;8214;PASSED;null
+     #------ Testcase file=tc/tc26_prack_call__to_from_check.xml name= Prack call using user s DN, Check Prack To and From header ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3306;PASSED;
+          SC;../opi2/addSingleUser.xml;3349;PASSED;
+       # <run-1>
+          SC;scenario/orig_prack_call_to_from_check.xml;1919;PASSED;
+          SC;scenario/term_prack_call_to_from_check.xml;1933;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;164;PASSED;
+          SC;../opi2/removeUser.xml;172;PASSED;
+     TC;tc/tc26_prack_call__to_from_check.xml;26. Prack call using user s DN, Check Prack To and From header;8085;PASSED;null
+     #------ Testcase file=tc/tc27_basic_subscribe_without_expire_header.xml name= basic_subscribe_without_expire_header ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3349;PASSED;
+       # <run-1>
+          SC;scenario/orig_basic_subscribe_without_expire_header.xml;853;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;106;PASSED;
+     TC;tc/tc27_basic_subscribe_without_expire_header.xml;27. Add SA client, Subscribe without expire header;6930;PASSED;null
+     #------ Testcase file=tc/tc28_basic_subscribe_different_dialog.xml name= basic_subscribe_different_dialog ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3240;PASSED;
+       # <run-1>
+          SC;scenario/orig_basic_subscribe_different_dialog.xml;833;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;115;PASSED;
+     TC;tc/tc28_basic_subscribe_different_dialog.xml;28. Add SA client, Basic Subscribe different Dialog;6807;PASSED;null
+     #------ Testcase file=tc/tc29_line_reject_notify.xml name= orig_reject_notify ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3255;PASSED;
+       # <run-1>
+          SC;scenario/orig_reject_notify.xml;884;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;142;PASSED;
+     TC;tc/tc29_line_reject_notify.xml;29. Add SA client, Line reject Notify;6900;PASSED;null
+     #------ Testcase file=tc/tc30_302_Redirection.xml name= SA client 1 calls SA client 2, SA Client 2 redirects call SA Client 3 ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3290;PASSED;
+          SC;../opi2/addSingleUser.xml;3303;PASSED;
+          SC;../opi2/addSingleUser.xml;3329;PASSED;
+       # <run-1>
+          SC;scenario/term1_302_redirection.xml;752;PASSED;
+          SC;scenario/orig_302_redirection.xml;1232;PASSED;
+          SC;scenario/term2_302_redirection.xml;1244;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;258;PASSED;
+          SC;../opi2/removeUser.xml;269;PASSED;
+          SC;../opi2/removeUser.xml;278;PASSED;
+     TC;tc/tc30_302_Redirection.xml;30. Add SA clients, SA client 1 calls SA client 2, SA Client 2 redirects call SA Client 3;7486;PASSED;null
+     #------ Testcase file=tc/tc31_302_Redirection_after_180.xml name= SA client 1 calls SA client 2, SA Client 2 redirects call SA Client 3 after 180 ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3416;PASSED;
+          SC;../opi2/addSingleUser.xml;3416;PASSED;
+          SC;../opi2/addSingleUser.xml;3457;PASSED;
+       # <run-1>
+          SC;scenario/term1_302_redirection_after_180.xml;799;PASSED;
+          SC;scenario/orig_302_redirection_after_180.xml;1172;PASSED;
+          SC;scenario/term2_302_redirection_after_180.xml;1184;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;551;PASSED;
+          SC;../opi2/removeUser.xml;558;PASSED;
+          SC;../opi2/removeUser.xml;574;PASSED;
+     TC;tc/tc31_302_Redirection_after_180.xml;31. Add SA clients, SA client 1 calls SA client 2, SA Client 2 redirects call after 180 to SA Client 3;7856;PASSED;null
+     #------ Testcase file=tc/tc32_basic_PAI_call.xml name= SA client 1 to SA client 2 inter-sesm PAI call ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3269;PASSED;
+          SC;../opi2/addSingleUser.xml;3307;PASSED;
+       # <run-1>
+          SC;scenario/tc32_orig_basic_PAI_call.xml;1091;PASSED;
+          SC;scenario/tc32_term_basic_PAI_call.xml;1101;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;217;PASSED;
+          SC;../opi2/removeUser.xml;223;PASSED;
+     TC;tc/tc32_basic_PAI_call.xml;32. Add SA clients, SA client 1 calls SA client 2 using PAI;7257;PASSED;null
+     #------ Testcase file=tc/tc33_PAI_call_with_privacy_id.xml name= SA client 1 to SA client 2 inter-sesm PAI call with privacy id ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3249;PASSED;
+          SC;../opi2/addSingleUser.xml;3285;PASSED;
+       # <run-1>
+          SC;scenario/tc33_orig_PAI_call_with_privacy_id.xml;1093;PASSED;
+          SC;scenario/tc33_term_PAI_call_with_privacy_id.xml;1156;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;273;PASSED;
+          SC;../opi2/removeUser.xml;294;PASSED;
+     TC;tc/tc33_PAI_call_with_privacy_id.xml;33. Add SA clients, SA client 1 calls SA client 2 using PAI and privacy id;7360;PASSED;null
+     #------ Testcase file=tc/tc34_PAI_call_with_custom_name.xml name= SA client 1 to SA client 2 inter-sesm PAI call with custom name ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3329;PASSED;
+          SC;../opi2/addSingleUser.xml;3377;PASSED;
+       # <run-1>
+          SC;scenario/tc34_orig_PAI_call_with_custom_name.xml;1087;PASSED;
+          SC;scenario/tc34_term_PAI_call_with_custom_name.xml;1099;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;149;PASSED;
+          SC;../opi2/removeUser.xml;163;PASSED;
+     TC;tc/tc34_PAI_call_with_custom_name.xml;34. Add SA clients, SA client 1 calls SA client 2 using PAI with custom name;7272;PASSED;null
+     #------ Testcase file=tc/tc35_invalid_PAI_403.xml name= SA client 1 to SA client 2 inter-sesm invalid PAI call 403 ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3376;PASSED;
+          SC;../opi2/addSingleUser.xml;3435;PASSED;
+       # <run-1>
+          SC;scenario/tc35_term_invalid_PAI_403.xml;344;PASSED;
+          SC;scenario/tc35_orig_invalid_PAI_403.xml;602;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;179;PASSED;
+          SC;../opi2/removeUser.xml;184;PASSED;
+     TC;tc/tc35_invalid_PAI_403.xml;35. Add SA clients, Call reject via using invalid PAI 403;6845;PASSED;null
+     TC;tc/tc36_decline_with_603_sesm_handle_cancel.xml;36. Add SA clients, Call declined after INV, Call canceled after INV;0;INACTIVE;tc/tc36_decline_with_603_sesm_handle_cancel.xml active parm is false, test case inactive
+     #------ Testcase file=tc/tc37_term_posts_481_against_bye.xml name= SA client 1 to SA client 2. Term post 481 against Bye ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3387;PASSED;
+          SC;../opi2/addSingleUser.xml;3423;PASSED;
+       # <run-1>
+          SC;scenario/tc37_orig_term_posts_481_against_bye.xml;1093;PASSED;
+          SC;scenario/tc37_term_term_posts_481_against_bye.xml;1105;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;179;PASSED;
+          SC;../opi2/removeUser.xml;182;PASSED;
+     TC;tc/tc37_term_posts_481_against_bye.xml;37. Add SA clients, Term post 481 against BYE;7335;PASSED;null
+     #------ Testcase file=tc/tc38_basic_call_with_max_cseq.xml name= SA client 1 to SA client 2 Basic call with maximum cseq ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3345;PASSED;
+          SC;../opi2/addSingleUser.xml;3398;PASSED;
+       # <run-1>
+          SC;scenario/tc38_orig_basic_call_max_cseq.xml;1135;PASSED;
+          SC;scenario/tc38_term_basic_call_max_cseq.xml;1151;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;158;PASSED;
+          SC;../opi2/removeUser.xml;163;PASSED;
+     TC;tc/tc38_basic_call_with_max_cseq.xml;38. Add SA clients, Basic Call With Maximum Cseq Value;7344;PASSED;null
+     #------ Testcase file=tc/tc39_MalformedURIinSubscribe.xml name= AAK-47472 NUViA Outage after 11.2 Upgrade - Malformed URI in Subscribe message ------
+       # <run-0>
+          SC;../opi2/addSingleUser.xml;3226;PASSED;
+       # <run-1>
+          SC;scenario/tc39_orig_MalformedURIinSubscribe.xml;843;PASSED;
+       # <run-2>
+          SC;../opi2/removeUser.xml;107;PASSED;
+     TC;tc/tc39_MalformedURIinSubscribe.xml;39. AAK-47472 NUViA Outage after 11.2 Upgrade - Malformed URI in Subscribe message;6792;PASSED;null
+  # <run-2>
+     #------ Testcase file=tc/tcx_rfc_remove.xml name= RFC suite remove ------
+       # <run-0>
+          SC;../opi2/removeDomain.xml;1725;PASSED;
+     TC;tc/tcx_rfc_remove.xml;RFC suite remove;1728;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/RFC3261/test_suite.xml;RFC3261 SA;296060;FAILED;

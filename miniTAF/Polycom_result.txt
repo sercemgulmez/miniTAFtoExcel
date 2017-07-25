@@ -1,0 +1,27 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/Polycom/test_suite.xml name= Polycom ------
+  # <run-0>
+     #------ Testcase file=tc/tc0_PolycomSetup.xml name= Create Domain and User, Assign Services and Resources ------
+       # <run-0>
+          SC;../opi/addRootDomain.xml;478;PASSED;
+          SC;../opi/setSystemProfilesForDomain.xml;104;PASSED;
+          SC;../opi/setServicesForDomain.xml;153;PASSED;
+          SC;../opi/setDomainResources.xml;207;PASSED;
+     TC;tc/tc0_PolycomSetup.xml;0. Polycom Set Up;991;PASSED;null
+  # <run-1>
+     #------ Testcase file=tc/tc1_polycom_basic_call.xml name= Polycom Basic call ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3324;PASSED;
+          SC;../opi/addSingleUser.xml;3332;PASSED;
+       # <run-1>
+          SC;scenario/orig_basic_call.xml;1668;PASSED;
+          SC;scenario/term_basic_call.xml;1674;PASSED;
+       # <run-2>
+          SC;../opi/removeUser.xml;264;PASSED;
+          SC;../opi/removeUser.xml;266;PASSED;
+     TC;tc/tc1_polycom_basic_call.xml;1. Polycom Basic call;7995;PASSED;null
+  # <run-2>
+     #------ Testcase file=tc/tcx_PolycomRemove.xml name= Create Domain and User, Assign Services and Resources ------
+       # <run-0>
+          SC;../opi/removeDomain.xml;288;PASSED;
+     TC;tc/tcx_PolycomRemove.xml;X. Polycom Remove;295;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/Polycom/test_suite.xml;Polycom;9352;PASSED;

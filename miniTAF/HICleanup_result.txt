@@ -1,0 +1,366 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/HICleanup/test_suite.xml name= HICleanup ------
+  # <run-0>
+     #------ Testcase file=tc/prov_initial_omi.xml name= prov_initial_omi ------
+       # <run-0>
+          SC;../omi/addInformationalElement.xml;2775;PASSED;
+          SC;../omi/addInformationalElement.xml;2234;PASSED;
+     TC;tc/prov_initial_omi.xml;prov_initial_omi;5047;PASSED;null
+     #------ Testcase file=tc/prov_initial_opi.xml name= prov_initial_opi ------
+       # <run-0>
+          SC;../opi/addRootDomain.xml;146;PASSED;
+          SC;../opi/setSystemProfilesForDomain.xml;138;PASSED;
+          SC;../opi/setServicesForDomain.xml;149;PASSED;
+          SC;../opi/setDomainResources.xml;190;PASSED;
+          SC;../opi/addCosToDomain.xml;132;PASSED;
+          SC;../opi/setCosForDomain.xml;192;PASSED;
+          SC;../opi/addSingleUser.xml;3307;PASSED;
+          SC;../opi/setLocationForUser.xml;164;PASSED;
+          SC;../opi/setCosForUser.xml;111;PASSED;
+          SC;../opi/addServiceNode.xml;141;PASSED;
+          SC;../opi/addServiceNode.xml;175;PASSED;
+          SC;../opi/assignDomainToServiceNode.xml;184;PASSED;
+          SC;../opi/assignDomainToServiceNode.xml;99;PASSED;
+          SC;../opi/addGatewayTelephonyRoute.xml;143;PASSED;
+          SC;../opi/addGatewayTelephonyRoute.xml;129;PASSED;
+          SC;../opi/addPrivateTelephonyRoute.xml;143;PASSED;
+          SC;../opi/addSIPTelephonyRoute.xml;191;PASSED;
+          SC;opi/addRouteList_4routes.xml;137;PASSED;
+     TC;tc/prov_initial_opi.xml;prov_initial_opi;5953;PASSED;null
+  # <run-1>
+     #------ Testcase file=tc/restart_sesm.xml name= restart_sesm ------
+       # <run-0>
+          SC;scenario/pause5.xml;5003;PASSED;
+          SC;../omi/restartActiveNeInstance.xml;80719;PASSED;
+     TC;tc/restart_sesm.xml;restart_sesm;85728;PASSED;null
+  # <run-2>
+     #------ Testcase file=tc/tc1.xml name= TC1: Invite without HI -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/orig_withoutHI.xml;1247;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term1.xml;7252;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc1.xml;TC1: Invite without HI -GatewayHideTopologyEnabled;19478;FAILED;
+     #------ Testcase file=tc/tc2.xml name= TC2: Invite with HI -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/orig_withHI.xml;318;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term2.xml;6321;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc2.xml;TC2: Invite with HI -GatewayHideTopologyEnabled;18546;FAILED;
+     #------ Testcase file=tc/tc3.xml name= TC3: Invite with HI -RedirectionServerHideTopologyEnabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/orig_withHI.xml;303;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/redirect.xml;6306;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/term3.xml;6306;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc3.xml;TC3: Invite with HI -RedirectionServerHideTopologyEnabled -GatewayHideTopologyEnabled;18547;FAILED;
+     #------ Testcase file=tc/tc4.xml name= TC4: Invite without HI -RedirectionServerHideTopologyEnabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/orig_withoutHI.xml;579;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/redirect.xml;6582;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/term4.xml;6582;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc4.xml;TC4: Invite without HI -RedirectionServerHideTopologyEnabled -GatewayHideTopologyEnabled;18805;FAILED;
+     #------ Testcase file=tc/tc5.xml name= TC5: Invite without HI -SipRouteHideTopologyDisabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/orig_withoutHI.xml;296;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term5.xml;6300;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc5.xml;TC5: Invite without HI -SipRouteHideTopologyDisabled -GatewayHideTopologyEnabled;18519;FAILED;
+     #------ Testcase file=tc/tc6.xml name= TC6: Invite with HI -SipRouteHideTopologyDisabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/orig_withHI.xml;306;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term6.xml;6308;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc6.xml;TC6: Invite with HI -SipRouteHideTopologyDisabled -GatewayHideTopologyEnabled;18528;FAILED;
+     #------ Testcase file=tc/tc7.xml name= TC7: Invite with HI -SipRouteHideTopologyDisabled -RedirectionServerHideTopologyEnabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/orig_withHI.xml;301;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term7.xml;6303;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/redirect.xml;6303;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc7.xml;TC7: Invite with HI -SipRouteHideTopologyDisabled -RedirectionServerHideTopologyEnabled -GatewayHideTopologyEnabled;18527;FAILED;
+     #------ Testcase file=tc/tc8.xml name= TC8: Invite without HI -SipRouteHideTopologyDisabled -RedirectionServerHideTopologyEnabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/orig_withoutHI.xml;297;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term8.xml;6299;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/redirect.xml;6299;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc8.xml;TC8: Invite without HI -SipRouteHideTopologyDisabled -RedirectionServerHideTopologyEnabled -GatewayHideTopologyEnabled;18522;FAILED;
+  # <run-3>
+     #------ Testcase file=tc/prov_sipEnabled.xml name= prov_sipEnabled ------
+       # <run-0>
+          SC;../opi/modifySIPTelephonyRoute.xml;160;PASSED;
+          SC;opi/modifyRouteList_4routes.xml;112;PASSED;
+     TC;tc/prov_sipEnabled.xml;prov_sipEnabled;279;PASSED;null
+  # <run-4>
+     #------ Testcase file=tc/restart_sesm.xml name= restart_sesm ------
+       # <run-0>
+          SC;scenario/pause5.xml;5003;PASSED;
+          SC;../omi/restartActiveNeInstance.xml;81573;PASSED;
+     TC;tc/restart_sesm.xml;restart_sesm;86581;PASSED;null
+  # <run-5>
+     #------ Testcase file=tc/tc9.xml name= TC9: Invite without HI -SipRouteHideTopologyEnabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/orig_withoutHI.xml;869;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term9.xml;6871;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc9.xml;TC9: Invite without HI -SipRouteHideTopologyEnabled -GatewayHideTopologyEnabled;19107;FAILED;
+     #------ Testcase file=tc/tc10.xml name= TC10: Invite with HI -SipRouteHideTopologyEnabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/orig_withHI.xml;308;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term10.xml;6310;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc10.xml;TC10: Invite with HI -SipRouteHideTopologyEnabled -GatewayHideTopologyEnabled;18527;FAILED;
+     #------ Testcase file=tc/tc11.xml name= TC11: Invite with HI -SipRouteHideTopologyEnabled -RedirectionServerHideTopologyEnabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/orig_withHI.xml;292;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term11.xml;6295;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/redirect.xml;6295;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc11.xml;TC11: Invite with HI -SipRouteHideTopologyEnabled -RedirectionServerHideTopologyEnabled -GatewayHideTopologyEnabled;18516;FAILED;
+     #------ Testcase file=tc/tc12.xml name= TC12: Invite without HI -SipRouteHideTopologyEnabled -RedirectionServerHideTopologyEnabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/orig_withoutHI.xml;342;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/redirect.xml;6345;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/term12.xml;6345;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc12.xml;TC12: Invite without HI -SipRouteHideTopologyEnabled -RedirectionServerHideTopologyEnabled -GatewayHideTopologyEnabled;18566;FAILED;
+  # <run-6>
+     #------ Testcase file=tc/prov_redirectionDisabled.xml name= prov_redirectionDisabled ------
+       # <run-0>
+          SC;../opi/modifyServiceNode.xml;137;PASSED;
+          SC;../opi/modifyGatewayTelephonyRoute.xml;96;PASSED;
+          SC;opi/modifyRouteList_4routes.xml;94;PASSED;
+     TC;tc/prov_redirectionDisabled.xml;prov_redirectionDisabled;336;PASSED;null
+  # <run-7>
+     #------ Testcase file=tc/restart_sesm.xml name= restart_sesm ------
+       # <run-0>
+          SC;scenario/pause5.xml;5001;PASSED;
+          SC;../omi/restartActiveNeInstance.xml;80399;PASSED;
+     TC;tc/restart_sesm.xml;restart_sesm;85407;PASSED;null
+  # <run-8>
+     #------ Testcase file=tc/tc13.xml name= TC13: Invite with HI -RedirectionServerHideTopologyDisabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/redirect.xml;929;PASSED;
+          SC;scenario/orig_withHI.xml;972;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term13.xml;6977;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc13.xml;TC13: Invite with HI -RedirectionServerHideTopologyDisabled -GatewayHideTopologyEnabled;19195;FAILED;
+     #------ Testcase file=tc/tc14.xml name= TC14: Invite without HI -RedirectionServerHideTopologyDisabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/redirect.xml;404;PASSED;
+          SC;scenario/orig_withoutHI.xml;422;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term14.xml;6425;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc14.xml;TC14: Invite without HI -RedirectionServerHideTopologyDisabled -GatewayHideTopologyEnabled;18643;FAILED;
+     #------ Testcase file=tc/tc15.xml name= TC15: Invite with HI -SipRouteHideTopologyEnabled -RedirectionServerHideTopologyDisabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/orig_withHI.xml;315;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term15.xml;6318;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/redirect.xml;6318;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc15.xml;TC15: Invite with HI -SipRouteHideTopologyEnabled -RedirectionServerHideTopologyDisabled -GatewayHideTopologyEnabled;18541;FAILED;
+     #------ Testcase file=tc/tc16.xml name= TC16: Invite without HI -SipRouteHideTopologyEnabled -RedirectionServerHideTopologyDisabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/orig_withoutHI.xml;330;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term16.xml;6333;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/redirect.xml;6333;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc16.xml;TC16: Invite without HI -SipRouteHideTopologyEnabled -RedirectionServerHideTopologyDisabled -GatewayHideTopologyEnabled;18553;FAILED;
+  # <run-9>
+     #------ Testcase file=tc/prov_sipDisabled.xml name= prov_sipDisabled ------
+       # <run-0>
+          SC;../opi/modifySIPTelephonyRoute.xml;85;PASSED;
+          SC;opi/modifyRouteList_4routes.xml;134;PASSED;
+     TC;tc/prov_sipDisabled.xml;prov_sipDisabled;225;PASSED;null
+  # <run-10>
+     #------ Testcase file=tc/restart_sesm.xml name= restart_sesm ------
+       # <run-0>
+          SC;scenario/pause5.xml;5001;PASSED;
+          SC;../omi/restartActiveNeInstance.xml;83995;PASSED;
+     TC;tc/restart_sesm.xml;restart_sesm;89002;PASSED;null
+  # <run-11>
+     #------ Testcase file=tc/tc17.xml name= TC17: Invite without HI -SipRouteHideTopologyDisabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/orig_withoutHI.xml;839;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term17.xml;6841;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc17.xml;TC17: Invite without HI -SipRouteHideTopologyDisabled -GatewayHideTopologyEnabled;19055;FAILED;
+     #------ Testcase file=tc/tc18.xml name= TC18: Invite with HI -SipRouteHideTopologyDisabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/orig_withHI.xml;305;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term18.xml;6308;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc18.xml;TC18: Invite with HI -SipRouteHideTopologyDisabled -GatewayHideTopologyEnabled;18531;FAILED;
+     #------ Testcase file=tc/tc19.xml name= TC19: Invite with HI -SipRouteHideTopologyDisabled -RedirectionServerHideTopologyDisabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/redirect.xml;414;PASSED;
+          SC;scenario/orig_withHI.xml;442;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term19.xml;6445;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc19.xml;TC19: Invite with HI -SipRouteHideTopologyDisabled -RedirectionServerHideTopologyDisabled -GatewayHideTopologyEnabled;18662;FAILED;
+     #------ Testcase file=tc/tc20.xml name= TC20: Invite without HI -SipRouteHideTopologyDisabled -RedirectionServerHideTopologyDisabled -GatewayHideTopologyEnabled ------
+       # <run-0>
+          SC;scenario/redirect.xml;390;PASSED;
+          SC;scenario/orig_withoutHI.xml;407;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term20.xml;6410;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc20.xml;TC20: Invite without HI -SipRouteHideTopologyDisabled -RedirectionServerHideTopologyDisabled -GatewayHideTopologyEnabled;18628;FAILED;
+  # <run-12>
+     #------ Testcase file=tc/prov_gatewayDisabled.xml name= prov_gatewayDisabled ------
+       # <run-0>
+          SC;../opi/modifyServiceNode.xml;108;PASSED;
+          SC;../opi/modifyGatewayTelephonyRoute.xml;121;PASSED;
+          SC;opi/modifyRouteList_4routes.xml;150;PASSED;
+     TC;tc/prov_gatewayDisabled.xml;prov_gatewayDisabled;386;PASSED;null
+  # <run-13>
+     #------ Testcase file=tc/restart_sesm.xml name= restart_sesm ------
+       # <run-0>
+          SC;scenario/pause5.xml;5002;PASSED;
+          SC;../omi/restartActiveNeInstance.xml;79923;PASSED;
+     TC;tc/restart_sesm.xml;restart_sesm;84929;PASSED;null
+  # <run-14>
+     #------ Testcase file=tc/tc21.xml name= TC21: Invite without HI -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/term21.xml;1281;PASSED;
+          SC;scenario/orig_withoutHI.xml;1518;PASSED;
+     TC;tc/tc21.xml;TC21: Invite without HI -GatewayHideTopologyDisabled;3732;PASSED;null
+     #------ Testcase file=tc/tc22.xml name= TC22: Invite with HI -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/term22.xml;709;PASSED;
+          SC;scenario/orig_withHI.xml;972;PASSED;
+     TC;tc/tc22.xml;TC22: Invite with HI -GatewayHideTopologyDisabled;3187;PASSED;null
+     #------ Testcase file=tc/tc23.xml name= TC23: Invite with HI -RedirectionServerHideTopologyDisabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/redirect.xml;388;PASSED;
+          SC;scenario/term23.xml;842;PASSED;
+          SC;scenario/orig_withHI.xml;1095;PASSED;
+     TC;tc/tc23.xml;TC23: Invite with HI -RedirectionServerHideTopologyDisabled -GatewayHideTopologyDisabled;3316;PASSED;null
+     #------ Testcase file=tc/tc24.xml name= TC24: Invite without HI -RedirectionServerHideTopologyDisabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/redirect.xml;395;PASSED;
+          SC;scenario/term24.xml;833;PASSED;
+          SC;scenario/orig_withoutHI.xml;1095;PASSED;
+     TC;tc/tc24.xml;TC24: Invite without HI -RedirectionServerHideTopologyDisabled -GatewayHideTopologyDisabled;3311;PASSED;null
+     #------ Testcase file=tc/tc25.xml name= TC25: Invite without HI -SipRouteHideTopologyDisabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/term25.xml;744;PASSED;
+          SC;scenario/orig_withoutHI.xml;997;PASSED;
+     TC;tc/tc25.xml;TC25: Invite without HI -SipRouteHideTopologyDisabled -GatewayHideTopologyDisabled;3209;PASSED;null
+     #------ Testcase file=tc/tc26.xml name= TC26: Invite with HI -SipRouteHideTopologyDisabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/term26.xml;714;PASSED;
+          SC;scenario/orig_withHI.xml;951;PASSED;
+     TC;tc/tc26.xml;TC26: Invite with HI -SipRouteHideTopologyDisabled -GatewayHideTopologyDisabled;3165;PASSED;null
+     #------ Testcase file=tc/tc27.xml name= TC27: Invite with HI -SipRouteHideTopologyDisabled -RedirectionServerHideTopologyDisabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/redirect.xml;378;PASSED;
+          SC;scenario/term27.xml;818;PASSED;
+          SC;scenario/orig_withHI.xml;1065;PASSED;
+     TC;tc/tc27.xml;TC27: Invite with HI -SipRouteHideTopologyDisabled -RedirectionServerHideTopologyDisabled -GatewayHideTopologyDisabled;3281;PASSED;null
+     #------ Testcase file=tc/tc28.xml name= TC28: Invite without HI -SipRouteHideTopologyDisabled -RedirectionServerHideTopologyDisabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/redirect.xml;391;PASSED;
+          SC;scenario/term28.xml;830;PASSED;
+          SC;scenario/orig_withoutHI.xml;1106;PASSED;
+     TC;tc/tc28.xml;TC28: Invite without HI -SipRouteHideTopologyDisabled -RedirectionServerHideTopologyDisabled -GatewayHideTopologyDisabled;3327;PASSED;null
+  # <run-15>
+     #------ Testcase file=tc/prov_sipEnabled.xml name= prov_sipEnabled ------
+       # <run-0>
+          SC;../opi/modifySIPTelephonyRoute.xml;103;PASSED;
+          SC;opi/modifyRouteList_4routes.xml;111;PASSED;
+     TC;tc/prov_sipEnabled.xml;prov_sipEnabled;220;PASSED;null
+  # <run-16>
+     #------ Testcase file=tc/restart_sesm.xml name= restart_sesm ------
+       # <run-0>
+          SC;scenario/pause5.xml;5002;PASSED;
+          SC;../omi/restartActiveNeInstance.xml;81972;PASSED;
+     TC;tc/restart_sesm.xml;restart_sesm;86978;PASSED;null
+  # <run-17>
+     #------ Testcase file=tc/tc29.xml name= TC29: Invite without HI -SipRouteHideTopologyEnabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/orig_withoutHI.xml;801;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term29.xml;6803;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc29.xml;TC29: Invite without HI -SipRouteHideTopologyEnabled -GatewayHideTopologyDisabled;19023;FAILED;
+     #------ Testcase file=tc/tc30.xml name= TC30: Invite with HI -SipRouteHideTopologyEnabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/orig_withHI.xml;290;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term30.xml;6292;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc30.xml;TC30: Invite with HI -SipRouteHideTopologyEnabled -GatewayHideTopologyDisabled;18507;FAILED;
+     #------ Testcase file=tc/tc31.xml name= TC31: Invite with HI -SipRouteHideTopologyEnabled -RedirectionServerHideTopologyDisabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/orig_withHI.xml;282;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term31.xml;6284;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/redirect.xml;6285;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc31.xml;TC31: Invite with HI -SipRouteHideTopologyEnabled -RedirectionServerHideTopologyDisabled -GatewayHideTopologyDisabled;18502;FAILED;
+     #------ Testcase file=tc/tc32.xml name= TC32: Invite without HI -SipRouteHideTopologyEnabled -RedirectionServerHideTopologyDisabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/orig_withoutHI.xml;294;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term32.xml;6297;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/redirect.xml;6297;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc32.xml;TC32: Invite without HI -SipRouteHideTopologyEnabled -RedirectionServerHideTopologyDisabled -GatewayHideTopologyDisabled;18513;FAILED;
+  # <run-18>
+     #------ Testcase file=tc/prov_redirectionEnabled.xml name= prov_redirectionEnabled ------
+       # <run-0>
+          SC;../opi/modifyServiceNode.xml;119;PASSED;
+          SC;../opi/modifyGatewayTelephonyRoute.xml;168;PASSED;
+          SC;opi/modifyRouteList_4routes.xml;113;PASSED;
+     TC;tc/prov_redirectionEnabled.xml;prov_redirectionEnabled;408;PASSED;null
+  # <run-19>
+     #------ Testcase file=tc/restart_sesm.xml name= restart_sesm ------
+       # <run-0>
+          SC;scenario/pause5.xml;5002;PASSED;
+          SC;../omi/restartActiveNeInstance.xml;79560;PASSED;
+     TC;tc/restart_sesm.xml;restart_sesm;84567;PASSED;null
+  # <run-20>
+     #------ Testcase file=tc/tc33.xml name= TC33: Invite with HI -RedirectionServerHideTopologyEnabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/orig_withHI.xml;842;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term33.xml;6844;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/redirect.xml;6844;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc33.xml;TC33: Invite with HI -RedirectionServerHideTopologyEnabled -GatewayHideTopologyDisabled;19066;FAILED;
+     #------ Testcase file=tc/tc34.xml name= TC34: Invite without HI -RedirectionServerHideTopologyEnabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/orig_withoutHI.xml;384;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term34.xml;6386;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/redirect.xml;6386;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc34.xml;TC34: Invite without HI -RedirectionServerHideTopologyEnabled -GatewayHideTopologyDisabled;18605;FAILED;
+     #------ Testcase file=tc/tc35.xml name= TC35: Invite with HI -SipRouteHideTopologyEnabled -RedirectionServerHideTopologyEnabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/orig_withHI.xml;293;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term35.xml;6296;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/redirect.xml;6295;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc35.xml;TC35: Invite with HI -SipRouteHideTopologyEnabled -RedirectionServerHideTopologyEnabled -GatewayHideTopologyDisabled;18513;FAILED;
+     #------ Testcase file=tc/tc36.xml name= TC36: Invite without HI -SipRouteHideTopologyEnabled -RedirectionServerHideTopologyEnabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/orig_withoutHI.xml;309;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/redirect.xml;6312;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/term36.xml;6312;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc36.xml;TC36: Invite without HI -SipRouteHideTopologyEnabled -RedirectionServerHideTopologyEnabled -GatewayHideTopologyDisabled;18534;FAILED;
+  # <run-21>
+     #------ Testcase file=tc/prov_sipDisabled.xml name= prov_sipDisabled ------
+       # <run-0>
+          SC;../opi/modifySIPTelephonyRoute.xml;147;PASSED;
+          SC;opi/modifyRouteList_4routes.xml;101;PASSED;
+     TC;tc/prov_sipDisabled.xml;prov_sipDisabled;254;PASSED;null
+  # <run-22>
+     #------ Testcase file=tc/restart_sesm.xml name= restart_sesm ------
+       # <run-0>
+          SC;scenario/pause5.xml;5001;PASSED;
+          SC;../omi/restartActiveNeInstance.xml;81486;PASSED;
+     TC;tc/restart_sesm.xml;restart_sesm;86492;PASSED;null
+  # <run-23>
+     #------ Testcase file=tc/tc37.xml name= TC37: Invite without HI -SipRouteHideTopologyDisabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/term37.xml;1249;PASSED;
+          SC;scenario/orig_withoutHI.xml;1494;PASSED;
+     TC;tc/tc37.xml;TC37: Invite without HI -SipRouteHideTopologyDisabled -GatewayHideTopologyDisabled;3711;PASSED;null
+     #------ Testcase file=tc/tc38.xml name= TC38: Invite with HI -SipRouteHideTopologyDisabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/term38.xml;716;PASSED;
+          SC;scenario/orig_withHI.xml;942;PASSED;
+     TC;tc/tc38.xml;TC38: Invite with HI -SipRouteHideTopologyDisabled -GatewayHideTopologyDisabled;3155;PASSED;null
+     #------ Testcase file=tc/tc39.xml name= TC39: Invite with HI -SipRouteHideTopologyDisabled -RedirectionServerHideTopologyEnabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/orig_withHI.xml;295;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/term39.xml;6296;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/redirect.xml;6296;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc39.xml;TC39: Invite with HI -SipRouteHideTopologyDisabled -RedirectionServerHideTopologyEnabled -GatewayHideTopologyDisabled;18514;FAILED;
+     #------ Testcase file=tc/tc40.xml name= TC40: Invite without HI -SipRouteHideTopologyDisabled -RedirectionServerHideTopologyEnabled -GatewayHideTopologyDisabled ------
+       # <run-0>
+          SC;scenario/orig_withoutHI.xml;572;FAILED;Unexpected response <500> while in <recv> action with index=4
+          SC;scenario/redirect.xml;6574;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/term40.xml;6574;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc40.xml;TC40: Invite without HI -SipRouteHideTopologyDisabled -RedirectionServerHideTopologyEnabled -GatewayHideTopologyDisabled;18790;FAILED;
+  # <run-24>
+     #------ Testcase file=tc/prov_final_opi.xml name= prov_final_opi ------
+       # <run-0>
+          SC;../opi/removeDomain.xml;330;PASSED;
+          SC;../opi/removeServiceNode.xml;101;PASSED;
+          SC;../opi/removeServiceNode.xml;113;PASSED;
+     TC;tc/prov_final_opi.xml;prov_final_opi;552;PASSED;null
+     #------ Testcase file=tc/prov_final_omi.xml name= prov_final_omi ------
+       # <run-0>
+          SC;../omi/removeInformationalElement.xml;2168;PASSED;
+          SC;../omi/removeInformationalElement.xml;2102;PASSED;
+     TC;tc/prov_final_omi.xml;prov_final_omi;4275;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/HICleanup/test_suite.xml;HICleanup;1301730;FAILED;

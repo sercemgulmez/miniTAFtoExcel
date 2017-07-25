@@ -1,0 +1,334 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/Inheritance/test_suite.xml name= Inheritance ------
+  # <run-0>
+     #------ Testcase file=tc/prov_initial.xml name= prov_initial ------
+       # <run-0>
+          SC;../omi2/addSipProfile.xml;905;PASSED;
+       # <run-1>
+          SC;../omi2/addPhysicalSite.xml;130;PASSED;
+       # <run-2>
+          SC;omi/addStandAloneSipPbx_static_trkgrp_2links.xml;181;PASSED;
+       # <run-3>
+          SC;../omi2/addStandAloneSipPbxSessMgrAssoc_static_trkgrp.xml;173;PASSED;
+       # <run-4>
+          SC;../omi2/makeStandAloneSipPbxOnline_static_trkgrp.xml;124;PASSED;
+          SC;../omi2/makeStandAloneSipPbxOnline_static_trkgrp.xml;83;PASSED;
+       # <run-5>
+          SC;../opi2/addRootDomain.xml;90;PASSED;
+       # <run-6>
+          SC;../opi2/setDomainResourcesforSAPBX.xml;183;PASSED;
+       # <run-7>
+          SC;../opi2/addSubDomain.xml;113;PASSED;
+          SC;../opi2/addSubDomain.xml;119;PASSED;
+       # <run-8>
+          SC;../opi2/addServiceNode.xml;134;PASSED;
+       # <run-9>
+          SC;../opi2/assignDomainToServiceNode.xml;67;PASSED;
+       # <run-10>
+          SC;../opi2/addSASipPbx.xml;202;PASSED;
+       # <run-11>
+          SC;../opi2/setAdministrativeStateForSAPbx.xml;78;PASSED;
+       # <run-12>
+          SC;../opi2/addSystemDNRange.xml;99;PASSED;
+       # <run-13>
+          SC;../opi2/addSubRangeToSipPbx.xml;117;PASSED;
+          SC;../opi2/addSubRangeToSipPbx.xml;123;PASSED;
+       # <run-14>
+          SC;../opi2/setSystemProfilesForDomain.xml;96;PASSED;
+       # <run-15>
+          SC;../opi2/addSingleUserandAssignSesm.xml;3269;PASSED;
+          SC;../opi2/addSingleUserandAssignSesm.xml;3350;PASSED;
+       # <run-16>
+          SC;opi/addSingleUserSubdomain.xml;248;PASSED;
+          SC;opi/addSingleUserSubdomain.xml;315;PASSED;
+          SC;opi/addSingleUserSubdomain.xml;314;PASSED;
+          SC;opi/addSingleUserSubdomain.xml;343;PASSED;
+          SC;opi/addSingleUserSubdomain.xml;374;PASSED;
+       # <run-17>
+          SC;../opi2/addSingleUserwithoutSesmAssociation.xml;156;PASSED;
+          SC;../opi2/addSingleUserwithoutSesmAssociation.xml;198;PASSED;
+       # <run-18>
+          SC;../opi2/setUserDirectoryNumber.xml;380;PASSED;
+          SC;../opi2/setUserDirectoryNumber.xml;403;PASSED;
+          SC;../opi2/setUserDirectoryNumber.xml;416;PASSED;
+          SC;../opi2/setUserDirectoryNumber.xml;428;PASSED;
+          SC;../opi2/setUserDirectoryNumber.xml;435;PASSED;
+          SC;../opi2/setUserDirectoryNumber.xml;447;PASSED;
+          SC;../opi2/setUserDirectoryNumber.xml;462;PASSED;
+       # <run-19>
+          SC;opi/linkExtensionUsersToSASipPbx.xml;191;PASSED;
+       # <run-20>
+          SC;../opi2/addTrunkGroup.xml;148;PASSED;
+          SC;../opi2/addTrunkGroup.xml;131;PASSED;
+       # <run-21>
+          SC;scenario/pause5.xml;5003;PASSED;
+     TC;tc/prov_initial.xml;prov_initial;15637;PASSED;null
+  # <run-1>
+     #------ Testcase file=tc/tc1_yyyy_tgrpforsubdomain_Domain.xml name= tc1_yyyy_tgrpforsubdomain_Domain ------
+       # <run-0>
+          SC;scenario/tcforsubdomainViaDomain_link1.xml;574;PASSED;
+          SC;scenario/tcforsubdomainViaDomain_link2.xml;588;PASSED;
+          SC;scenario/tcforsubdomainViaDomain_orig.xml;636;PASSED;
+     TC;tc/tc1_yyyy_tgrpforsubdomain_Domain.xml;tc1_yyyy_tgrpforsubdomain_Domain;2862;PASSED;null
+     #------ Testcase file=tc/tc2_yyny_tgrpforsubdomain_Domain.xml name= tc2_yyny_tgrpforsubdomain_Domain ------
+       # <run-0>
+          SC;scenario/tcforsubdomainViaDomain_link1.xml;106;PASSED;
+          SC;scenario/tcforsubdomainViaDomain_link2.xml;117;PASSED;
+          SC;scenario/tcforsubdomainViaDomain_orig.xml;164;PASSED;
+     TC;tc/tc2_yyny_tgrpforsubdomain_Domain.xml;tc2_yyny_tgrpforsubdomain_Domain;2390;PASSED;null
+     #------ Testcase file=tc/tc3_ynny_tgrpfordefault_Domain.xml name= tc3_ynny_tgrpfordefault_Domain ------
+       # <run-0>
+          SC;scenario/tcfordefaultViaDomain_link1.xml;76;PASSED;
+          SC;scenario/tcfordefaultViaDomain_link2.xml;88;PASSED;
+          SC;scenario/tcfordefaultViaDomain_orig.xml;120;PASSED;
+     TC;tc/tc3_ynny_tgrpfordefault_Domain.xml;tc3_ynny_tgrpfordefault_Domain;2348;PASSED;null
+     #------ Testcase file=tc/tc4_ynyy_tgrpforsubrange_Domain.xml name= tc4_ynyy_tgrpforsubrange_Domain ------
+       # <run-0>
+          SC;scenario/tcforsubrangeViaDomain_link1.xml;94;PASSED;
+          SC;scenario/tcforsubrangeViaDomain_link2.xml;104;PASSED;
+          SC;scenario/tcforsubrangeViaDomain_orig.xml;134;PASSED;
+     TC;tc/tc4_ynyy_tgrpforsubrange_Domain.xml;tc4_ynyy_tgrpforsubrange_Domain;2365;PASSED;null
+     #------ Testcase file=tc/tc5_ynyn_tgrpfordefault_Domain.xml name= tc5_ynyn_tgrpfordefault_Domain ------
+       # <run-0>
+          SC;scenario/tcfordefaultViaDomain_link1.xml;100;PASSED;
+          SC;scenario/tcfordefaultViaDomain_link2.xml;112;PASSED;
+          SC;scenario/tcfordefaultViaDomain_orig.xml;155;PASSED;
+     TC;tc/tc5_ynyn_tgrpfordefault_Domain.xml;tc5_ynyn_tgrpfordefault_Domain;2371;PASSED;null
+     #------ Testcase file=tc/tc6_nxxn_tgrpfordefault_Domain.xml name= tc6_nxxn_tgrpfordefault_Domain ------
+       # <run-0>
+          SC;scenario/tcfordefaultViaDomain_link1.xml;96;PASSED;
+          SC;scenario/tcfordefaultViaDomain_link2.xml;108;PASSED;
+          SC;scenario/tcfordefaultViaDomain_orig.xml;152;PASSED;
+     TC;tc/tc6_nxxn_tgrpfordefault_Domain.xml;tc6_nxxn_tgrpfordefault_Domain;2369;PASSED;null
+     #------ Testcase file=tc/tc7_nxxy_tgrpforsubrange_Domain.xml name= tc7_nxxy_tgrpforsubrange_Domain  ------
+       # <run-0>
+          SC;scenario/tcforsubrangeViaDomain_link1.xml;99;PASSED;
+          SC;scenario/tcforsubrangeViaDomain_link2.xml;109;PASSED;
+          SC;scenario/tcforsubrangeViaDomain_orig.xml;152;PASSED;
+     TC;tc/tc7_nxxy_tgrpforsubrange_Domain.xml;tc7_nxxy_tgrpforsubrange_Domain;2370;PASSED;null
+     #------ Testcase file=tc/tc8_yyyy_tgrpforsubdomain_302.xml name= tc8_yyyy_tgrpforsubdomain_302 ------
+       # <run-0>
+          SC;scenario/tcforsubdomain302_link1.xml;474;PASSED;
+          SC;scenario/tcfor302_term1.xml;477;PASSED;
+          SC;scenario/tcforsubdomain302_link2.xml;486;PASSED;
+          SC;scenario/tcfor302_orig.xml;525;PASSED;
+     TC;tc/tc8_yyyy_tgrpforsubdomain_302.xml;tc8_yyyy_tgrpforsubdomain_302;2748;PASSED;null
+     #------ Testcase file=tc/tc9_yyny_tgrpforsubdomain_302 .xml name= tc9_yyny_tgrpforsubdomain_302  ------
+       # <run-0>
+          SC;scenario/tcforsubdomain302_link1.xml;423;PASSED;
+          SC;scenario/tcfor302_term1.xml;430;PASSED;
+          SC;scenario/tcforsubdomain302_link2.xml;436;PASSED;
+          SC;scenario/tcfor302_orig.xml;477;PASSED;
+     TC;tc/tc9_yyny_tgrpforsubdomain_302 .xml;tc9_yyny_tgrpforsubdomain_302 ;2699;PASSED;null
+     #------ Testcase file=tc/tc10_ynny_tgrpfordefault_302.xml name= tc10_ynny_tgrpfordefault_302 ------
+       # <run-0>
+          SC;scenario/tcfordefault302_link1.xml;380;PASSED;
+          SC;scenario/tcfordefault302_link2.xml;393;PASSED;
+          SC;scenario/tcfor302_term1.xml;399;PASSED;
+          SC;scenario/tcfor302_orig.xml;435;PASSED;
+     TC;tc/tc10_ynny_tgrpfordefault_302.xml;tc10_ynny_tgrpfordefault_302;2657;PASSED;null
+     #------ Testcase file=tc/tc11_ynyy_tgrpforsubrange_302.xml name= tc11_ynyy_tgrpforsubrange_302 ------
+       # <run-0>
+          SC;scenario/tcfor302_term1.xml;425;PASSED;
+          SC;scenario/tcforsubrange302_link1.xml;434;PASSED;
+          SC;scenario/tcforsubrange302_link2.xml;446;PASSED;
+          SC;scenario/tcfor302_orig.xml;476;PASSED;
+     TC;tc/tc11_ynyy_tgrpforsubrange_302.xml;tc11_ynyy_tgrpforsubrange_302;2698;PASSED;null
+     #------ Testcase file=tc/tc12_ynyn_tgrpfordefault_302.xml name= tc12_ynyn_tgrpfordefault_302 ------
+       # <run-0>
+          SC;scenario/tcfordefault302_link1.xml;421;PASSED;
+          SC;scenario/tcfor302_term1.xml;431;PASSED;
+          SC;scenario/tcfordefault302_link2.xml;433;PASSED;
+          SC;scenario/tcfor302_orig.xml;467;PASSED;
+     TC;tc/tc12_ynyn_tgrpfordefault_302.xml;tc12_ynyn_tgrpfordefault_302;2700;PASSED;null
+     #------ Testcase file=tc/tc13_nxxn_tgrpfordefault_302.xml name= tc13_nxxn_tgrpfordefault_302 ------
+       # <run-0>
+          SC;scenario/tcfordefault302_link1.xml;405;PASSED;
+          SC;scenario/tcfordefault302_link2.xml;416;PASSED;
+          SC;scenario/tcfor302_term1.xml;419;PASSED;
+          SC;scenario/tcfor302_orig.xml;443;PASSED;
+     TC;tc/tc13_nxxn_tgrpfordefault_302.xml;tc13_nxxn_tgrpfordefault_302;2663;PASSED;null
+     #------ Testcase file=tc/tc14_nxxy_tgrpforsubrange_302.xml name= tc14_nxxy_tgrpforsubrange_302 ------
+       # <run-0>
+          SC;scenario/tcfor302_term1.xml;425;PASSED;
+          SC;scenario/tcforsubrange302_link1.xml;428;PASSED;
+          SC;scenario/tcforsubrange302_link2.xml;438;PASSED;
+          SC;scenario/tcfor302_orig.xml;471;PASSED;
+     TC;tc/tc14_nxxy_tgrpforsubrange_302.xml;tc14_nxxy_tgrpforsubrange_302;2692;PASSED;null
+     #------ Testcase file=tc/tc15_yyyy_tgrpforsubdomain_IpPort.xml name= tc15_yyyy_tgrpforsubdomain_IpPort ------
+       # <run-0>
+          SC;scenario/tcforsubdomain_link1.xml;93;PASSED;
+          SC;scenario/tcforsubdomain_link2.xml;101;PASSED;
+          SC;scenario/tcforsubdomain_orig.xml;129;PASSED;
+     TC;tc/tc15_yyyy_tgrpforsubdomain_IpPort.xml;tc15_yyyy_tgrpforsubdomain_IpPort;2347;PASSED;null
+     #------ Testcase file=tc/tc16_yyny_tgrpforsubdomain_IpPort.xml name= tc16_yyny_tgrpforsubdomain_IpPort ------
+       # <run-0>
+          SC;scenario/tcforsubdomain_link1.xml;97;PASSED;
+          SC;scenario/tcforsubdomain_link2.xml;106;PASSED;
+          SC;scenario/tcforsubdomain_orig.xml;135;PASSED;
+     TC;tc/tc16_yyny_tgrpforsubdomain_IpPort.xml;tc16_yyny_tgrpforsubdomain_IpPort;2351;PASSED;null
+     #------ Testcase file=tc/tc17_ynny_tgrpfordefault_IpPort.xml name= tc17_ynny_tgrpfordefault_IpPort ------
+       # <run-0>
+          SC;scenario/tcfordefault_link1.xml;58;PASSED;
+          SC;scenario/tcfordefault_link2.xml;68;PASSED;
+          SC;scenario/tcfordefault_orig.xml;99;PASSED;
+     TC;tc/tc17_ynny_tgrpfordefault_IpPort.xml;tc17_ynny_tgrpfordefault_IpPort;2489;PASSED;null
+     #------ Testcase file=tc/tc18_ynyy_tgrpforsubrange_IpPort.xml name= tc18_ynyy_tgrpforsubrange_IpPort ------
+       # <run-0>
+          SC;scenario/tcforsubrange_link1.xml;91;PASSED;
+          SC;scenario/tcforsubrange_link2.xml;100;PASSED;
+          SC;scenario/tcforsubrange_orig.xml;137;PASSED;
+     TC;tc/tc18_ynyy_tgrpforsubrange_IpPort.xml;tc18_ynyy_tgrpforsubrange_IpPort;2351;PASSED;null
+     #------ Testcase file=tc/tc19_ynyn_tgrpfordefault_IpPort.xml name= tc19_ynyn_tgrpfordefault_IpPort ------
+       # <run-0>
+          SC;scenario/tcfordefault_link1.xml;69;PASSED;
+          SC;scenario/tcfordefault_link2.xml;78;PASSED;
+          SC;scenario/tcfordefault_orig.xml;113;PASSED;
+     TC;tc/tc19_ynyn_tgrpfordefault_IpPort.xml;tc19_ynyn_tgrpfordefault_IpPort;2327;PASSED;null
+     #------ Testcase file=tc/tc20_nxxn_tgrpfordefault_IpPort.xml name= tc20_nxxn_tgrpfordefault_IpPort  ------
+       # <run-0>
+          SC;scenario/tcfordefault_link1.xml;80;PASSED;
+          SC;scenario/tcfordefault_link2.xml;90;PASSED;
+          SC;scenario/tcfordefault_orig.xml;125;PASSED;
+     TC;tc/tc20_nxxn_tgrpfordefault_IpPort.xml;tc20_nxxn_tgrpfordefault_IpPort;2340;PASSED;null
+     #------ Testcase file=tc/tc21_nxxy_tgrpforsubrange_IpPort.xml name= tc21_nxxy_tgrpforsubrange_IpPort  ------
+       # <run-0>
+          SC;scenario/tcforsubrange_link1.xml;79;PASSED;
+          SC;scenario/tcforsubrange_link2.xml;88;PASSED;
+          SC;scenario/tcforsubrange_orig.xml;123;PASSED;
+     TC;tc/tc21_nxxy_tgrpforsubrange_IpPort.xml;tc21_nxxy_tgrpforsubrange_IpPort;2338;PASSED;null
+     #------ Testcase file=tc/tc34_rootdomain_subdntgrp.xml name= tc34_rootdomain_subdntgrp ------
+       # <run-0>
+          SC;scenario/tcforsubrangeViaDomain_link1.xml;92;PASSED;
+          SC;scenario/tcforsubrangeViaDomain_link2.xml;100;PASSED;
+          SC;scenario/tcforsubrangeViaDomain_orig.xml;138;PASSED;
+     TC;tc/tc34_rootdomain_subdntgrp.xml;tc34_rootdomain_subdntgrp;2352;PASSED;null
+     #------ Testcase file=tc/tc35_rootdomain_nosubdntgrp.xml name= tc35_rootdomain_nosubdntgrp ------
+       # <run-0>
+          SC;scenario/tcfordefaultViaDomain_link1.xml;65;PASSED;
+          SC;scenario/tcfordefaultViaDomain_link2.xml;75;PASSED;
+          SC;scenario/tcfordefaultViaDomain_orig.xml;108;PASSED;
+     TC;tc/tc35_rootdomain_nosubdntgrp.xml;tc35_rootdomain_nosubdntgrp;2322;PASSED;null
+  # <run-2>
+     #------ Testcase file=tc/username_setup.xml name= username_setup ------
+       # <run-0>
+          SC;../opi2/modifySvcNode.xml;149;PASSED;
+       # <run-1>
+          SC;../omi2/deleteSipProfile.xml;279;PASSED;
+       # <run-2>
+          SC;../omi2/addSipProfile.xml;281;PASSED;
+       # <run-3>
+          SC;../opi2/modifySvcNode.xml;132;PASSED;
+       # <run-4>
+          SC;scenario/pause5.xml;5003;PASSED;
+     TC;tc/username_setup.xml;username_setup;5853;PASSED;null
+  # <run-3>
+     #------ Testcase file=tc/tc22_yyyy_tgrpforsubdomain_Username.xml name= tc22_yyyy_tgrpforsubdomain_Username ------
+       # <run-0>
+          SC;scenario/tcforsubdomainViaUsername_link2.xml;83;PASSED;
+          SC;scenario/tcforsubdomainViaUsername_link1.xml;92;PASSED;
+          SC;scenario/tcforsubdomainViaUsername_orig.xml;129;PASSED;
+     TC;tc/tc22_yyyy_tgrpforsubdomain_Username.xml;tc22_yyyy_tgrpforsubdomain_Username;2344;PASSED;null
+     #------ Testcase file=tc/tc23_yyny_tgrpforsubdomain_Username.xml name= tc23_yyny_tgrpforsubdomain_Username ------
+       # <run-0>
+          SC;scenario/tcforsubdomainViaUsername_link2.xml;79;PASSED;
+          SC;scenario/tcforsubdomainViaUsername_link1.xml;88;PASSED;
+          SC;scenario/tcforsubdomainViaUsername_orig.xml;127;PASSED;
+     TC;tc/tc23_yyny_tgrpforsubdomain_Username.xml;tc23_yyny_tgrpforsubdomain_Username;2340;PASSED;null
+     #------ Testcase file=tc/tc24_ynny_tgrpfordefault_Username.xml name= tc24_ynny_tgrpfordefault_Username ------
+       # <run-0>
+          SC;scenario/tcfordefaultViaUsername_link2.xml;59;PASSED;
+          SC;scenario/tcfordefaultViaUsername_link1.xml;69;PASSED;
+          SC;scenario/tcfordefaultViaUsername_orig.xml;101;PASSED;
+     TC;tc/tc24_ynny_tgrpfordefault_Username.xml;tc24_ynny_tgrpfordefault_Username;2314;PASSED;null
+     #------ Testcase file=tc/tc25_ynyy_tgrpfordefault_NoInheritance_Username.xml name= tc25_ynyy_tgrpfordefault_NoInheritance_Username ------
+       # <run-0>
+          SC;scenario/tcfordefaultViaUsername_link2.xml;72;PASSED;
+          SC;scenario/tcfordefaultViaUsername_link1.xml;81;PASSED;
+          SC;scenario/tcfordefaultViaUsername_orig.xml;120;PASSED;
+     TC;tc/tc25_ynyy_tgrpfordefault_NoInheritance_Username.xml;tc25_ynyy_tgrpfordefault_NoInheritance_Username;2334;PASSED;null
+     #------ Testcase file=tc/tc26_ynyn_tgrpfordefault_Username.xml name= tc26_ynyn_tgrpfordefault_Username ------
+       # <run-0>
+          SC;scenario/tcfordefaultViaUsername_link2.xml;53;PASSED;
+          SC;scenario/tcfordefaultViaUsername_link1.xml;63;PASSED;
+          SC;scenario/tcfordefaultViaUsername_orig.xml;86;PASSED;
+     TC;tc/tc26_ynyn_tgrpfordefault_Username.xml;tc26_ynyn_tgrpfordefault_Username;2299;PASSED;null
+  # <run-4>
+     #------ Testcase file=tc/prefix_setup.xml name= prefix_setup ------
+       # <run-0>
+          SC;../opi2/modifySvcNode.xml;105;PASSED;
+       # <run-1>
+          SC;../omi2/deleteSipProfile.xml;256;PASSED;
+       # <run-2>
+          SC;../omi2/addSipProfile.xml;246;PASSED;
+       # <run-3>
+          SC;../opi2/modifySvcNode.xml;113;PASSED;
+       # <run-4>
+          SC;../opi2/modifySASipPbx.xml;229;PASSED;
+       # <run-5>
+          SC;scenario/pause5.xml;5002;PASSED;
+     TC;tc/prefix_setup.xml;prefix_setup;5962;PASSED;null
+  # <run-5>
+     #------ Testcase file=tc/tc27_yyyy_tgrpforsubdomain_Prefix.xml name= tc27_yyyy_tgrpforsubdomain_Prefix ------
+       # <run-0>
+          SC;scenario/tcforsubdomainPrefix_link2.xml;82;PASSED;
+          SC;scenario/tcforsubdomainPrefix_link1.xml;92;PASSED;
+          SC;scenario/tcforsubdomainPrefix_orig.xml;126;PASSED;
+     TC;tc/tc27_yyyy_tgrpforsubdomain_Prefix.xml;tc27_yyyy_tgrpforsubdomain_Prefix;2339;PASSED;null
+     #------ Testcase file=tc/tc28_yyny_tgrpforsubdomain_Prefix.xml name= tc28_yyny_tgrpforsubdomain_Prefix ------
+       # <run-0>
+          SC;scenario/tcforsubdomainPrefix_link2.xml;90;PASSED;
+          SC;scenario/tcforsubdomainPrefix_link1.xml;105;PASSED;
+          SC;scenario/tcforsubdomainPrefix_orig.xml;139;PASSED;
+     TC;tc/tc28_yyny_tgrpforsubdomain_Prefix.xml;tc28_yyny_tgrpforsubdomain_Prefix;2352;PASSED;null
+     #------ Testcase file=tc/tc29_ynny_tgrpfordefault_Prefix.xml name= tc29_ynny_tgrpfordefault_Prefix ------
+       # <run-0>
+          SC;scenario/tcfordefaultPrefix_link2.xml;70;PASSED;
+          SC;scenario/tcfordefaultPrefix_link1.xml;80;PASSED;
+          SC;scenario/tcfordefaultPrefix_orig.xml;120;PASSED;
+     TC;tc/tc29_ynny_tgrpfordefault_Prefix.xml;tc29_ynny_tgrpfordefault_Prefix;2333;PASSED;null
+     #------ Testcase file=tc/tc30_ynyy_tgrpforsubrange_Prefix.xml name= tc30_ynyy_tgrpforsubrange_Prefix ------
+       # <run-0>
+          SC;scenario/tcforsubrangePrefix_link2.xml;90;PASSED;
+          SC;scenario/tcforsubrangePrefix_link1.xml;98;PASSED;
+          SC;scenario/tcforsubrangePrefix_orig.xml;137;PASSED;
+     TC;tc/tc30_ynyy_tgrpforsubrange_Prefix.xml;tc30_ynyy_tgrpforsubrange_Prefix;2350;PASSED;null
+     #------ Testcase file=tc/tc31_ynyn_tgrpfordefault_Prefix.xml name= tc31_ynyn_tgrpfordefault_Prefix ------
+       # <run-0>
+          SC;scenario/tcfordefaultPrefix_link2.xml;86;PASSED;
+          SC;scenario/tcfordefaultPrefix_link1.xml;101;PASSED;
+          SC;scenario/tcfordefaultPrefix_orig.xml;138;PASSED;
+     TC;tc/tc31_ynyn_tgrpfordefault_Prefix.xml;tc31_ynyn_tgrpfordefault_Prefix;2352;PASSED;null
+     #------ Testcase file=tc/tc32_nxxn_tgrpfordefault_Prefix.xml name= tc32_nxxn_tgrpfordefault_Prefix ------
+       # <run-0>
+          SC;scenario/tcfordefaultPrefix_link2.xml;89;PASSED;
+          SC;scenario/tcfordefaultPrefix_link1.xml;99;PASSED;
+          SC;scenario/tcfordefaultPrefix_orig.xml;121;PASSED;
+     TC;tc/tc32_nxxn_tgrpfordefault_Prefix.xml;tc32_nxxn_tgrpfordefault_Prefix;2335;PASSED;null
+     #------ Testcase file=tc/tc33_nxxy_tgrpforsubrange_Prefix.xml name= tc33_nxxy_tgrpforsubrange_Prefix  ------
+       # <run-0>
+          SC;scenario/tcforsubrangePrefix_link2.xml;83;PASSED;
+          SC;scenario/tcforsubrangePrefix_link1.xml;92;PASSED;
+          SC;scenario/tcforsubrangePrefix_orig.xml;130;PASSED;
+     TC;tc/tc33_nxxy_tgrpforsubrange_Prefix.xml;tc33_nxxy_tgrpforsubrange_Prefix;2343;PASSED;null
+  # <run-6>
+     #------ Testcase file=tc/prov_final.xml name= prov_final ------
+       # <run-0>
+          SC;../opi2/deleteTrunkGroup.xml;131;PASSED;
+          SC;../opi2/deleteTrunkGroup.xml;119;PASSED;
+       # <run-1>
+          SC;../opi2/removeDomain.xml;391;PASSED;
+          SC;../opi2/removeDomain.xml;330;PASSED;
+       # <run-2>
+          SC;../opi2/removeDomain.xml;434;PASSED;
+       # <run-3>
+          SC;../opi2/removeServiceNode.xml;134;PASSED;
+       # <run-4>
+          SC;../omi2/deleteStandAloneSipPbxSessMgrAssoc.xml;174;PASSED;
+       # <run-5>
+          SC;../omi2/deleteStandAloneSipPbx.xml;172;PASSED;
+       # <run-6>
+          SC;../omi2/deletePhysicalSite.xml;120;PASSED;
+       # <run-7>
+          SC;../omi2/deleteSipProfile.xml;293;PASSED;
+     TC;tc/prov_final.xml;prov_final;2718;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/Inheritance/test_suite.xml;Inheritance;115548;PASSED;

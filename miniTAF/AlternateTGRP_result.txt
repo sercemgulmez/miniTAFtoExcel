@@ -1,0 +1,235 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/AlternateTGRP/test_suite.xml name= AlternateTGRP ------
+  # <run-0>
+     #------ Testcase file=tc/prov_initial.xml name= prov_initial ------
+       # <run-0>
+          SC;../omi2/addSipProfile.xml;1502;PASSED;
+       # <run-1>
+          SC;../omi2/addPhysicalSite.xml;173;PASSED;
+       # <run-2>
+          SC;../omi2/addReroutingProfile.xml;1207;PASSED;
+       # <run-3>
+          SC;../omi2/addResponseCodeMap.xml;406;PASSED;
+       # <run-4>
+          SC;omi/addStandAloneSipPbx_static_trkgrp_2links.xml;352;PASSED;
+          SC;omi/addStandAloneSipPbx_static_trkgrp_2links.xml;238;PASSED;
+       # <run-5>
+          SC;../omi2/addStandAloneSipPbxSessMgrAssoc_static_trkgrp.xml;206;PASSED;
+          SC;../omi2/addStandAloneSipPbxSessMgrAssoc_static_trkgrp.xml;109;PASSED;
+       # <run-6>
+          SC;../omi2/makeStandAloneSipPbxOnline_static_trkgrp.xml;106;PASSED;
+          SC;../omi2/makeStandAloneSipPbxOnline_static_trkgrp.xml;83;PASSED;
+          SC;../omi2/makeStandAloneSipPbxOnline_static_trkgrp.xml;88;PASSED;
+          SC;../omi2/makeStandAloneSipPbxOnline_static_trkgrp.xml;83;PASSED;
+       # <run-7>
+          SC;../omi2/addInformationalElement.xml;131;PASSED;
+       # <run-8>
+          SC;../opi2/addRootDomain.xml;320;PASSED;
+       # <run-9>
+          SC;../opi2/setDomainResourcesforSAPBX.xml;269;PASSED;
+       # <run-10>
+          SC;../opi2/addSubDomain.xml;173;PASSED;
+       # <run-11>
+          SC;../opi2/addServiceNode.xml;205;PASSED;
+          SC;../opi2/addServiceNode.xml;242;PASSED;
+          SC;../opi2/addServiceNode.xml;268;PASSED;
+       # <run-12>
+          SC;../opi2/assignDomainToServiceNode.xml;139;PASSED;
+          SC;../opi2/assignDomainToServiceNode.xml;158;PASSED;
+          SC;../opi2/assignDomainToServiceNode.xml;159;PASSED;
+       # <run-13>
+          SC;../opi2/addSASipPbx.xml;427;PASSED;
+          SC;../opi2/addSASipPbx.xml;455;PASSED;
+       # <run-14>
+          SC;../opi2/setAdministrativeStateForSAPbx.xml;150;PASSED;
+          SC;../opi2/setAdministrativeStateForSAPbx.xml;157;PASSED;
+       # <run-15>
+          SC;../opi2/addSystemDNRange.xml;875;PASSED;
+       # <run-16>
+          SC;../opi2/addSubRangeToSipPbx.xml;373;PASSED;
+          SC;../opi2/addSubRangeToSipPbx.xml;375;PASSED;
+          SC;../opi2/addSubRangeToSipPbx.xml;378;PASSED;
+       # <run-17>
+          SC;opi/addSingleUserwithoutSesmAssociationToSubdomain.xml;207;PASSED;
+       # <run-18>
+          SC;../opi2/setUserDirectoryNumber.xml;216;PASSED;
+       # <run-19>
+          SC;../opi2/linkExtensionUsersToSASipPbx.xml;113;PASSED;
+       # <run-20>
+          SC;../opi2/addTrunkGroup.xml;5492;PASSED;
+          SC;../opi2/addTrunkGroup.xml;5497;PASSED;
+       # <run-21>
+          SC;../opi2/setResiliancyDataForSASipPbx.xml;132;PASSED;
+       # <run-22>
+          SC;../opi2/addLogicalEntity.xml;319;PASSED;
+          SC;../opi2/assignDomainsToPooledRoute.xml;110;PASSED;
+          SC;../opi2/addExternalAppService.xml;955;PASSED;
+          SC;../opi2/addExternalAppService.xml;111;PASSED;
+          SC;../opi2/addExternalAppProfile.xml;325;PASSED;
+     TC;tc/prov_initial.xml;prov_initial;18697;PASSED;null
+  # <run-1>
+     #------ Testcase file=tc/tc1_links_with_alternate_no_answer.xml name= tc1_links_with_alternate_no_answer ------
+       # <run-0>
+          SC;scenario/tc1_orig.xml;1011;PASSED;
+          SC;scenario/tc1_link1.xml;1483;PASSED;
+          SC;scenario/tc1_link2.xml;1494;PASSED;
+     TC;tc/tc1_links_with_alternate_no_answer.xml;tc1_links_with_alternate_no_answer;3717;PASSED;null
+     #------ Testcase file=tc/tc2_links_with_alternate_answered.xml name= tc2_links_with_alternate_answered ------
+       # <run-0>
+          SC;scenario/tc2_orig.xml;193;PASSED;
+          SC;scenario/tc2_link2.xml;198;PASSED;
+          SC;scenario/tc2_link1.xml;566;PASSED;
+     TC;tc/tc2_links_with_alternate_answered.xml;tc2_links_with_alternate_answered;2817;PASSED;null
+     #------ Testcase file=tc/tc3_redirected_with_302.xml name= tc3_redirected_with_302 ------
+       # <run-0>
+          SC;scenario/tc3_orig.xml;238;PASSED;
+          SC;scenario/tc3_link2.xml;241;PASSED;
+          SC;scenario/tc3_link1.xml;613;PASSED;
+     TC;tc/tc3_redirected_with_302.xml;tc3_redirected_with_302;2861;PASSED;null
+     #------ Testcase file=tc/tc5_links_with_alternate_no_answer_outOfRange_defaultTgrp.xml name= tc5_links_with_alternate_no_answer_outOfRange_defaultTgrp ------
+       # <run-0>
+          SC;scenario/tc5_orig.xml;82;PASSED;
+          SC;scenario/tc5_link1.xml;564;PASSED;
+          SC;scenario/tc5_link2.xml;576;PASSED;
+     TC;tc/tc5_links_with_alternate_no_answer_outOfRange_defaultTgrp.xml;tc5_links_with_alternate_no_answer_outOfRange_defaultTgrp;2793;PASSED;null
+     #------ Testcase file=tc/tc6_links_with_alternate_no_answer_subdomainTgrp.xml name= tc6_links_with_alternate_no_answer_subdomainTgrp ------
+       # <run-0>
+          SC;scenario/tc6_orig.xml;74;PASSED;
+          SC;scenario/tc6_link1.xml;559;PASSED;
+          SC;scenario/tc6_link2.xml;570;PASSED;
+     TC;tc/tc6_links_with_alternate_no_answer_subdomainTgrp.xml;tc6_links_with_alternate_no_answer_subdomainTgrp;2787;PASSED;null
+     #------ Testcase file=tc/tc17_answered_before_alternate.xml name= tc17_answered_before_alternate ------
+       # <run-0>
+          SC;scenario/tc17_link1.xml;535;PASSED;
+          SC;scenario/tc17_orig.xml;691;PASSED;
+          SC;scenario/tc17_link2.xml;694;PASSED;
+     TC;tc/tc17_answered_before_alternate.xml;tc17_answered_before_alternate;2911;PASSED;null
+  # <run-2>
+     #------ Testcase file=tc/prov_enableXAS.xml name= prov_enableXAS ------
+       # <run-0>
+          SC;../opi2/setExternalAppDomainData.xml;182;PASSED;
+     TC;tc/prov_enableXAS.xml;prov_enableXAS;186;PASSED;null
+     #------ Testcase file=tc/pause.xml name= pause ------
+       # <run-0>
+          SC;scenario/pause5.xml;5003;PASSED;
+     TC;tc/pause.xml;pause;5005;PASSED;null
+  # <run-3>
+     #------ Testcase file=tc/tc7_links_with_alternate_no_answer_withXAS.xml name= tc7_links_with_alternate_no_answer_withXAS ------
+       # <run-0>
+          SC;scenario/tc7_orig.xml;165;PASSED;
+          SC;scenario/tc7_link1.xml;621;PASSED;
+          SC;scenario/tc7_link2.xml;632;PASSED;
+          SC;scenario/tc7_xas.xml;659;PASSED;
+     TC;tc/tc7_links_with_alternate_no_answer_withXAS.xml;tc7_links_with_alternate_no_answer_withXAS;2878;PASSED;null
+     #------ Testcase file=tc/tc8_redirected_with_302_withXAS.xml name= tc8_redirected_with_302_withXAS ------
+       # <run-0>
+          SC;scenario/tc8_orig.xml;272;PASSED;
+          SC;scenario/tc8_link2.xml;275;PASSED;
+          SC;scenario/tc8_xas.xml;613;PASSED;
+          SC;scenario/tc8_link1.xml;650;PASSED;
+     TC;tc/tc8_redirected_with_302_withXAS.xml;tc8_redirected_with_302_withXAS;2875;PASSED;null
+  # <run-4>
+     #------ Testcase file=tc/prov_disableXAS.xml name= prov_disableXAS ------
+       # <run-0>
+          SC;../opi2/removeExternalAppDomainData.xml;108;PASSED;
+     TC;tc/prov_disableXAS.xml;prov_disableXAS;112;PASSED;null
+     #------ Testcase file=tc/prov_updateStandAloneSipPbxWithOnly1TransportLink.xml name= prov_updateStandAloneSipPbxWithOnly1TransportLink ------
+       # <run-0>
+          SC;omi/updateStandAloneSipPbxWithOnly1TransportLink.xml;218;PASSED;
+     TC;tc/prov_updateStandAloneSipPbxWithOnly1TransportLink.xml;prov_updateStandAloneSipPbxWithOnly1TransportLink;223;PASSED;null
+     #------ Testcase file=tc/pause.xml name= pause ------
+       # <run-0>
+          SC;scenario/pause5.xml;5002;PASSED;
+     TC;tc/pause.xml;pause;5006;PASSED;null
+  # <run-5>
+     #------ Testcase file=tc/tc9_links_with_alternate_no_answer.xml name= tc9_links_with_alternate_no_answer ------
+       # <run-0>
+          SC;scenario/tc1_orig.xml;50;PASSED;
+          SC;scenario/tc1_link2.xml;545;PASSED;
+     TC;tc/tc9_links_with_alternate_no_answer.xml;tc9_links_with_alternate_no_answer;2758;PASSED;null
+     #------ Testcase file=tc/tc10_links_with_alternate_answered.xml name= tc10_links_with_alternate_answered ------
+       # <run-0>
+          SC;scenario/tc2_orig.xml;155;PASSED;
+          SC;scenario/tc2_link2.xml;158;PASSED;
+     TC;tc/tc10_links_with_alternate_answered.xml;tc10_links_with_alternate_answered;2374;PASSED;null
+     #------ Testcase file=tc/tc11_redirected_with_302.xml name= tc11_redirected_with_302 ------
+       # <run-0>
+          SC;scenario/tc3_orig.xml;184;PASSED;
+          SC;scenario/tc3_link2.xml;188;PASSED;
+     TC;tc/tc11_redirected_with_302.xml;tc11_redirected_with_302;2406;PASSED;null
+     #------ Testcase file=tc/tc12_redirected_with_302_multiple_contacts.xml name= tc12_redirected_with_302_multiple_contacts ------
+       # <run-0>
+          SC;scenario/tc4_orig.xml;214;PASSED;
+          SC;scenario/tc4_link2.xml;218;PASSED;
+     TC;tc/tc12_redirected_with_302_multiple_contacts.xml;tc12_redirected_with_302_multiple_contacts;2438;PASSED;null
+     #------ Testcase file=tc/tc13_links_with_alternate_no_answer_outOfRange_defaultTgrp.xml name= tc13_links_with_alternate_no_answer_outOfRange_defaultTgrp ------
+       # <run-0>
+          SC;scenario/tc5_orig.xml;37;PASSED;
+          SC;scenario/tc5_link2.xml;531;PASSED;
+     TC;tc/tc13_links_with_alternate_no_answer_outOfRange_defaultTgrp.xml;tc13_links_with_alternate_no_answer_outOfRange_defaultTgrp;2744;PASSED;null
+     #------ Testcase file=tc/tc14_links_with_alternate_no_answer_subdomainTgrp.xml name= tc14_links_with_alternate_no_answer_subdomainTgrp ------
+       # <run-0>
+          SC;scenario/tc6_orig.xml;49;PASSED;
+          SC;scenario/tc6_link2.xml;543;PASSED;
+     TC;tc/tc14_links_with_alternate_no_answer_subdomainTgrp.xml;tc14_links_with_alternate_no_answer_subdomainTgrp;2758;PASSED;null
+  # <run-6>
+     #------ Testcase file=tc/prov_enableXAS.xml name= prov_enableXAS ------
+       # <run-0>
+          SC;../opi2/setExternalAppDomainData.xml;106;PASSED;
+     TC;tc/prov_enableXAS.xml;prov_enableXAS;110;PASSED;null
+     #------ Testcase file=tc/pause.xml name= pause ------
+       # <run-0>
+          SC;scenario/pause5.xml;5003;PASSED;
+     TC;tc/pause.xml;pause;5006;PASSED;null
+  # <run-7>
+     #------ Testcase file=tc/tc15_links_with_alternate_no_answer_withXAS.xml name= tc15_links_with_alternate_no_answer_withXAS ------
+       # <run-0>
+          SC;scenario/tc7_orig.xml;84;PASSED;
+          SC;scenario/tc7_link2.xml;561;PASSED;
+          SC;scenario/tc7_xas.xml;578;PASSED;
+     TC;tc/tc15_links_with_alternate_no_answer_withXAS.xml;tc15_links_with_alternate_no_answer_withXAS;2796;PASSED;null
+     #------ Testcase file=tc/tc16_redirected_with_302_withXAS.xml name= tc16_redirected_with_302_withXAS ------
+       # <run-0>
+          SC;scenario/tc8_orig.xml;223;PASSED;
+          SC;scenario/tc8_link2.xml;226;PASSED;
+          SC;scenario/tc8_xas.xml;587;PASSED;
+     TC;tc/tc16_redirected_with_302_withXAS.xml;tc16_redirected_with_302_withXAS;2805;PASSED;null
+  # <run-8>
+     #------ Testcase file=tc/prov_disableXAS.xml name= prov_disableXAS ------
+       # <run-0>
+          SC;../opi2/removeExternalAppDomainData.xml;105;PASSED;
+     TC;tc/prov_disableXAS.xml;prov_disableXAS;108;PASSED;null
+     #------ Testcase file=tc/prov_final.xml name= prov_final ------
+       # <run-0>
+          SC;../opi2/deleteExternalAppProfile.xml;118;PASSED;
+          SC;../opi2/deleteExternalAppService.xml;104;PASSED;
+          SC;../opi2/deleteExternalAppService.xml;80;PASSED;
+          SC;../opi2/removeLogicalEntity.xml;236;PASSED;
+       # <run-1>
+          SC;../opi2/deleteTrunkGroup.xml;125;PASSED;
+          SC;../opi2/deleteTrunkGroup.xml;133;PASSED;
+       # <run-2>
+          SC;../opi2/removeSubDomain.xml;2082;PASSED;
+       # <run-3>
+          SC;../opi2/removeDomain.xml;525;PASSED;
+       # <run-4>
+          SC;../opi2/removeServiceNode.xml;144;PASSED;
+          SC;../opi2/removeServiceNode.xml;178;PASSED;
+          SC;../opi2/removeServiceNode.xml;204;PASSED;
+       # <run-5>
+          SC;../omi2/removeInformationalElement.xml;205;PASSED;
+       # <run-6>
+          SC;../omi2/deleteStandAloneSipPbxSessMgrAssoc.xml;131;PASSED;
+          SC;../omi2/deleteStandAloneSipPbxSessMgrAssoc.xml;95;PASSED;
+       # <run-7>
+          SC;../omi2/deleteStandAloneSipPbx.xml;124;PASSED;
+          SC;../omi2/deleteStandAloneSipPbx.xml;110;PASSED;
+       # <run-8>
+          SC;../omi2/deleteResponseCodeMap.xml;161;PASSED;
+       # <run-9>
+          SC;../omi2/deleteReroutingProfile.xml;203;PASSED;
+       # <run-10>
+          SC;../omi2/deletePhysicalSite.xml;142;PASSED;
+       # <run-11>
+          SC;../omi2/deleteSipProfile.xml;537;PASSED;
+     TC;tc/prov_final.xml;prov_final;6030;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/AlternateTGRP/test_suite.xml;AlternateTGRP;85435;PASSED;

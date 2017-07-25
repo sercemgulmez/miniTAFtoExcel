@@ -1,0 +1,543 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/DNRange/test_suite.xml name= DNRange ------
+  # <run-0>
+     #------ Testcase file=tc/tc-1_addTgrpPbxSetup.xml name= tc-1_addTgrpPbxSetup ------
+       # <run-0>
+          SC;../omi2/addPhysicalSite.xml;578;PASSED;
+       # <run-1>
+          SC;../omi/addStandAloneSipPbx_static_trkgrp.xml;315;PASSED;
+       # <run-2>
+          SC;../omi/addStandAloneSipPbxSessMgrAssoc_static_trkgrp.xml;141;PASSED;
+       # <run-3>
+          SC;../omi/makeStandAloneSipPbxOnline_static_trkgrp.xml;163;PASSED;
+       # <run-4>
+          SC;../opi/addRootDomain.xml;123;PASSED;
+       # <run-5>
+          SC;../opi/setDomainResourcesforSAPBX.xml;201;PASSED;
+       # <run-6>
+          SC;../opi/addServiceNode.xml;124;PASSED;
+       # <run-7>
+          SC;../opi/assignDomainToServiceNode.xml;61;PASSED;
+       # <run-8>
+          SC;opi/addSASipPbx.xml;239;PASSED;
+       # <run-9>
+          SC;../opi/setAdministrativeStateForSAPbx.xml;110;PASSED;
+       # <run-10>
+          SC;../opi/addSystemDNRange.xml;113;PASSED;
+       # <run-11>
+          SC;../opi/addSubRangeToSipPbx.xml;95;PASSED;
+       # <run-12>
+          SC;../opi/addSingleUserwithoutSesmAssociation.xml;209;PASSED;
+       # <run-13>
+          SC;../opi/setUserDirectoryNumber.xml;166;PASSED;
+       # <run-14>
+          SC;../opi/linkExtensionUsersToSASipPbx.xml;121;PASSED;
+     TC;tc/tc-1_addTgrpPbxSetup.xml;tc-1_addTgrpPbxSetup;5923;PASSED;null
+     #------ Testcase file=tc/tc-2_addTerm1DynamicPbxSetup.xml name= tc-2_addTerm1DynamicPbxSetup ------
+       # <run-0>
+          SC;../omi/addStandAloneSipPbx.xml;2092;PASSED;
+       # <run-1>
+          SC;../omi/addStandAloneSipPbxSessMgrAssoc.xml;2145;PASSED;
+       # <run-2>
+          SC;../omi/makeStandAloneSipPbxOnline.xml;2108;PASSED;
+       # <run-3>
+          SC;../opi/addRootDomain.xml;148;PASSED;
+       # <run-4>
+          SC;../opi/setDomainResourcesforSAPBX.xml;191;PASSED;
+       # <run-5>
+          SC;../opi/addServiceNode.xml;121;PASSED;
+       # <run-6>
+          SC;../opi/assignDomainToServiceNode.xml;60;PASSED;
+       # <run-7>
+          SC;opi/addSASipPbx.xml;153;PASSED;
+       # <run-8>
+          SC;../opi/setAdministrativeStateForSAPbx.xml;99;PASSED;
+       # <run-9>
+          SC;../opi/addSystemDNRange.xml;85;PASSED;
+       # <run-10>
+          SC;../opi/addSubRangeToSipPbx.xml;74;PASSED;
+       # <run-11>
+          SC;../opi/addSingleUserwithoutSesmAssociation.xml;158;PASSED;
+       # <run-12>
+          SC;../opi/setUserDirectoryNumber.xml;144;PASSED;
+       # <run-13>
+          SC;../opi/linkExtensionUsersToSASipPbx.xml;99;PASSED;
+     TC;tc/tc-2_addTerm1DynamicPbxSetup.xml;tc-2_addTerm1DynamicPbxSetup;10572;PASSED;null
+     #------ Testcase file=tc/tc-3_addTerm2DynamicPbxSetup.xml name= tc-3_addTerm2DynamicPbxSetup.xml ------
+       # <run-0>
+          SC;../omi/addStandAloneSipPbx_static.xml;154;PASSED;
+       # <run-1>
+          SC;../omi/addStandAloneSipPbxSessMgrAssoc.xml;2098;PASSED;
+       # <run-2>
+          SC;../omi/makeStandAloneSipPbxOnline_static_trkgrp.xml;107;PASSED;
+       # <run-3>
+          SC;../opi/addRootDomain.xml;110;PASSED;
+       # <run-4>
+          SC;../opi/setDomainResourcesforSAPBX.xml;225;PASSED;
+       # <run-5>
+          SC;../opi/addServiceNode.xml;102;PASSED;
+       # <run-6>
+          SC;../opi/assignDomainToServiceNode.xml;61;PASSED;
+       # <run-7>
+          SC;opi/addSASipPbx.xml;145;PASSED;
+       # <run-8>
+          SC;../opi/setAdministrativeStateForSAPbx.xml;83;PASSED;
+       # <run-9>
+          SC;../opi/addSystemDNRange.xml;120;PASSED;
+       # <run-10>
+          SC;../opi/addSubRangeToSipPbx.xml;97;PASSED;
+     TC;tc/tc-3_addTerm2DynamicPbxSetup.xml;tc-3_addTerm2DynamicPbxSetup;5587;PASSED;null
+     #------ Testcase file=tc/tc-1_OrigLoadedbyFromIdScrOffPBXMatchRouScrOn.xml name= tc-1_OrigLoadedbyFromIdScrOffPBXMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;99;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;221;PASSED;
+       # <run-2>
+          SC;scenario/sc-1_OrigLoadedbyFromIdScrOffPBXMatchRouScrOnOrig.xml;1084;PASSED;
+          SC;scenario/sc-1_OrigLoadedbyFromIdScrOffPBXMatchRouScrOnTerm.xml;1384;PASSED;
+     TC;tc/tc-1_OrigLoadedbyFromIdScrOffPBXMatchRouScrOn.xml;tc-1_OrigLoadedbyFromIdScrOffPBXMatchRouScrOn;4335;PASSED;null
+     #------ Testcase file=tc/tc-2_OrigLoadedbyPaiIdScrOffPBXMatchRouScrOn.xml name= tc-2_OrigLoadedbyPaiIdScrOffPBXMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;106;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;164;PASSED;
+       # <run-2>
+          SC;scenario/sc-2_OrigLoadedbyPaiIdScrOffPBXMatchRouScrOnOrig.xml;804;PASSED;
+          SC;scenario/sc-2_OrigLoadedbyPaiIdScrOffPBXMatchRouScrOnTerm.xml;1101;PASSED;
+     TC;tc/tc-2_OrigLoadedbyPaiIdScrOffPBXMatchRouScrOn.xml;tc-2_OrigLoadedbyPaiIdScrOffPBXMatchRouScrOn;4034;PASSED;null
+     #------ Testcase file=tc/tc-3_OrigLoadedbyReferredByIdScrOffPBXMatchRouScrOn.xml name= tc-3_OrigLoadedbyReferredByIdScrOffPBXMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;105;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;146;PASSED;
+       # <run-2>
+          SC;scenario/sc-3_OrigLoadedbyReferredByIdScrOffPBXMatchRouScrOnOrig.xml;801;PASSED;
+          SC;scenario/sc-3_OrigLoadedbyReferredByIdScrOffPBXMatchRouScrOnTerm.xml;1089;PASSED;
+     TC;tc/tc-3_OrigLoadedbyReferredByIdScrOffPBXMatchRouScrOn.xml;tc-3_OrigLoadedbyReferredByIdScrOffPBXMatchRouScrOn;3966;PASSED;null
+     #------ Testcase file=tc/tc-4_OrigLoadedbyDiversionIdScrOffPBXMatchRouScrOn.xml name= tc-4_OrigLoadedbyDiversionIdScrOffPBXMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;128;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;196;PASSED;
+       # <run-2>
+          SC;scenario/sc-4_OrigLoadedbyDiversionIdScrOffPBXMatchRouScrOnOrig.xml;815;PASSED;
+          SC;scenario/sc-4_OrigLoadedbyDiversionIdScrOffPBXMatchRouScrOnTerm.xml;1099;PASSED;
+     TC;tc/tc-4_OrigLoadedbyDiversionIdScrOffPBXMatchRouScrOn.xml;tc-4_OrigLoadedbyDiversionIdScrOffPBXMatchRouScrOn;4049;PASSED;null
+     #------ Testcase file=tc/tc-5_OrigLoadedbyHistoryInfoIdScrOffPBXMatchRouScrOn.xml name= tc-5_OrigLoadedbyHistoryInfoIdScrOffPBXMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;85;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;146;PASSED;
+       # <run-2>
+          SC;scenario/sc-5_OrigLoadedbyHistoryInfoIdScrOffPBXMatchRouScrOnOrig.xml;795;PASSED;
+          SC;scenario/sc-5_OrigLoadedbyHistoryInfoIdScrOffPBXMatchRouScrOnTerm.xml;1096;PASSED;
+     TC;tc/tc-5_OrigLoadedbyHistoryInfoIdScrOffPBXMatchRouScrOn.xml;tc-5_OrigLoadedbyHistoryInfoIdScrOffPBXMatchRouScrOn;3954;PASSED;null
+     #------ Testcase file=tc/tc-6_OrigLoadedbyFromIdScrOnPBXMatchRouScrOff.xml name= tc-6_OrigLoadedbyFromIdScrOnPBXMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;97;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;147;PASSED;
+       # <run-2>
+          SC;scenario/sc-6_OrigLoadedbyFromIdScrOnPBXMatchRouScrOffOrig.xml;796;PASSED;
+          SC;scenario/sc-6_OrigLoadedbyFromIdScrOnPBXMatchRouScrOffTerm.xml;1089;PASSED;
+     TC;tc/tc-6_OrigLoadedbyFromIdScrOnPBXMatchRouScrOff.xml;tc-6_OrigLoadedbyFromIdScrOnPBXMatchRouScrOff;3959;PASSED;null
+     #------ Testcase file=tc/tc-7_OrigLoadedbyPaiIdScrOnPBXMatchRouScrOff.xml name= tc-7_OrigLoadedbyPaiIdScrOnPBXMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;94;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;148;PASSED;
+       # <run-2>
+          SC;scenario/sc-7_OrigLoadedbyPaiIdScrOnPBXMatchRouScrOffOrig.xml;793;PASSED;
+          SC;scenario/sc-7_OrigLoadedbyPaiIdScrOnPBXMatchRouScrOffTerm.xml;1096;PASSED;
+     TC;tc/tc-7_OrigLoadedbyPaiIdScrOnPBXMatchRouScrOff.xml;tc-7_OrigLoadedbyPaiIdScrOnPBXMatchRouScrOff;3972;PASSED;null
+     #------ Testcase file=tc/tc-8_OrigLoadedbyReferredByIdScrOnPBXMatchRouScrOff.xml name= tc-8_OrigLoadedbyReferredByIdScrOnPBXMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;94;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;203;PASSED;
+       # <run-2>
+          SC;scenario/sc-8_OrigLoadedbyReferredByIdScrOnPBXMatchRouScrOffOrig.xml;795;PASSED;
+          SC;scenario/sc-8_OrigLoadedbyReferredByIdScrOnPBXMatchRouScrOffTerm.xml;1076;PASSED;
+     TC;tc/tc-8_OrigLoadedbyReferredByIdScrOnPBXMatchRouScrOff.xml;tc-8_OrigLoadedbyReferredByIdScrOnPBXMatchRouScrOff;3998;PASSED;null
+     #------ Testcase file=tc/tc-9_OrigLoadedbyDiversionIdScrOnPBXMatchRouScrOff.xml name= tc-9_OrigLoadedbyDiversionIdScrOnPBXMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;104;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;164;PASSED;
+       # <run-2>
+          SC;scenario/sc-9_OrigLoadedbyDiversionIdScrOnPBXMatchRouScrOffOrig.xml;797;PASSED;
+          SC;scenario/sc-9_OrigLoadedbyDiversionIdScrOnPBXMatchRouScrOffTerm.xml;1193;PASSED;
+     TC;tc/tc-9_OrigLoadedbyDiversionIdScrOnPBXMatchRouScrOff.xml;tc-9_OrigLoadedbyDiversionIdScrOnPBXMatchRouScrOff;4085;PASSED;null
+     #------ Testcase file=tc/tc-10_OrigLoadedbyHistoryInfoIdScrOnPBXMatchRouScrOff.xml name= tc-10_OrigLoadedbyHistoryInfoIdScrOnPBXMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;97;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;159;PASSED;
+       # <run-2>
+          SC;scenario/sc-10_OrigLoadedbyHistoryInfoIdScrOnPBXMatchRouScrOffOrig.xml;797;PASSED;
+          SC;scenario/sc-10_OrigLoadedbyHistoryInfoIdScrOnPBXMatchRouScrOffTerm.xml;1094;PASSED;
+     TC;tc/tc-10_OrigLoadedbyHistoryInfoIdScrOnPBXMatchRouScrOff.xml;tc-10_OrigLoadedbyHistoryInfoIdScrOnPBXMatchRouScrOff;3973;PASSED;null
+     #------ Testcase file=tc/tc-11_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOn.xml name= tc-11_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;83;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;326;PASSED;
+       # <run-2>
+          SC;scenario/sc-11_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOnOrig.xml;215;PASSED;
+     TC;tc/tc-11_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOn.xml;tc-11_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOn;3244;PASSED;null
+     #------ Testcase file=tc/tc-12_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOn.xml name= tc-12_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;123;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;158;PASSED;
+       # <run-2>
+          SC;scenario/sc-12_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOnOrig.xml;214;PASSED;
+     TC;tc/tc-12_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOn.xml;tc-12_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOn;3111;PASSED;null
+     #------ Testcase file=tc/tc-13_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOn.xml name= tc-13_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;87;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;147;PASSED;
+       # <run-2>
+          SC;scenario/sc-13_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOnOrig.xml;214;PASSED;
+     TC;tc/tc-13_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOn.xml;tc-13_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOn;3065;PASSED;null
+     #------ Testcase file=tc/tc-14_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOn.xml name= tc-14_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;88;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;165;PASSED;
+       # <run-2>
+          SC;scenario/sc-14_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOnOrig.xml;214;PASSED;
+     TC;tc/tc-14_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOn.xml;tc-14_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOn;3084;PASSED;null
+     #------ Testcase file=tc/tc-15_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOn.xml name= tc-15_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;91;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;190;PASSED;
+       # <run-2>
+          SC;scenario/sc-15_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOnOrig.xml;213;PASSED;
+     TC;tc/tc-15_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOn.xml;tc-15_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOn;3119;PASSED;null
+     #------ Testcase file=tc/tc-16_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOff.xml name= tc-16_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;107;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;176;PASSED;
+       # <run-2>
+          SC;scenario/sc-16_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOffOrig.xml;793;PASSED;
+          SC;scenario/sc-16_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOffTerm.xml;1078;PASSED;
+     TC;tc/tc-16_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOff.xml;tc-16_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOff;3984;PASSED;null
+     #------ Testcase file=tc/tc-17_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOff.xml name= tc-17_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;193;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;175;PASSED;
+       # <run-2>
+          SC;scenario/sc-17_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOffOrig.xml;799;PASSED;
+          SC;scenario/sc-17_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOffTerm.xml;1096;PASSED;
+     TC;tc/tc-17_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOff.xml;tc-17_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOff;4091;PASSED;null
+     #------ Testcase file=tc/tc-18_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOff.xml name= tc-18_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;102;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;153;PASSED;
+       # <run-2>
+          SC;scenario/sc-18_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOffOrig.xml;791;PASSED;
+          SC;scenario/sc-18_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOffTerm.xml;1083;PASSED;
+     TC;tc/tc-18_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOff.xml;tc-18_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOff;3960;PASSED;null
+     #------ Testcase file=tc/tc-19_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOff.xml name= tc-19_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;86;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;151;PASSED;
+       # <run-2>
+          SC;scenario/sc-19_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOffOrig.xml;794;PASSED;
+          SC;scenario/sc-19_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOffTerm.xml;1104;PASSED;
+     TC;tc/tc-19_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOff.xml;tc-19_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOff;3967;PASSED;null
+     #------ Testcase file=tc/tc-20_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOff.xml name= tc-20_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;90;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;148;PASSED;
+       # <run-2>
+          SC;scenario/sc-20_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOffOrig.xml;794;PASSED;
+          SC;scenario/sc-20_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOffTerm.xml;1087;PASSED;
+     TC;tc/tc-20_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOff.xml;tc-20_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOff;3946;PASSED;null
+     #------ Testcase file=tc/tc-1-ipPort_OrigLoadedbyFromIdScrOffPBXMatchRouScrOn.xml name= tc-1_OrigLoadedbyFromIdScrOffPBXMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;86;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;164;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-1_OrigLoadedbyFromIdScrOffPBXMatchRouScrOnOrig.xml;793;PASSED;
+          SC;scenario/sc-ipport-1_OrigLoadedbyFromIdScrOffPBXMatchRouScrOnTerm.xml;1086;PASSED;
+     TC;tc/tc-1-ipPort_OrigLoadedbyFromIdScrOffPBXMatchRouScrOn.xml;tc-1-ipPort_OrigLoadedbyFromIdScrOffPBXMatchRouScrOn;3958;PASSED;null
+     #------ Testcase file=tc/tc-2-ipPort_OrigLoadedbyPaiIdScrOffPBXMatchRouScrOn.xml name= tc-2_OrigLoadedbyPaiIdScrOffPBXMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;94;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;140;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-2_OrigLoadedbyPaiIdScrOffPBXMatchRouScrOnOrig.xml;791;PASSED;
+          SC;scenario/sc-ipport-2_OrigLoadedbyPaiIdScrOffPBXMatchRouScrOnTerm.xml;1092;PASSED;
+     TC;tc/tc-2-ipPort_OrigLoadedbyPaiIdScrOffPBXMatchRouScrOn.xml;tc-2-ipPort_OrigLoadedbyPaiIdScrOffPBXMatchRouScrOn;3947;PASSED;null
+     #------ Testcase file=tc/tc-3-ipPort_OrigLoadedbyReferredByIdScrOffPBXMatchRouScrOn.xml name= tc-3_OrigLoadedbyReferredByIdScrOffPBXMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;93;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;149;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-3_OrigLoadedbyReferredByIdScrOffPBXMatchRouScrOnOrig.xml;792;PASSED;
+          SC;scenario/sc-ipport-3_OrigLoadedbyReferredByIdScrOffPBXMatchRouScrOnTerm.xml;1093;PASSED;
+     TC;tc/tc-3-ipPort_OrigLoadedbyReferredByIdScrOffPBXMatchRouScrOn.xml;tc-3-ipPort_OrigLoadedbyReferredByIdScrOffPBXMatchRouScrOn;3958;PASSED;null
+     #------ Testcase file=tc/tc-4-ipPort_OrigLoadedbyDiversionIdScrOffPBXMatchRouScrOn.xml name= tc-4_OrigLoadedbyDiversionIdScrOffPBXMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;97;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;158;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-4_OrigLoadedbyDiversionIdScrOffPBXMatchRouScrOnOrig.xml;793;PASSED;
+          SC;scenario/sc-ipport-4_OrigLoadedbyDiversionIdScrOffPBXMatchRouScrOnTerm.xml;1083;PASSED;
+     TC;tc/tc-4-ipPort_OrigLoadedbyDiversionIdScrOffPBXMatchRouScrOn.xml;tc-4-ipPort_OrigLoadedbyDiversionIdScrOffPBXMatchRouScrOn;3959;PASSED;null
+     #------ Testcase file=tc/tc-5-ipPort_OrigLoadedbyHistoryInfoIdScrOffPBXMatchRouScrOn.xml name= tc-5_OrigLoadedbyHistoryInfoIdScrOffPBXMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;145;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;158;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-5_OrigLoadedbyHistoryInfoIdScrOffPBXMatchRouScrOnOrig.xml;793;PASSED;
+          SC;scenario/sc-ipport-5_OrigLoadedbyHistoryInfoIdScrOffPBXMatchRouScrOnTerm.xml;1094;PASSED;
+     TC;tc/tc-5-ipPort_OrigLoadedbyHistoryInfoIdScrOffPBXMatchRouScrOn.xml;tc-5-ipPort_OrigLoadedbyHistoryInfoIdScrOffPBXMatchRouScrOn;4020;PASSED;null
+     #------ Testcase file=tc/tc-6-ipPort_OrigLoadedbyFromIdScrOnPBXMatchRouScrOff.xml name= tc-6_OrigLoadedbyFromIdScrOnPBXMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;90;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;177;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-6_OrigLoadedbyFromIdScrOnPBXMatchRouScrOffOrig.xml;790;PASSED;
+          SC;scenario/sc-ipport-6_OrigLoadedbyFromIdScrOnPBXMatchRouScrOffTerm.xml;1092;PASSED;
+     TC;tc/tc-6-ipPort_OrigLoadedbyFromIdScrOnPBXMatchRouScrOff.xml;tc-6-ipPort_OrigLoadedbyFromIdScrOnPBXMatchRouScrOff;3980;PASSED;null
+     #------ Testcase file=tc/tc-7-ipPort_OrigLoadedbyPaiIdScrOnPBXMatchRouScrOff.xml name= tc-7_OrigLoadedbyPaiIdScrOnPBXMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;119;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;154;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-7_OrigLoadedbyPaiIdScrOnPBXMatchRouScrOffOrig.xml;793;PASSED;
+          SC;scenario/sc-ipport-7_OrigLoadedbyPaiIdScrOnPBXMatchRouScrOffTerm.xml;1102;PASSED;
+     TC;tc/tc-7-ipPort_OrigLoadedbyPaiIdScrOnPBXMatchRouScrOff.xml;tc-7-ipPort_OrigLoadedbyPaiIdScrOnPBXMatchRouScrOff;4002;PASSED;null
+     #------ Testcase file=tc/tc-8-ipPort_OrigLoadedbyReferredByIdScrOnPBXMatchRouScrOff.xml name= tc-8_OrigLoadedbyReferredByIdScrOnPBXMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;116;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;184;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-8_OrigLoadedbyReferredByIdScrOnPBXMatchRouScrOffOrig.xml;796;PASSED;
+          SC;scenario/sc-ipport-8_OrigLoadedbyReferredByIdScrOnPBXMatchRouScrOffTerm.xml;1097;PASSED;
+     TC;tc/tc-8-ipPort_OrigLoadedbyReferredByIdScrOnPBXMatchRouScrOff.xml;tc-8-ipPort_OrigLoadedbyReferredByIdScrOnPBXMatchRouScrOff;4019;PASSED;null
+     #------ Testcase file=tc/tc-9-ipPort_OrigLoadedbyDiversionIdScrOnPBXMatchRouScrOff.xml name= tc-9_OrigLoadedbyDiversionIdScrOnPBXMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;229;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;146;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-9_OrigLoadedbyDiversionIdScrOnPBXMatchRouScrOffOrig.xml;795;PASSED;
+          SC;scenario/sc-ipport-9_OrigLoadedbyDiversionIdScrOnPBXMatchRouScrOffTerm.xml;1097;PASSED;
+     TC;tc/tc-9-ipPort_OrigLoadedbyDiversionIdScrOnPBXMatchRouScrOff.xml;tc-9-ipPort_OrigLoadedbyDiversionIdScrOnPBXMatchRouScrOff;4091;PASSED;null
+     #------ Testcase file=tc/tc-10-ipPort_OrigLoadedbyHistoryInfoIdScrOnPBXMatchRouScrOff.xml name= tc-10_OrigLoadedbyHistoryInfoIdScrOnPBXMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;94;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode.xml;144;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-10_OrigLoadedbyHistoryInfoIdScrOnPBXMatchRouScrOffOrig.xml;791;PASSED;
+          SC;scenario/sc-ipport-10_OrigLoadedbyHistoryInfoIdScrOnPBXMatchRouScrOffTerm.xml;1083;PASSED;
+     TC;tc/tc-10-ipPort_OrigLoadedbyHistoryInfoIdScrOnPBXMatchRouScrOff.xml;tc-10-ipPort_OrigLoadedbyHistoryInfoIdScrOnPBXMatchRouScrOff;3947;PASSED;null
+     #------ Testcase file=tc/tc-11-ipPort_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOn.xml name= tc-11_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;90;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;143;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-11_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOnOrig.xml;212;PASSED;
+     TC;tc/tc-11-ipPort_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOn.xml;tc-11-ipPort_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOn;3061;PASSED;null
+     #------ Testcase file=tc/tc-12-ipPort_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOn.xml name= tc-12_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;82;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;186;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-12_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOnOrig.xml;212;PASSED;
+     TC;tc/tc-12-ipPort_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOn.xml;tc-12-ipPort_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOn;3096;PASSED;null
+     #------ Testcase file=tc/tc-13-ipPort_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOn.xml name= tc-13_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;93;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;209;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-13_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOnOrig.xml;213;PASSED;
+     TC;tc/tc-13-ipPort_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOn.xml;tc-13-ipPort_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOn;3135;PASSED;null
+     #------ Testcase file=tc/tc-14-ipPort_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOn.xml name= tc-14_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;88;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;156;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-14_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOnOrig.xml;213;PASSED;
+     TC;tc/tc-14-ipPort_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOn.xml;tc-14-ipPort_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOn;3073;PASSED;null
+     #------ Testcase file=tc/tc-15-ipPort_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOn.xml name= tc-15_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOn ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;88;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;143;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-15_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOnOrig.xml;213;PASSED;
+     TC;tc/tc-15-ipPort_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOn.xml;tc-15-ipPort_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOn;3058;PASSED;null
+     #------ Testcase file=tc/tc-16-ipPort_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOff.xml name= tc-16_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;100;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;124;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-16_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOffOrig.xml;791;PASSED;
+          SC;scenario/sc-ipport-16_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOffTerm.xml;1091;PASSED;
+     TC;tc/tc-16-ipPort_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOff.xml;tc-16-ipPort_OrigLoadedbyFromIdScrOnPBXNotMatchRouScrOff;3935;PASSED;null
+     #------ Testcase file=tc/tc-17-ipPort_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOff.xml name= tc-17_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;77;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;164;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-17_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOffOrig.xml;791;PASSED;
+          SC;scenario/sc-ipport-17_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOffTerm.xml;1080;PASSED;
+     TC;tc/tc-17-ipPort_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOff.xml;tc-17-ipPort_OrigLoadedbyPaiIdScrOnPBXNotMatchRouScrOff;3941;PASSED;null
+     #------ Testcase file=tc/tc-18-ipPort_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOff.xml name= tc-18_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;75;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;155;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-18_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOffOrig.xml;791;PASSED;
+          SC;scenario/sc-ipport-18_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOffTerm.xml;1082;PASSED;
+     TC;tc/tc-18-ipPort_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOff.xml;tc-18-ipPort_OrigLoadedbyReferredByIdScrOnPBXNotMatchRouScrOff;3932;PASSED;null
+     #------ Testcase file=tc/tc-19-ipPort_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOff.xml name= tc-19_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;113;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;202;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-19_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOffOrig.xml;790;PASSED;
+          SC;scenario/sc-ipport-19_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOffTerm.xml;1081;PASSED;
+     TC;tc/tc-19-ipPort_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOff.xml;tc-19-ipPort_OrigLoadedbyDiversionIdScrOnPBXNotMatchRouScrOff;4020;PASSED;null
+     #------ Testcase file=tc/tc-20-ipPort_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOff.xml name= tc-20_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOff ------
+       # <run-0>
+          SC;omi/updateConfigParm.xml;152;PASSED;
+       # <run-1>
+          SC;opi/updateSAPBXNode1.xml;142;PASSED;
+       # <run-2>
+          SC;scenario/sc-ipport-20_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOffOrig.xml;791;PASSED;
+          SC;scenario/sc-ipport-20_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOffTerm.xml;1103;PASSED;
+     TC;tc/tc-20-ipPort_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOff.xml;tc-20-ipPort_OrigLoadedbyHistoryInfoIdScrOnPBXNotMatchRouScrOff;4020;PASSED;null
+     #------ Testcase file=tc/tc-1_OrigLoadedFromPAIwPLUS.xml name= tc-1_OrigLoadedFromPAIwPLUS ------
+       # <run-0>
+          SC;opi/updateSAPBXNode.xml;149;PASSED;
+       # <run-1>
+          SC;omi/updateConfigParm.xml;80;PASSED;
+       # <run-2>
+          SC;scenario/sc-1_OrigLoadedFromPAIwPLUSOrig.xml;789;PASSED;
+          SC;scenario/sc-1_OrigLoadedFromPAIwPLUSTerm.xml;1088;PASSED;
+     TC;tc/tc-1_OrigLoadedFromPAIwPLUS.xml;tc-1_OrigLoadedFromPAIwPLUS;3936;PASSED;null
+     #------ Testcase file=tc/tc-2_OrigLoadedFromPAIwOPLUS.xml name= tc-2_OrigLoadedFromPAIwOPLUS ------
+       # <run-0>
+          SC;opi/updateSAPBXNode.xml;180;PASSED;
+       # <run-1>
+          SC;omi/updateConfigParm.xml;63;PASSED;
+       # <run-2>
+          SC;scenario/sc-2_OrigLoadedFromPAIwOPLUSOrig.xml;787;PASSED;
+          SC;scenario/sc-2_OrigLoadedFromPAIwOPLUSTerm.xml;1179;PASSED;
+     TC;tc/tc-2_OrigLoadedFromPAIwOPLUS.xml;tc-2_OrigLoadedFromPAIwOPLUS;4040;PASSED;null
+     #------ Testcase file=tc/tc-4_OrigLoadedFromPAIwUserUri.xml name= tc-4_OrigLoadedFromPAIwUserUri ------
+       # <run-0>
+          SC;opi/updateSAPBXNode.xml;157;PASSED;
+       # <run-1>
+          SC;omi/updateConfigParm.xml;64;PASSED;
+       # <run-2>
+          SC;scenario/sc-4_OrigLoadedFromPAIwUserUriOrig.xml;789;PASSED;
+          SC;scenario/sc-4_OrigLoadedFromPAIwUserUriTerm.xml;1085;PASSED;
+     TC;tc/tc-4_OrigLoadedFromPAIwUserUri.xml;tc-4_OrigLoadedFromPAIwUserUri;3924;PASSED;null
+     #------ Testcase file=tc/tc-5_OrigLoadedFromPAIwPLUSwhenFromAndPAIisSame.xml name= tc-5_OrigLoadedFromPAIwPLUSwhenFromAndPAIisSame ------
+       # <run-0>
+          SC;opi/updateSAPBXNode.xml;127;PASSED;
+       # <run-1>
+          SC;omi/updateConfigParm.xml;70;PASSED;
+       # <run-2>
+          SC;scenario/sc-5_OrigLoadedFromPAIwPLUSwhenFromAndPAIisSameOrig.xml;792;PASSED;
+          SC;scenario/sc-5_OrigLoadedFromPAIwPLUSwhenFromAndPAIisSameTerm.xml;1082;PASSED;
+     TC;tc/tc-5_OrigLoadedFromPAIwPLUSwhenFromAndPAIisSame.xml;tc-5_OrigLoadedFromPAIwPLUSwhenFromAndPAIisSame;3897;PASSED;null
+     #------ Testcase file=tc/tc-6_OrigLoadedFromPAIwhenFromHasPrExtDN.xml name= tc-6_OrigLoadedFromPAIwhenFromHasPrExtDN ------
+       # <run-0>
+          SC;opi/updateSAPBXNode.xml;218;PASSED;
+       # <run-1>
+          SC;omi/updateConfigParm.xml;87;PASSED;
+       # <run-2>
+          SC;scenario/sc-6_OrigLoadedFromPAIwhenFromHasPrExtDNOrig.xml;791;PASSED;
+          SC;scenario/sc-6_OrigLoadedFromPAIwhenFromHasPrExtDNTerm.xml;1090;PASSED;
+     TC;tc/tc-6_OrigLoadedFromPAIwhenFromHasPrExtDN.xml;tc-6_OrigLoadedFromPAIwhenFromHasPrExtDN;4015;PASSED;null
+     #------ Testcase file=tc/tc-7_OrigLoadedFromPAIwPluswhenFromHasPrExtUserName.xml name= tc-7_OrigLoadedFromPAIwPluswhenFromHasPrExtUserName ------
+       # <run-0>
+          SC;opi/updateSAPBXNode.xml;180;PASSED;
+       # <run-1>
+          SC;omi/updateConfigParm.xml;73;PASSED;
+       # <run-2>
+          SC;scenario/sc-7_OrigLoadedFromPAIwPluswhenFromHasPrExtUserNameOrig.xml;788;PASSED;
+          SC;scenario/sc-7_OrigLoadedFromPAIwPluswhenFromHasPrExtUserNameTerm.xml;1082;PASSED;
+     TC;tc/tc-7_OrigLoadedFromPAIwPluswhenFromHasPrExtUserName.xml;tc-7_OrigLoadedFromPAIwPluswhenFromHasPrExtUserName;3953;PASSED;null
+     #------ Testcase file=tc/tc-9_OrigLoadedFromPAIasPrExtwhenAllParmEnable.xml name= tc-9_OrigLoadedFromPAIasPrExtwhenAllParmEnable ------
+       # <run-0>
+          SC;opi/updateSAPBXNode.xml;188;PASSED;
+       # <run-1>
+          SC;omi/updateConfigParm.xml;75;PASSED;
+       # <run-2>
+          SC;scenario/sc-9_OrigLoadedFromPAIasPrExtwhenAllParmEnableOrig.xml;789;PASSED;
+          SC;scenario/sc-9_OrigLoadedFromPAIasPrExtwhenAllParmEnableTerm.xml;1076;PASSED;
+     TC;tc/tc-9_OrigLoadedFromPAIasPrExtwhenAllParmEnable.xml;tc-9_OrigLoadedFromPAIasPrExtwhenAllParmEnable;3959;PASSED;null
+     #------ Testcase file=tc/tc-10_OrigLoadedFromPAIasPrExtUserNameWhenAllParmEnable.xml name= tc-10_OrigLoadedFromPAIasPrExtUserNameWhenAllParmEnable ------
+       # <run-0>
+          SC;opi/updateSAPBXNode.xml;158;PASSED;
+       # <run-1>
+          SC;omi/updateConfigParm.xml;71;PASSED;
+       # <run-2>
+          SC;scenario/sc-10_OrigLoadedFromPAIasPrExtUserNameWhenAllParmEnableOrig.xml;789;PASSED;
+          SC;scenario/sc-10_OrigLoadedFromPAIasPrExtUserNameWhenAllParmEnableTerm.xml;1078;PASSED;
+     TC;tc/tc-10_OrigLoadedFromPAIasPrExtUserNameWhenAllParmEnable.xml;tc-10_OrigLoadedFromPAIasPrExtUserNameWhenAllParmEnable;3931;PASSED;null
+     #------ Testcase file=tc/tc-1_removeTgrpPbxSetup.xml name= tc-1_removeTgrpPbxSetup ------
+       # <run-0>
+          SC;../opi/removeDomain.xml;1538;PASSED;
+       # <run-1>
+          SC;../opi/removeServiceNode.xml;128;PASSED;
+       # <run-2>
+          SC;../omi/deleteStandAloneSipPbxSessMgrAssoc.xml;2130;PASSED;
+       # <run-3>
+          SC;../omi/deleteStandAloneSipPbx.xml;2188;PASSED;
+       # <run-4>
+          SC;../omi2/deletePhysicalSite.xml;132;PASSED;
+     TC;tc/tc-1_removeTgrpPbxSetup.xml;tc-1_removeTgrpPbxSetup;6936;PASSED;null
+     #------ Testcase file=tc/tc-2_removeTerm1DynamicPbxSetup.xml name= tc-2_removeTerm1DynamicPbxSetup ------
+       # <run-0>
+          SC;../opi/removeDomain.xml;336;PASSED;
+       # <run-1>
+          SC;../opi/removeServiceNode.xml;97;PASSED;
+       # <run-2>
+          SC;../omi/deleteStandAloneSipPbxSessMgrAssoc.xml;2086;PASSED;
+       # <run-3>
+          SC;../omi/deleteStandAloneSipPbx.xml;2105;PASSED;
+     TC;tc/tc-2_removeTerm1DynamicPbxSetup.xml;tc-2_removeTerm1DynamicPbxSetup;5441;PASSED;null
+     #------ Testcase file=tc/tc-3_removeTerm2DynamicPbxSetup.xml name= tc-3_removeTerm2DynamicPbxSetup.xml ------
+       # <run-0>
+          SC;../opi/removeDomain.xml;345;PASSED;
+       # <run-1>
+          SC;../opi/removeServiceNode.xml;87;PASSED;
+       # <run-2>
+          SC;../omi/deleteStandAloneSipPbxSessMgrAssoc.xml;2093;PASSED;
+       # <run-3>
+          SC;../omi/deleteStandAloneSipPbx.xml;2108;PASSED;
+     TC;tc/tc-3_removeTerm2DynamicPbxSetup.xml;tc-3_removeTerm2DynamicPbxSetup;5452;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/DNRange/test_suite.xml;DNRange;222707;PASSED;

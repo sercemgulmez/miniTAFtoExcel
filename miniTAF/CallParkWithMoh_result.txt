@@ -1,0 +1,2 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/CallParkWithMoh/test_suite.xml name= Call Park with MOH ------
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/CallParkWithMoh/test_suite.xml;Call Park with MOH;56;PASSED;

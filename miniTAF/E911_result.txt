@@ -1,0 +1,122 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/E911/test_suite.xml name= E911 ------
+  # <run-0>
+     #------ Testcase file=tc/tc1_Omi_Provisioning.xml name= provisionOmi ------
+       # <run-0>
+          SC;../omi/addExternalAppMgr.xml;2602;PASSED;
+          SC;../omi/addInformationalElement.xml;2180;PASSED;
+     TC;tc/tc1_Omi_Provisioning.xml;tc1_Omi_Provisioning;4823;PASSED;null
+     #------ Testcase file=tc/tc2_Opi_Provisioning.xml name= provisionOpi ------
+       # <run-0>
+          SC;../opi/addSystemService.xml;406;PASSED;
+          SC;../opi/addSCIMTrigger.xml;682;PASSED;
+          SC;../opi/assignServiceToAppMgr.xml;473;PASSED;
+          SC;../opi/addRootDomain.xml;107;PASSED;
+          SC;../opi/setSystemProfilesForDomain.xml;125;PASSED;
+          SC;../opi/set2ServicesForDomain.xml;77;PASSED;
+          SC;../opi/setDomainResources_Service_Subscriber.xml;197;PASSED;
+          SC;../opi/addServiceNode.xml;130;PASSED;
+          SC;../opi/assignDomainToServiceNode.xml;99;PASSED;
+          SC;../opi/addInteropProfile.xml;266;PASSED;
+          SC;../opi/setDomainInteropProfile.xml;287;PASSED;
+          SC;../opi/addEmergencyNumber.xml;655;PASSED;
+          SC;../opi/setEnterpriseErlForDomain.xml;737;PASSED;
+          SC;../opi/e911_setSystemProfilesForDomain.xml;1071;PASSED;
+          SC;../opi/addRootLocation.xml;135;PASSED;
+     TC;tc/tc2_Opi_Provisioning.xml;tc2_Opi_Provisioning;5506;PASSED;null
+  # <run-1>
+     #------ Testcase file=tc/tc3_Register.xml name= TC1: Register ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3335;PASSED;
+          SC;../opi/setLocationForUser.xml;184;PASSED;
+          SC;../opi/addServiceForUser.xml;95;PASSED;
+          SC;../opi/addServiceForUser_foreign.xml;118;PASSED;
+          SC;../opi/e911_setSystemProfileForUser.xml;184;PASSED;
+          SC;../opi/assignAppMgrServiceToUser.xml;167;PASSED;
+          SC;scenario/pause20.xml;20003;PASSED;
+       # <run-1>
+          SC;scenario/tc1_emergency.xml;878;PASSED;
+          SC;scenario/tc1_conveyant.xml;887;PASSED;
+          SC;scenario/tc1_register.xml;891;PASSED;
+       # <run-2>
+          SC;../opi/e911_updateLocation.xml;79;PASSED;
+          SC;scenario/pause20.xml;20004;PASSED;
+       # <run-3>
+          SC;scenario/tc1_conveyant2.xml;353;PASSED;
+          SC;scenario/tc1_emergency.xml;355;PASSED;
+          SC;scenario/tc1_register2.xml;606;PASSED;
+     TC;tc/tc3_Register.xml;tc3_Register;50146;PASSED;null
+     #------ Testcase file=tc/tc4_BulkRegister.xml name= TC2: Bulk Register ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3491;PASSED;
+          SC;../opi/addSingleUser.xml;3612;PASSED;
+          SC;../opi/addSingleUser.xml;3638;PASSED;
+          SC;../opi/addSingleUser.xml;3639;PASSED;
+          SC;../opi/addSingleUser.xml;3653;PASSED;
+          SC;../opi/addSingleUser.xml;3659;PASSED;
+       # <run-1>
+          SC;../opi/setLocationForUser.xml;270;PASSED;
+          SC;../opi/setLocationForUser.xml;314;PASSED;
+          SC;../opi/setLocationForUser.xml;314;PASSED;
+          SC;../opi/setLocationForUser.xml;356;PASSED;
+          SC;../opi/setLocationForUser.xml;363;PASSED;
+          SC;../opi/setLocationForUser.xml;363;PASSED;
+       # <run-2>
+          SC;../opi/addServiceForUser.xml;155;PASSED;
+          SC;../opi/addServiceForUser.xml;187;PASSED;
+          SC;../opi/addServiceForUser.xml;196;PASSED;
+          SC;../opi/addServiceForUser.xml;197;PASSED;
+          SC;../opi/addServiceForUser.xml;197;PASSED;
+          SC;../opi/addServiceForUser.xml;198;PASSED;
+       # <run-3>
+          SC;../opi/addServiceForUser_foreign.xml;136;PASSED;
+          SC;../opi/addServiceForUser_foreign.xml;159;PASSED;
+          SC;../opi/addServiceForUser_foreign.xml;171;PASSED;
+          SC;../opi/addServiceForUser_foreign.xml;172;PASSED;
+          SC;../opi/addServiceForUser_foreign.xml;172;PASSED;
+          SC;../opi/addServiceForUser_foreign.xml;173;PASSED;
+       # <run-4>
+          SC;../opi/e911_setSystemProfileForUser.xml;163;PASSED;
+          SC;../opi/e911_setSystemProfileForUser.xml;163;PASSED;
+          SC;../opi/e911_setSystemProfileForUser.xml;167;PASSED;
+          SC;../opi/e911_setSystemProfileForUser.xml;169;PASSED;
+          SC;../opi/e911_setSystemProfileForUser.xml;169;PASSED;
+          SC;../opi/e911_setSystemProfileForUser.xml;170;PASSED;
+       # <run-5>
+          SC;../opi/assignAppMgrServiceToUser.xml;373;PASSED;
+          SC;../opi/assignAppMgrServiceToUser.xml;372;PASSED;
+          SC;../opi/assignAppMgrServiceToUser.xml;372;PASSED;
+          SC;../opi/assignAppMgrServiceToUser.xml;390;PASSED;
+          SC;../opi/assignAppMgrServiceToUser.xml;389;PASSED;
+          SC;../opi/assignAppMgrServiceToUser.xml;390;PASSED;
+       # <run-6>
+          SC;scenario/pause20.xml;20002;PASSED;
+       # <run-7>
+          SC;scenario/tc2_register.xml;59;PASSED;
+          SC;scenario/tc2_register.xml;80;PASSED;
+          SC;scenario/tc2_register.xml;81;PASSED;
+          SC;scenario/tc2_register.xml;79;PASSED;
+          SC;scenario/tc2_register.xml;96;PASSED;
+          SC;scenario/tc2_register.xml;98;PASSED;
+       # <run-8>
+          SC;scenario/pause20.xml;20003;PASSED;
+       # <run-9>
+          SC;../opi/e911_triggerUpdateLocation.xml;103;PASSED;
+          SC;scenario/tc2_conveyant.xml;1288;PASSED;
+     TC;tc/tc4_BulkRegister.xml;tc4_BulkRegister;52136;PASSED;null
+  # <run-2>
+     #------ Testcase file=tc/tc5_Clear_Opi_Provisioning.xml name= provisionOpiClear ------
+       # <run-0>
+          SC;../opi/removeDomain.xml;816;PASSED;
+          SC;../opi/removeInteropProfile.xml;113;PASSED;
+          SC;../opi/removeServiceNode.xml;138;PASSED;
+          SC;../opi/removeEmergencyNumber.xml;165;PASSED;
+          SC;../opi/unassignServiceFromAppMgr.xml;110;PASSED;
+          SC;../opi/removeSCIMTrigger.xml;162;PASSED;
+          SC;../opi/removeSystemService.xml;292;PASSED;
+     TC;tc/tc5_Clear_Opi_Provisioning.xml;tc5_Clear_Opi_Provisioning;1811;PASSED;null
+     #------ Testcase file=tc/tc6_Clear_Omi_Provisioning.xml name= provisionOmiClear ------
+       # <run-0>
+          SC;../omi/removeInformationalElement.xml;2216;PASSED;
+          SC;../omi/deleteExternalAppMgr.xml;2124;PASSED;
+     TC;tc/tc6_Clear_Omi_Provisioning.xml;tc6_Clear_Omi_Provisioning;4347;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/E911/test_suite.xml;E911;118855;PASSED;

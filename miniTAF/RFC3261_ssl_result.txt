@@ -1,0 +1,118 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/RFC3261_ssl/test_suite.xml name= RFC3261 SSL ------
+  # <run-0>
+     #------ Testcase file=tc/tc1_basic_call.xml name= SSL client 1 to SSL client 2 inter-sesm call using user s DN ------
+       # <run-0>
+          SC;scenario/orig_basic_call.xml;1937;PASSED;
+          SC;scenario/term_basic_call.xml;2039;PASSED;
+     TC;tc/tc1_basic_call.xml;1. Basic call;4403;PASSED;null
+     #------ Testcase file=tc/tc2_basic_call_compact.xml name= SSL client 1 to SSL client 2 intersesm call using DN compact ------
+       # <run-0>
+          SC;scenario/orig_basic_call_compact.xml;1076;PASSED;
+          SC;scenario/term_basic_call_compact.xml;1219;PASSED;
+     TC;tc/tc2_basic_call_compact.xml;2. Basic call with compact headers;1490;PASSED;null
+     #------ Testcase file=tc/tc3_basic_info_call.xml name= SSL client 1 to SSL client 2 inter-sesm call using user s DN ------
+       # <run-0>
+          SC;scenario/tc3_orig_info_call.xml;2867;PASSED;
+          SC;scenario/tc3_term_info_call.xml;2940;PASSED;
+     TC;tc/tc3_basic_info_call.xml;3. Basic Info Call;5182;PASSED;null
+     #------ Testcase file=tc/tc4_cancel_call_after100.xml name= Add SSL clients, Orig cancels the call before 180 ------
+       # <run-0>
+          SC;scenario/term_cancel_call_after_100.xml;835;PASSED;
+          SC;scenario/orig_cancel_call_after_100.xml;1098;PASSED;
+     TC;tc/tc4_cancel_call_after100.xml;4. Orig cancels the call before 180;3334;PASSED;null
+     #------ Testcase file=tc/tc5_cancel_call_after180.xml name= SSL client 1 to SSL client 2. Client 1 cancels the call after 18x. ------
+       # <run-0>
+          SC;scenario/term_cancel_call_after_18x.xml;805;PASSED;
+          SC;scenario/orig_cancel_call_after_18x.xml;1183;PASSED;
+     TC;tc/tc5_cancel_call_after180.xml;5. Orig cancels the call after 180;3408;PASSED;null
+     #------ Testcase file=tc/tc6_reject_call_via_403.xml name= SSL client 1 to SSL client 2 intersesm call using DN ------
+       # <run-0>
+          SC;scenario/term_basic_reject_call_403.xml;894;PASSED;
+          SC;scenario/orig_basic_reject_call_403.xml;926;PASSED;
+     TC;tc/tc6_reject_call_via_403.xml;6. Term rejects via 403;3146;PASSED;null
+     #------ Testcase file=tc/tc7_reject_call_via_480.xml name= SSL client 1 to SSL client 2 intersesm call using DN ------
+       # <run-0>
+          SC;scenario/term_basic_reject_call_480.xml;1247;PASSED;
+          SC;scenario/orig_basic_reject_call_480.xml;10819;PASSED;
+     TC;tc/tc7_reject_call_via_480.xml;7. Term rejects via 480;13051;PASSED;null
+     #------ Testcase file=tc/tc8_reject_call_via_486.xml name= SSL client 1 to SSL client 2 intersesm call using DN ------
+       # <run-0>
+          SC;scenario/term_basic_reject_call_486.xml;876;PASSED;
+          SC;scenario/orig_basic_reject_call_486.xml;48032;PASSED;
+     TC;tc/tc8_reject_call_via_486.xml;8. Term rejects via 486;50253;PASSED;null
+     #------ Testcase file=tc/tc9_reject_call_via_488.xml name= SSL client 1 to SSL client 2 intersesm call using DN ------
+       # <run-0>
+          SC;scenario/term_basic_reject_call_488.xml;883;PASSED;
+          SC;scenario/orig_basic_reject_call_488.xml;10524;PASSED;
+     TC;tc/tc9_reject_call_via_488.xml;9. Term rejects via 488;12744;PASSED;null
+     #------ Testcase file=tc/tc10_reject_call_via_603_after_100.xml name= SSL client 1 to SSL client 2 intersesm call using DN ------
+       # <run-0>
+          SC;scenario/term_basic_reject_call_603_after_100.xml;596;PASSED;
+          SC;scenario/orig_basic_reject_call_603_after_100.xml;931;PASSED;
+     TC;tc/tc10_reject_call_via_603_after_100.xml;10. Term rejects via 603 after 100;3149;PASSED;null
+     TC;tc/tc11_reject_call_via_603_after_180.xml;11. Term rejects via 603 after 180;0;INACTIVE;tc/tc11_reject_call_via_603_after_180.xml active parm is false, test case inactive
+     #------ Testcase file=tc/tc12_unknown_register_reject_404.xml name= SSL client 1 to SSL client 2 intersesm call using DN ------
+       # <run-0>
+          SC;scenario/unknown_register_reject_404.xml;16;PASSED;
+     TC;tc/tc12_unknown_register_reject_404.xml;12. Reject unknow user's register;2225;PASSED;null
+     #------ Testcase file=tc/tc13_unregister_basic_call_reject_480.xml name= Add SSL client, Reject Unregistered user's call ------
+       # <run-0>
+          SC;scenario/unregister_basic_call_reject_480_term.xml;21;PASSED;
+          SC;scenario/unregister_basic_call_reject_480.xml;12130;PASSED;
+     TC;tc/tc13_unregister_basic_call_reject_480.xml;13. Reject Unregistered user's call;14346;PASSED;null
+     #------ Testcase file=tc/tc14_basic_subscribe.xml name= SSL client 1 to SSL client 2 inter-sesm call using user s DN ------
+       # <run-0>
+          SC;scenario/orig_basic_subscribe.xml;731;PASSED;
+     TC;tc/tc14_basic_subscribe.xml;14. Basic Subscribe and Notify;2948;PASSED;null
+     #------ Testcase file=tc/tc15_basic_call_with_dtmf_check.xml name= SSL client 1 to SSL client 2 inter-sesm call using user s DN ------
+       # <run-0>
+          SC;scenario/orig_basic_call_with_dtmf_check.xml;1122;PASSED;
+          SC;scenario/term_basic_call_with_dtmf_check.xml;1254;PASSED;
+     TC;tc/tc15_basic_call_with_dtmf_check.xml;15. Basic Call with DTMF check;3506;PASSED;null
+     #------ Testcase file=tc/tc17_max_forward_0.xml name= Unsuccessfully call with max fwd 0 ------
+       # <run-0>
+          SC;scenario/orig_max_forward_0.xml;791;PASSED;
+     TC;tc/tc17_max_forward_0.xml;17. Unsuccessfully call with max fwd 0;3011;PASSED;null
+     #------ Testcase file=tc/tc18_slow_start_call.xml name= SSL client 1 to SSL client 2 inter-sesm slow start ------
+       # <run-0>
+          SC;scenario/orig_slow_start_call.xml;1038;PASSED;
+          SC;scenario/term_slow_start_call.xml;1170;PASSED;
+     TC;tc/tc18_slow_start_call.xml;18. SSL client 1 to SSL client 2 inter-sesm slow start;3390;PASSED;null
+     #------ Testcase file=tc/tc19_basic_call_mlines.xml name= Basic call with m-lines ------
+       # <run-0>
+          SC;scenario/orig_mlines_call.xml;1060;PASSED;
+          SC;scenario/term_mlines_call.xml;1180;PASSED;
+     TC;tc/tc19_basic_call_mlines.xml;19. Basic call with m=lines, ;3400;PASSED;null
+     #------ Testcase file=tc/tc20_basic_call_term_ends.xml name= 20. Add SSL clients, Basic call Term ends, Remove SSL clients ------
+       # <run-0>
+          SC;scenario/term_basic_call_term_ends.xml;1061;PASSED;
+          SC;scenario/orig_basic_call_term_ends.xml;1181;PASSED;
+     TC;tc/tc20_basic_call_term_ends.xml;20. Basic call Term ends, ;3400;PASSED;null
+     #------ Testcase file=tc/tc21_orig_holds_call.xml name= Add SSL clients, Orig holds call ------
+       # <run-0>
+          SC;scenario/orig_orig_holds.xml;1281;PASSED;
+          SC;scenario/term_orig_holds.xml;1371;PASSED;
+     TC;tc/tc21_orig_holds_call.xml;21. Orig holds call and posts bye;3593;PASSED;null
+     #------ Testcase file=tc/tc22_term_holds_call.xml name= Term holds call ------
+       # <run-0>
+          SC;scenario/orig_term_holds_call.xml;2865;PASSED;
+          SC;scenario/term_term_holds_call.xml;2984;PASSED;
+     TC;tc/tc22_term_holds_call.xml;22. Term holds call and posts bye;5206;PASSED;null
+     #------ Testcase file=tc/tc24_basic_call_with_totag.xml name= SSL client 1 to SSL client 2 Basic call with To Tag ------
+       # <run-0>
+          SC;scenario/orig_basic_call_with_totag.xml;795;PASSED;
+          SC;scenario/term_basic_call_with_totag.xml;2031;PASSED;
+     TC;tc/tc24_basic_call_with_totag.xml;24. Orig with To tag;4247;PASSED;null
+     #------ Testcase file=tc/tc27_basic_subscribe_without_expire_header.xml name= basic_subscribe_without_expire_header ------
+       # <run-0>
+          SC;scenario/orig_basic_subscribe_without_expire_header.xml;725;PASSED;
+     TC;tc/tc27_basic_subscribe_without_expire_header.xml;27. Subscribe without expire header;2939;PASSED;null
+     #------ Testcase file=tc/tc28_basic_subscribe_different_dialog.xml name= 28. Basic Subscribe different Dialog ------
+       # <run-0>
+          SC;scenario/orig_basic_subscribe_different_dialog.xml;1014;PASSED;
+     TC;tc/tc28_basic_subscribe_different_dialog.xml;28. Basic Subscribe different Dialog;3227;PASSED;null
+     #------ Testcase file=tc/tc29_line_reject_notify.xml name= orig_reject_notify ------
+       # <run-0>
+          SC;scenario/orig_reject_notify.xml;701;PASSED;
+     TC;tc/tc29_line_reject_notify.xml;29. Reject Notify;2914;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/RFC3261_ssl/test_suite.xml;RFC3261 SSL;158593;FAILED;

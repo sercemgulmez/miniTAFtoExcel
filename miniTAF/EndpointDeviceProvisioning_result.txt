@@ -1,0 +1,82 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/EndpointDeviceProvisioning/test_suite.xml name= Endpoint Device Provisioning (Polycom Device) ------
+  # <run-0>
+     #------ Testcase file=tc/addRootDomain.xml name= addRootDomain ------
+       # <run-0>
+          SC;../opi/addRootDomain.xml;562;PASSED;
+     TC;tc/addRootDomain.xml;addRootDomain;815;PASSED;null
+     #------ Testcase file=tc/setSystemProfilesForDomain.xml name= setSystemProfilesForDomain ------
+       # <run-0>
+          SC;../opi/setSystemProfilesForDomain.xml;89;PASSED;
+     TC;tc/setSystemProfilesForDomain.xml;setSystemProfilesForDomain;307;PASSED;null
+     #------ Testcase file=tc/setServicesForDomain.xml name= setServicesForDomain ------
+       # <run-0>
+          SC;../opi/setServicesForDomain.xml;111;PASSED;
+     TC;tc/setServicesForDomain.xml;setServicesForDomain;327;PASSED;null
+     #------ Testcase file=tc/setDomainResources.xml name= setDomainResources ------
+       # <run-0>
+          SC;../opi/setDomainResources.xml;164;PASSED;
+     TC;tc/setDomainResources.xml;setDomainResources;379;PASSED;null
+     #------ Testcase file=tc/addUsers.xml name= Add Users ------
+       # <run-0>
+          SC;../opi/addSingleUser.xml;3399;PASSED;
+          SC;../opi/addSingleUser.xml;3421;PASSED;
+     TC;tc/addUsers.xml;addUsers;3658;PASSED;null
+  # <run-1>
+     #------ Testcase file=tc/tc1.xml name= TC1: Add Device- Empty MAC Address ------
+       # <run-0>
+          SC;scenario/tc1.xml;275;PASSED;
+     TC;tc/tc1.xml;TC1: Add Device- Empty MAC Address;488;PASSED;null
+     #------ Testcase file=tc/tc2.xml name= TC2: Add Device- Empty Users ------
+       # <run-0>
+          SC;scenario/tc2.xml;103;PASSED;
+     TC;tc/tc2.xml;TC2: Add Device- Empty Users;316;PASSED;null
+     #------ Testcase file=tc/tc3.xml name= TC3: Add Device- Invalid Users ------
+       # <run-0>
+          SC;scenario/tc3.xml;86;PASSED;
+     TC;tc/tc3.xml;TC3: Add Device- Invalid Users;298;PASSED;null
+     #------ Testcase file=tc/tc4.xml name= TC4: Add Device- Non-existing domain ------
+       # <run-0>
+          SC;scenario/tc4.xml;66;PASSED;
+     TC;tc/tc4.xml;TC4: Add Device- Non-existing domain;278;PASSED;null
+     #------ Testcase file=tc/tc5.xml name= TC5: Add Device- Non-existing user ------
+       # <run-0>
+          SC;scenario/tc5.xml;78;PASSED;
+     TC;tc/tc5.xml;TC5: Add Device- Non-existing user;290;PASSED;null
+     #------ Testcase file=tc/tc6.xml name= TC6: Add Device ------
+       # <run-0>
+          SC;scenario/tc6.xml;261;PASSED;
+     TC;tc/tc6.xml;TC6: Add Device;471;PASSED;null
+     #------ Testcase file=tc/tc7.xml name= TC7: Add Device- Already saved MAC Address ------
+       # <run-0>
+          SC;scenario/tc7.xml;58;PASSED;
+     TC;tc/tc7.xml;TC7: Add Device- Already saved MAC Address;269;PASSED;null
+     #------ Testcase file=tc/tc8.xml name= TC8: Modify Device ------
+       # <run-0>
+          SC;scenario/tc8.xml;96;PASSED;
+     TC;tc/tc8.xml;TC8: Modify Device;305;PASSED;null
+     #------ Testcase file=tc/tc9.xml name= TC9: Search Device- Invalid query ------
+       # <run-0>
+          SC;scenario/tc9.xml;52;PASSED;
+     TC;tc/tc9.xml;TC9: Search Device- Invalid query;261;PASSED;null
+     #------ Testcase file=tc/tc10.xml name= TC10: Search Device- Non-existing domain query ------
+       # <run-0>
+          SC;scenario/tc10.xml;66;PASSED;
+     TC;tc/tc10.xml;TC10: Search Device- Non-existing domain query;275;PASSED;null
+     #------ Testcase file=tc/tc11.xml name= TC11: Search Device- Non-existing user query ------
+       # <run-0>
+          SC;scenario/tc11.xml;56;PASSED;
+     TC;tc/tc11.xml;TC11: Search Device- Non-existing user query;265;PASSED;null
+     #------ Testcase file=tc/tc12.xml name= TC12: Search Device- User query ------
+       # <run-0>
+          SC;scenario/tc12.xml;43;PASSED;
+     TC;tc/tc12.xml;TC12: Search Device- User query;252;PASSED;null
+     #------ Testcase file=tc/tc13.xml name= TC13: Modify Device- Delete ------
+       # <run-0>
+          SC;scenario/tc13.xml;81;PASSED;
+     TC;tc/tc13.xml;TC13: Modify Device- Delete;289;PASSED;null
+  # <run-2>
+     #------ Testcase file=tc/removeDomain.xml name= removeDomain ------
+       # <run-0>
+          SC;../opi/removeDomain.xml;293;PASSED;
+     TC;tc/removeDomain.xml;removeDomain;499;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/EndpointDeviceProvisioning/test_suite.xml;Endpoint Device Provisioning (Polycom Device);10121;PASSED;

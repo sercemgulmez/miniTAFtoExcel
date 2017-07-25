@@ -1,0 +1,784 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/BChannel/test_suite.xml name= BCHANNEL_AUTOMATION_SUITE ------
+  # <run-0>
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_1.xml name= BCHANNEL_AUTOMATION_TEST_1: Basic Call Static PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI Username ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;499;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;284;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;339;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;184;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_1_CALLING.xml;2835;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_1_CALLED.xml;2883;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;166;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;138;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;203;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;92;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;252;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_1.xml;BCHANNEL_AUTOMATION_TEST_1: Basic Call Static PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI Username;7573;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_2.xml name= BCHANNEL_AUTOMATION_TEST_2: Basic Call Static PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI Username ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;184;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;196;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;125;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;213;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_2_CALLING.xml;2553;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_2_CALLED.xml;2917;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;173;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;131;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;157;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;104;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_2.xml;BCHANNEL_AUTOMATION_TEST_2: Basic Call Static PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI Username;6898;PASSED;null
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_3.xml;BCHANNEL_AUTOMATION_TEST_3: Basic Call Dynamic PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI Username;0;INACTIVE;tc/tc-BCHANNEL_AUTOMATION_TEST_3.xml active parm is false, test case inactive
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_4.xml name= BCHANNEL_AUTOMATION_TEST_4: Basic Call Dynamic PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI Username ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;128;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;209;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;131;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;191;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_4_CALLING.xml;2642;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_4_CALLED.xml;2660;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;255;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;264;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;286;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;389;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_4.xml;BCHANNEL_AUTOMATION_TEST_4: Basic Call Dynamic PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI Username;7207;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_5.xml name= BCHANNEL_AUTOMATION_TEST_5: Basic Call Static PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI DN ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;241;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;307;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;162;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;232;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_5_CALLING.xml;2266;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_5_CALLED.xml;2295;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;144;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;107;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;185;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;132;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_5.xml;BCHANNEL_AUTOMATION_TEST_5: Basic Call Static PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI DN;6492;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_6.xml name= BCHANNEL_AUTOMATION_TEST_6: Basic Call Static PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI DN ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;225;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;188;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;131;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;164;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_6_CALLING.xml;2519;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_6_CALLED.xml;2874;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;255;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;126;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;221;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;120;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;250;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_6.xml;BCHANNEL_AUTOMATION_TEST_6: Basic Call Static PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI DN;6990;PASSED;null
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_7.xml;BCHANNEL_AUTOMATION_TEST_7: Basic Call Dynamic PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI DN;0;INACTIVE;tc/tc-BCHANNEL_AUTOMATION_TEST_7.xml active parm is false, test case inactive
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_8.xml name= BCHANNEL_AUTOMATION_TEST_8: Basic Call Dynamic PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI DN ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;95;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;168;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;131;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;203;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_8_CALLING.xml;2664;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_8_CALLED.xml;2700;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;139;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;83;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;215;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;88;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;252;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_8.xml;BCHANNEL_AUTOMATION_TEST_8: Basic Call Dynamic PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI DN;6513;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_9.xml name= BCHANNEL_AUTOMATION_TEST_9: Basic Call Static PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From DN, PAI Username ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;77;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;150;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;101;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;149;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_9_CALLING.xml;2473;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_9_CALLED.xml;2504;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;165;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;90;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;160;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;124;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_9.xml;BCHANNEL_AUTOMATION_TEST_9: Basic Call Static PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From DN, PAI Username;6214;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_10.xml name= BCHANNEL_AUTOMATION_TEST_10: Basic Call Static PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From DN, PAI Username ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;111;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;174;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;131;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;182;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_10_CALLING.xml;2463;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_10_CALLED.xml;2815;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;172;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;119;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;173;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;114;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_10.xml;BCHANNEL_AUTOMATION_TEST_10: Basic Call Static PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From DN, PAI Username;6676;PASSED;null
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_11.xml;BCHANNEL_AUTOMATION_TEST_11: Basic Call Dynamic PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From DN, PAI Username;0;INACTIVE;tc/tc-BCHANNEL_AUTOMATION_TEST_11.xml active parm is false, test case inactive
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_12.xml name= BCHANNEL_AUTOMATION_TEST_3: Basic Call Dynamic PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From DN, PAI Username ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;166;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;173;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;136;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;167;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_12_CALLING.xml;2937;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_12_CALLED.xml;2985;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;142;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;87;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;162;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;105;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_12.xml;BCHANNEL_AUTOMATION_TEST_12: Basic Call Dynamic PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From DN, PAI Username;6808;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_13.xml name= BCHANNEL_AUTOMATION_TEST_13: Redirect Static PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI DN ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;91;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;143;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;101;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;179;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_13_ORIG_TERM.xml;2198;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_13_TERM2.xml;2492;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;142;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;103;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;256;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;131;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_13.xml;BCHANNEL_AUTOMATION_TEST_13: Redirect Static PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI DN;6323;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_14.xml name= BCHANNEL_AUTOMATION_TEST_14: Redirect Static PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI DN ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;129;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;170;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;130;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;185;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_14_ORIG_TERM.xml;2182;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_14_TERM2.xml;2799;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;180;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;108;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;164;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;122;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_14.xml;BCHANNEL_AUTOMATION_TEST_14: Redirect Static PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI DN;6673;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_15.xml name= BCHANNEL_AUTOMATION_TEST_15: Redirect Dynamic PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI DN ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;106;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;155;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;114;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;173;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_15_TERM2.xml;2613;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_15_ORIG_TERM.xml;2618;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;189;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;106;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;178;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;184;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_15.xml;BCHANNEL_AUTOMATION_TEST_15: Redirect Dynamic PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI DN;6507;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_16.xml name= BCHANNEL_AUTOMATION_TEST_16: Redirect Dynamic PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI DN ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;99;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;180;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;118;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;186;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_16_ORIG_TERM.xml;2729;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_16_TERM2.xml;2792;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;163;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;95;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;155;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;99;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_16.xml;BCHANNEL_AUTOMATION_TEST_16: Redirect Dynamic PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI DN;6574;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_17.xml name= BCHANNEL_AUTOMATION_TEST_17: Redirect Static PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI Username ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;99;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;144;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;94;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;145;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_17_ORIG_TERM.xml;2207;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_17_TERM2.xml;2528;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;130;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;95;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;149;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;114;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_17.xml;BCHANNEL_AUTOMATION_TEST_17: Redirect Static PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI Username;6185;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_18.xml name= BCHANNEL_AUTOMATION_TEST_18: Redirect Static PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI Username ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;95;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;161;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;121;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;227;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_18_ORIG_TERM.xml;2765;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_18_TERM2.xml;3138;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;190;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;124;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;201;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;124;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_18.xml;BCHANNEL_AUTOMATION_TEST_18: Redirect Static PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI Username;7070;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_19.xml name= BCHANNEL_AUTOMATION_TEST_19: Redirect Dynamic PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI Username ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;104;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;188;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;124;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;184;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_19_TERM2.xml;2571;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_19_ORIG_TERM.xml;2612;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;136;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;92;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;169;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;107;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_19.xml;BCHANNEL_AUTOMATION_TEST_19: Redirect Dynamic PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI Username;6401;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_20.xml name= BCHANNEL_AUTOMATION_TEST_20: Redirect Dynamic PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI Username ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;87;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;137;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;119;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;154;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_20_ORIG_TERM.xml;2521;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_20_TERM2.xml;2607;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;145;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;90;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;160;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;90;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_20.xml;BCHANNEL_AUTOMATION_TEST_20: Redirect Dynamic PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI Username;6273;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_21.xml name= BCHANNEL_AUTOMATION_TEST_21: Transfer Static PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI DN ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;89;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;203;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;127;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;263;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_21_ORIG.xml;4269;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_21_TERM1-TERM2.xml;5449;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;175;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;119;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;209;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;119;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;250;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_21.xml;BCHANNEL_AUTOMATION_TEST_21: Transfer Static PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI DN;9439;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_22.xml name= BCHANNEL_AUTOMATION_TEST_22: Transfer Static PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI DN ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;82;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;131;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;119;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;168;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_22_ORIG.xml;4173;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_22_TERM1-TERM2.xml;5446;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;187;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;110;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;146;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;95;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;250;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_22.xml;BCHANNEL_AUTOMATION_TEST_22: Transfer Static PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI DN;9172;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_23.xml name= BCHANNEL_AUTOMATION_TEST_23: Transfer Dynamic PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI DN ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;162;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;171;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;118;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;161;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_23_ORIG.xml;4303;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_23_TERM1-TERM2.xml;5452;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;157;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;109;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;170;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;98;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_23.xml;BCHANNEL_AUTOMATION_TEST_23: Transfer Dynamic PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI DN;9284;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_24.xml name= BCHANNEL_AUTOMATION_TEST_24: Transfer Dynamic PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI DN ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;80;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;192;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;168;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;169;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_24_ORIG.xml;4307;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_24_TERM1-TERM2.xml;5498;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;174;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;114;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;208;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;119;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_24.xml;BCHANNEL_AUTOMATION_TEST_24: Transfer Dynamic PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI DN;9410;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_25.xml name= BCHANNEL_AUTOMATION_TEST_25: Transfer Static PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI Username ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;119;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;166;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;112;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;167;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_25_ORIG.xml;4211;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_25_TERM1-TERM2.xml;5392;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;184;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;107;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;176;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;113;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_25.xml;BCHANNEL_AUTOMATION_TEST_25: Transfer Static PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI Username;9223;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_26.xml name= BCHANNEL_AUTOMATION_TEST_26: Transfer Static PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI Username ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;119;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;161;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;104;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;162;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_26_ORIG.xml;4152;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_26_TERM1-TERM2.xml;5438;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;122;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;120;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;168;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;132;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_26.xml;BCHANNEL_AUTOMATION_TEST_26: Transfer Static PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI Username;9209;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_27.xml name= BCHANNEL_AUTOMATION_TEST_27: Transfer Dynamic PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI Username ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;96;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;574;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;113;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;184;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_27_ORIG.xml;4263;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_27_TERM1-TERM2.xml;5421;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;154;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;114;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;155;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;96;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_27.xml;BCHANNEL_AUTOMATION_TEST_27: Transfer Dynamic PBX to Static PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI Username;9598;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_28.xml name= BCHANNEL_AUTOMATION_TEST_28: Transfer Dynamic PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control" Option is True and From Username, PAI Username ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;84;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;143;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;98;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;143;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_28_ORIG.xml;4278;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_28_TERM1-TERM2.xml;5472;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;179;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;90;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;208;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;126;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_28.xml;BCHANNEL_AUTOMATION_TEST_28: Transfer Dynamic PBX to Dynamic PBX When BChannel Limit 100, PBXs and "BChannel Limit Control, CLI as Charge Number" Options are True and From Username, PAI Username;9236;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_29.xml name= BCHANNEL_AUTOMATION_TEST_29: Basic Call Dynamic PBX to Static PBX, Orig Hold/Retrieve When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control" Option is True ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;96;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;150;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;125;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;245;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_29_CALLED.xml;2888;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_29_CALLING.xml;3921;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;133;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;137;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;150;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;96;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;250;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_29.xml;BCHANNEL_AUTOMATION_TEST_29: Basic Call Dynamic PBX to Static PBX, Orig Hold/Retrieve When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control, CLI as Charge Number" Options are True;7730;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_30.xml name= BCHANNEL_AUTOMATION_TEST_30: Basic Call Static PBX to Dynamic PBX, Orig Hold/Retrieve When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control" Option is True ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;96;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;141;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;90;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;135;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_30_CALLING.xml;2508;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_30_CALLED.xml;2855;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;155;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;138;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;178;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;114;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_30.xml;BCHANNEL_AUTOMATION_TEST_30: Basic Call Static PBX to Dynamic PBX, Orig Hold/Retrieve When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control, CLI as Charge Number" Options are True;6582;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_31.xml name= BCHANNEL_AUTOMATION_TEST_31: Basic Call Dynamic PBX to Static PBX, Term Hold/Retrieve When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control" Option is True ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;91;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;152;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;165;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;187;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_31_CALLING.xml;2675;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_31_CALLED.xml;2973;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;145;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;329;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;126;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;75;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_31.xml;BCHANNEL_AUTOMATION_TEST_31: Basic Call Dynamic PBX to Static PBX, Term Hold/Retrieve When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control, CLI as Charge Number" Options are True;6920;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_32.xml name= BCHANNEL_AUTOMATION_TEST_32: Basic Call Static PBX to Dynamic PBX, Term Hold/Retrieve When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control" Option is True ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;97;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;132;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;95;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;197;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_32_CALLING.xml;2622;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_32_CALLED.xml;2963;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;155;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;101;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;192;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;113;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_32.xml;BCHANNEL_AUTOMATION_TEST_32: Basic Call Static PBX to Dynamic PBX, Term Hold/Retrieve When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control, CLI as Charge Number" Options are True;6721;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_33.xml name= BCHANNEL_AUTOMATION_TEST_33: Transfer Static PBX to Dynamic PBX, Orig Static, Term1-2 Dynamic, Term2 Returns 404 When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control" Option is True ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;137;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;309;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;228;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;252;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_33_ORIG.xml;2563;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_33_TERM1-2.xml;6842;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;148;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;105;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;134;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;108;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_33.xml;BCHANNEL_AUTOMATION_TEST_33: Transfer Static PBX to Dynamic PBX, Orig Static, Term1-2 Dynamic, Term2 Returns 404 When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control, CLI as Charge Number" Options are True;10939;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_34.xml name= BCHANNEL_AUTOMATION_TEST_34: Transfer Static PBX to Dynamic PBX, Orig Static, Term1-2 Dynamic, Term2 Returns 486 When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control" Option is True ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;90;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;168;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;123;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;160;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_34_ORIG.xml;2735;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_34_TERM1-2.xml;2953;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;141;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;89;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;149;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;137;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;250;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_34.xml;BCHANNEL_AUTOMATION_TEST_34: Transfer Static PBX to Dynamic PBX, Orig Static, Term1-2 Dynamic, Term2 Returns 486 When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control, CLI as Charge Number" Options are True;6685;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_35.xml name= BCHANNEL_AUTOMATION_TEST_35: Transfer Static PBX to Dynamic PBX, Orig Static, Term1-2 Dynamic, Term2 Returns 603 When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control" Option is True ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;91;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;162;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;125;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;162;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_35_ORIG.xml;2768;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_35_TERM1-2.xml;2975;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;191;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;131;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;178;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;101;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_35.xml;BCHANNEL_AUTOMATION_TEST_35: Transfer Static PBX to Dynamic PBX, Orig Static, Term1-2 Dynamic, Term2 Returns 603 When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control, CLI as Charge Number" Options are True;6795;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_36.xml name= BCHANNEL_AUTOMATION_TEST_36: Redirection Static PBX to Dynamic PBX, Orig-Term2 Static, Term1 Dynamic, Term2 Returns 404 When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control" Option is True ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;95;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;158;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;89;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;153;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_36_TERM1.xml;1357;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_36_ORIG-TERM2.xml;5506;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;148;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;90;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;161;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;120;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_36.xml;BCHANNEL_AUTOMATION_TEST_36: Redirection Static PBX to Dynamic PBX, Orig-Term2 Static, Term1 Dynamic, Term2 Returns 404 When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control, CLI as Charge Number" Options are True;9192;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_37.xml name= BCHANNEL_AUTOMATION_TEST_37: Redirection Static PBX to Dynamic PBX, Orig-Term2 Static, Term1 Dynamic, Term2 Returns 486 When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control" Option is True ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;115;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;164;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;143;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;179;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_37_TERM1.xml;1346;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_37_ORIG-TERM2.xml;1460;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;178;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;119;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;173;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;175;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_37.xml;BCHANNEL_AUTOMATION_TEST_37: Redirection Static PBX to Dynamic PBX, Orig-Term2 Static, Term1 Dynamic, Term2 Returns 486 When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control, CLI as Charge Number" Options are True;5384;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_38.xml name= BCHANNEL_AUTOMATION_TEST_38: Redirection Static PBX to Dynamic PBX, Orig-Term2 Static, Term1 Dynamic, Term2 Returns 603 When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control" Option is True ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;104;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;160;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;121;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;271;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_38_TERM1.xml;1338;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_38_ORIG-TERM2.xml;1518;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;165;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;83;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;173;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;121;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_38.xml;BCHANNEL_AUTOMATION_TEST_38: Redirection Static PBX to Dynamic PBX, Orig-Term2 Static, Term1 Dynamic, Term2 Returns 603 When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control, CLI as Charge Number" Options are True;5387;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_39.xml name= BCHANNEL_AUTOMATION_TEST_39: Consultative Transfer Static PBX to Dynamic PBX, Orig-Term2 Static, Term1 Dynamic When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control" Option is True ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;210;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;172;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;120;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;148;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_39_ORIG.xml;5755;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_39_TERM1-2.xml;6066;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;166;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;86;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;173;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;137;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;250;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_39.xml;BCHANNEL_AUTOMATION_TEST_39: Consultative Transfer Static PBX to Dynamic PBX, Orig-Term2 Static, Term1 Dynamic When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control, CLI as Charge Number" Options are True;9964;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_41.xml name= BCHANNEL_AUTOMATION_TEST_41: Consultative Transfer Static PBX to Dynamic PBX, Orig-Term2 Static, Term1 Dynamic, Term2 Returns 486 When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control" Option is True ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;85;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;127;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;101;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;161;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_41_ORIG-TERM2.xml;3985;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_41_TERM1.xml;4091;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;339;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;103;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;167;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;117;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_41.xml;BCHANNEL_AUTOMATION_TEST_41: Consultative Transfer Static PBX to Dynamic PBX, Orig-Term2 Static, Term1 Dynamic, Term2 Returns 486 When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control, CLI as Charge Number" Options are True;7976;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_42.xml name= BCHANNEL_AUTOMATION_TEST_42: Consultative Transfer Static PBX to Dynamic PBX, Orig-Term2 Static, Term1 Dynamic, Term2 Returns 603 When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control" Option is True ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;85;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;130;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;126;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;161;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_42_ORIG-TERM2.xml;3861;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_42_TERM1.xml;3958;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;138;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;122;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;275;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;129;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_42.xml;BCHANNEL_AUTOMATION_TEST_42: Consultative Transfer Static PBX to Dynamic PBX, Orig-Term2 Static, Term1 Dynamic, Term2 Returns 603 When BChannel Limit of PBX Domains are 100 and "BChannel Limit Control, CLI as Charge Number" Options are True;7808;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_43.xml name= BCHANNEL_AUTOMATION_TEST_43: Basic Call for Dynamic Orig PBX, When BChannel Limit 0 for Orig, "BChannel Limit Control" Option is True, Orig Gets 403 ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;108;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;158;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;111;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;158;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_43_ORIG.xml;1174;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;175;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;120;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;155;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;101;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_43.xml;BCHANNEL_AUTOMATION_TEST_43: Basic Call for Dynamic Orig PBX, When BChannel Limit 0 for Orig, "BChannel Limit Control, CLI as Charge Number" Options are True, Orig Gets 403;4932;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_44.xml name= BCHANNEL_AUTOMATION_TEST_44: Basic Call for Static Orig PBX, When BChannel Limit 0 for Orig, "BChannel Limit Control" Option is True, Orig Gets 403 ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;106;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;175;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;161;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;270;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_44_ORIG.xml;1012;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;174;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;90;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;160;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;102;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_44.xml;BCHANNEL_AUTOMATION_TEST_44: Basic Call for Static Orig PBX, When BChannel Limit 0 for Orig, "BChannel Limit Control, CLI as Charge Number" Options are True, Orig Gets 403;4917;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_45.xml name= BCHANNEL_AUTOMATION_TEST_45: Basic Call for Dynamic Orig PBX, When BChannel Limit 0 for Term, "BChannel Limit Control" Option is True, Orig Gets 403 ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;93;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;162;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;126;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;163;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_45_ORIG.xml;1197;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;154;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;131;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;183;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;119;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_45.xml;BCHANNEL_AUTOMATION_TEST_45: Basic Call for Dynamic Orig PBX, When BChannel Limit 0 for Term, "BChannel Limit Control, CLI as Charge Number" Options are True, Orig Gets 403;5002;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_46.xml name= BCHANNEL_AUTOMATION_TEST_46: Basic Call for Static Orig PBX, When BChannel Limit 0 for Term, "BChannel Limit Control" Option is True, Orig Gets 403 ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;175;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;188;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;137;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;161;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_46_ORIG.xml;1117;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;184;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;138;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;179;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;84;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_46.xml;BCHANNEL_AUTOMATION_TEST_46: Basic Call for Static Orig PBX, When BChannel Limit 0 for Term, "BChannel Limit Control, CLI as Charge Number" Options are True, Orig Gets 403;5034;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_47.xml name= BCHANNEL_AUTOMATION_TEST_47: Basic Call for Dynamic Orig PBX, When BChannel Limit is Exceeded for Orig, "BChannel Limit Control" Option is True, Orig Gets 503 ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;80;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;755;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;113;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;171;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_47_ORIG.xml;3075;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_47_TERM.xml;3330;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;137;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;78;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;167;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;111;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;250;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_47.xml;BCHANNEL_AUTOMATION_TEST_47: Basic Call for Dynamic Orig PBX, When BChannel Limit is Exceeded for Orig, "BChannel Limit Control, CLI as Charge Number" Options are True, Orig Gets 503;7615;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_48.xml name= BCHANNEL_AUTOMATION_TEST_48: Basic Call for Static Orig PBX, When BChannel Limit is Exceeded for Orig, "BChannel Limit Control" Option is True, Orig Gets 503 ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;86;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;175;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;113;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;156;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_48_ORIG.xml;3021;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_48_TERM.xml;3343;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;219;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;101;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;177;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;125;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_48.xml;BCHANNEL_AUTOMATION_TEST_48: Basic Call for Static Orig PBX, When BChannel Limit is Exceeded for Orig, "BChannel Limit Control, CLI as Charge Number" Options are True, Orig Gets 503;7168;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_49.xml name= BCHANNEL_AUTOMATION_TEST_49: Basic Call for Dynamic Orig PBX, When BChannel Limit is Exceeded for Term, "BChannel Limit Control" Option is True, Orig Gets 503 ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;121;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;175;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;203;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;205;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_49_TERM.xml;2659;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_49_ORIG.xml;2776;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;158;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;90;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;158;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;117;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;252;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_49.xml;BCHANNEL_AUTOMATION_TEST_49: Basic Call for Dynamic Orig PBX, When BChannel Limit is Exceeded for Term, "BChannel Limit Control, CLI as Charge Number" Options are True, Orig Gets 503;6822;PASSED;null
+     #------ Testcase file=tc/tc-BCHANNEL_AUTOMATION_TEST_50.xml name= BCHANNEL_AUTOMATION_TEST_50: Basic Call for Static Orig PBX, When BChannel Limit is Exceeded for Term, "BChannel Limit Control" Option is True, Orig Gets 503 ------
+       # <run-0>
+          SC;../opi/setBchLimitForDomain.xml;88;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;152;PASSED;
+          SC;../opi/setBchLimitForDomain.xml;101;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;225;PASSED;
+       # <run-1>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_50_TERM.xml;3287;PASSED;
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_50_ORIG.xml;3323;PASSED;
+       # <run-2>
+          SC;../opi/modifyCS2KSipPbx.xml;219;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;90;PASSED;
+          SC;../opi/modifyCS2KSipPbx.xml;153;PASSED;
+          SC;../opi/removeBchLimitFromDomain.xml;95;PASSED;
+       # <run-3>
+          SC;scenario/sc-BCHANNEL_AUTOMATION_TEST_PAUSE.xml;251;PASSED;
+     TC;tc/tc-BCHANNEL_AUTOMATION_TEST_50.xml;BCHANNEL_AUTOMATION_TEST_50: Basic Call for Static Orig PBX, When BChannel Limit is Exceeded for Term, "BChannel Limit Control, CLI as Charge Number" Options are True, Orig Gets 503;7120;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/BChannel/test_suite.xml;BCHANNEL_AUTOMATION_SUITE;334729;FAILED;

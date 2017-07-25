@@ -1,0 +1,191 @@
+#------ Test-suite file=/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/HICleanup_transportlink/test_suite.xml name= HICleanup_transportlink ------
+  # <run-0>
+     #------ Testcase file=tc/prov_initial_omi.xml name= prov_initial_omi ------
+       # <run-0>
+          SC;../omi/addInformationalElement.xml;2556;PASSED;
+          SC;../omi/addStandAloneSipPbxWithTransportLink.xml;2287;PASSED;
+          SC;../omi/addStandAloneSipPbxSessMgrAssoc.xml;2134;PASSED;
+          SC;../omi/makeStandAloneSipPbxOnline.xml;2111;PASSED;
+     TC;tc/prov_initial_omi.xml;prov_initial_omi;9145;PASSED;null
+     #------ Testcase file=tc/prov_initial_opi.xml name= prov_initial_opi ------
+       # <run-0>
+          SC;../opi/addRootDomain.xml;94;PASSED;
+          SC;../opi/setSystemProfilesForDomain.xml;95;PASSED;
+          SC;../opi/setDomainResources_Service_Subscriber.xml;185;PASSED;
+          SC;../opi/addCosToDomain.xml;114;PASSED;
+          SC;../opi/setCosForDomain.xml;154;PASSED;
+          SC;../opi/addServiceNode.xml;152;PASSED;
+          SC;../opi/assignDomainToServiceNode.xml;98;PASSED;
+          SC;../opi/addServiceNode.xml;170;PASSED;
+          SC;../opi/assignDomainToServiceNode.xml;74;PASSED;
+          SC;../opi/addSASipPbx.xml;222;PASSED;
+          SC;../opi/setAdministrativeStateForSAPbx.xml;98;PASSED;
+          SC;../opi/addSystemDNRange.xml;133;PASSED;
+          SC;../opi/addSubRangeToSipPbx.xml;258;PASSED;
+          SC;../opi/addSingleUser_withoutSesmAssignment.xml;221;PASSED;
+          SC;../opi/setLocationForUser.xml;212;PASSED;
+          SC;../opi/setCosForUser.xml;147;PASSED;
+          SC;../opi/setUserDirectoryNumber.xml;235;PASSED;
+          SC;../opi/linkExtensionUsersToSASipPbx.xml;236;PASSED;
+          SC;../opi/addSingleUser.xml;3351;PASSED;
+          SC;../opi/setLocationForUser.xml;171;PASSED;
+          SC;../opi/setCosForUser.xml;122;PASSED;
+     TC;tc/prov_initial_opi.xml;prov_initial_opi;6615;PASSED;null
+  # <run-1>
+     #------ Testcase file=tc/restart_sesm.xml name= restart_sesm ------
+       # <run-0>
+          SC;scenario/pause5.xml;5002;PASSED;
+          SC;../omi/restartActiveNeInstance.xml;79525;PASSED;
+     TC;tc/restart_sesm.xml;restart_sesm;84534;PASSED;null
+     #------ Testcase file=tc/restart_sesm.xml name= restart_sesm ------
+       # <run-0>
+          SC;scenario/pause5.xml;5003;PASSED;
+          SC;../omi/restartActiveNeInstance.xml;83210;PASSED;
+     TC;tc/restart_sesm.xml;restart_sesm;88219;PASSED;null
+  # <run-2>
+     #------ Testcase file=tc/tc1.xml name= TC1: Transport Link is redirection server, PBX node is hidden, Initial INVITE has History-Info, 302 Contact: provisionedUser@domain ------
+       # <run-0>
+          SC;scenario/orig_withHI.xml;1581;FAILED;Unexpected response <500> while in <recv> action with index=2
+          SC;scenario/term1.xml;7588;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/redirect.xml;7588;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc1.xml;TC1: Transport Link is redirection server, PBX node is hidden, Initial INVITE has History-Info, 302 Contact: provisionedUser@domain;19818;FAILED;
+     #------ Testcase file=tc/tc2.xml name= TC2: Transport Link is redirection server, PBX node is hidden, Initial INVITE has History-Info, 302 Contact: unprovisionedPbxUser@IP ------
+       # <run-0>
+          SC;scenario/orig_withHI.xml;1047;FAILED;Unexpected response <500> while in <recv> action with index=2
+          SC;scenario/redirect.xml;7049;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/term2.xml;7050;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc2.xml;TC2: Transport Link is redirection server, PBX node is hidden, Initial INVITE has History-Info, 302 Contact: unprovisionedPbxUser@IP;19277;FAILED;
+     #------ Testcase file=tc/tc3.xml name= TC3: Transport Link is redirection server, PBX node is hidden, Initial INVITE doesn't have History-Info, 302 Contact: provisionedUser@domain ------
+       # <run-0>
+          SC;scenario/orig_withoutHI.xml;1128;FAILED;Unexpected response <500> while in <recv> action with index=2
+          SC;scenario/redirect.xml;7131;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/term3.xml;7131;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc3.xml;TC3: Transport Link is redirection server, PBX node is hidden, Initial INVITE doesn't have History-Info, 302 Contact: provisionedUser@domain;19358;FAILED;
+     #------ Testcase file=tc/tc4.xml name= TC4: Transport Link is redirection server, PBX node is hidden, Initial INVITE doesn't have History-Info, 302 Contact: unprovisionedPbxUser@IP ------
+       # <run-0>
+          SC;scenario/orig_withoutHI.xml;1038;FAILED;Unexpected response <500> while in <recv> action with index=2
+          SC;scenario/redirect.xml;7040;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/term4.xml;7040;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc4.xml;TC4: Transport Link is redirection server, PBX node is hidden, Initial INVITE doesn't have History-Info, 302 Contact: unprovisionedPbxUser@IP;19262;FAILED;
+  # <run-3>
+     #------ Testcase file=tc/prov1.xml name= prov1 ------
+       # <run-0>
+          SC;../opi/modifyServiceNode.xml;99;PASSED;
+     TC;tc/prov1.xml;prov1;103;PASSED;null
+  # <run-4>
+     #------ Testcase file=tc/restart_sesm.xml name= restart_sesm ------
+       # <run-0>
+          SC;scenario/pause5.xml;5002;PASSED;
+          SC;../omi/restartActiveNeInstance.xml;79096;PASSED;
+     TC;tc/restart_sesm.xml;restart_sesm;84102;PASSED;null
+  # <run-5>
+     #------ Testcase file=tc/tc5.xml name= TC5: Transport Link is redirection server, PBX node is not hidden, Initial INVITE has History-Info, 302 Contact: provisionedUser@domain ------
+       # <run-0>
+          SC;scenario/redirect.xml;1388;PASSED;
+          SC;scenario/orig_withHI.xml;1885;PASSED;
+          SC;scenario/term5.xml;2461;PASSED;
+     TC;tc/tc5.xml;TC5: Transport Link is redirection server, PBX node is not hidden, Initial INVITE has History-Info, 302 Contact: provisionedUser@domain;4679;PASSED;null
+     #------ Testcase file=tc/tc6.xml name= TC6: Transport Link is redirection server, PBX node is not hidden, Initial INVITE has History-Info, 302 Contact: unprovisionedPbxUser@IP ------
+       # <run-0>
+          SC;scenario/redirect.xml;1097;PASSED;
+          SC;scenario/orig_withHI.xml;1535;PASSED;
+          SC;scenario/term6.xml;1540;PASSED;
+     TC;tc/tc6.xml;TC6: Transport Link is redirection server, PBX node is not hidden, Initial INVITE has History-Info, 302 Contact: unprovisionedPbxUser@IP;3756;PASSED;null
+     #------ Testcase file=tc/tc7.xml name= TC7: Transport Link is redirection server, PBX node is not hidden, Initial INVITE doesn't have History-Info, 302 Contact: provisionedUser@domain ------
+       # <run-0>
+          SC;scenario/redirect.xml;1093;PASSED;
+          SC;scenario/orig_withoutHI.xml;1787;PASSED;
+          SC;scenario/term7.xml;1833;PASSED;
+     TC;tc/tc7.xml;TC7: Transport Link is redirection server, PBX node is not hidden, Initial INVITE doesn't have History-Info, 302 Contact: provisionedUser@domain;4051;PASSED;null
+     #------ Testcase file=tc/tc8.xml name= TC8: Transport Link is redirection server, PBX node is not hidden, Initial INVITE doesn't have History-Info, 302 Contact: unprovisionedPbxUser@IP ------
+       # <run-0>
+          SC;scenario/redirect.xml;1088;PASSED;
+          SC;scenario/orig_withoutHI.xml;1767;PASSED;
+          SC;scenario/term8.xml;1772;PASSED;
+     TC;tc/tc8.xml;TC8: Transport Link is redirection server, PBX node is not hidden, Initial INVITE doesn't have History-Info, 302 Contact: unprovisionedPbxUser@IP;3988;PASSED;null
+  # <run-6>
+     #------ Testcase file=tc/prov2.xml name= prov2 ------
+       # <run-0>
+          SC;../omi/updateStandAloneSipPbxWithTransportLink.xml;2152;PASSED;
+     TC;tc/prov2.xml;prov2;2156;PASSED;null
+  # <run-7>
+     #------ Testcase file=tc/restart_sesm.xml name= restart_sesm ------
+       # <run-0>
+          SC;scenario/pause5.xml;5002;PASSED;
+          SC;../omi/restartActiveNeInstance.xml;81959;PASSED;
+     TC;tc/restart_sesm.xml;restart_sesm;86966;PASSED;null
+  # <run-8>
+     #------ Testcase file=tc/tc9.xml name= TC9: Transport Link is not redirection server, PBX node is not hidden, Initial INVITE has History-Info, 302 Contact: provisionedUser@domain ------
+       # <run-0>
+          SC;scenario/redirect.xml;1355;PASSED;
+          SC;scenario/orig_withHI.xml;1859;PASSED;
+          SC;scenario/term9.xml;1907;PASSED;
+     TC;tc/tc9.xml;TC9: Transport Link is not redirection server, PBX node is not hidden, Initial INVITE has History-Info, 302 Contact: provisionedUser@domain;4124;PASSED;null
+     #------ Testcase file=tc/tc10.xml name= TC10: Transport Link is not redirection server, PBX node is not hidden, Initial INVITE has History-Info, 302 Contact: unprovisionedPbxUser@IP ------
+       # <run-0>
+          SC;scenario/redirect.xml;1091;PASSED;
+          SC;scenario/orig_withHI.xml;1523;PASSED;
+          SC;scenario/term10.xml;1531;PASSED;
+     TC;tc/tc10.xml;TC10: Transport Link is not redirection server, PBX node is not hidden, Initial INVITE has History-Info, 302 Contact: unprovisionedPbxUser@IP;3746;PASSED;null
+     #------ Testcase file=tc/tc11.xml name= TC11: Transport Link is not redirection server, PBX node is not hidden, Initial INVITE doesn't have History-Info, 302 Contact: provisionedUser@domain ------
+       # <run-0>
+          SC;scenario/redirect.xml;1102;PASSED;
+          SC;scenario/orig_withoutHI.xml;1791;PASSED;
+          SC;scenario/term11.xml;1840;PASSED;
+     TC;tc/tc11.xml;TC11: Transport Link is not redirection server, PBX node is not hidden, Initial INVITE doesn't have History-Info, 302 Contact: provisionedUser@domain;4057;PASSED;null
+     #------ Testcase file=tc/tc12.xml name= TC12: Transport Link is not redirection server, PBX node is not hidden, Initial INVITE doesn't have History-Info, 302 Contact: unprovisionedPbxUser@IP ------
+       # <run-0>
+          SC;scenario/redirect.xml;1084;PASSED;
+          SC;scenario/orig_withoutHI.xml;1763;PASSED;
+          SC;scenario/term12.xml;1767;PASSED;
+     TC;tc/tc12.xml;TC12: Transport Link is not redirection server, PBX node is not hidden, Initial INVITE doesn't have History-Info, 302 Contact: unprovisionedPbxUser@IP;3982;PASSED;null
+  # <run-9>
+     #------ Testcase file=tc/prov3.xml name= prov3 ------
+       # <run-0>
+          SC;../opi/modifyServiceNode.xml;161;PASSED;
+     TC;tc/prov3.xml;prov3;165;PASSED;null
+  # <run-10>
+     #------ Testcase file=tc/restart_sesm.xml name= restart_sesm ------
+       # <run-0>
+          SC;scenario/pause5.xml;5002;PASSED;
+          SC;../omi/restartActiveNeInstance.xml;80645;PASSED;
+     TC;tc/restart_sesm.xml;restart_sesm;85651;PASSED;null
+  # <run-11>
+     #------ Testcase file=tc/tc13.xml name= TC13: Transport Link is not redirection server, PBX node is hidden, Initial INVITE has History-Info, 302 Contact: provisionedUser@domain ------
+       # <run-0>
+          SC;scenario/orig_withHI.xml;1811;FAILED;Unexpected response <500> while in <recv> action with index=2
+          SC;scenario/term13.xml;7814;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/redirect.xml;7814;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc13.xml;TC13: Transport Link is not redirection server, PBX node is hidden, Initial INVITE has History-Info, 302 Contact: provisionedUser@domain;20032;FAILED;
+     #------ Testcase file=tc/tc14.xml name= TC14: Transport Link is not redirection server, PBX node is hidden, Initial INVITE has History-Info, 302 Contact: unprovisionedPbxUser@IP ------
+       # <run-0>
+          SC;scenario/orig_withHI.xml;1037;FAILED;Unexpected response <500> while in <recv> action with index=2
+          SC;scenario/term14.xml;7039;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/redirect.xml;7039;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc14.xml;TC14: Transport Link is not redirection server, PBX node is hidden, Initial INVITE has History-Info, 302 Contact: unprovisionedPbxUser@IP;19255;FAILED;
+     #------ Testcase file=tc/tc15.xml name= TC15: Transport Link is not redirection server, PBX node is hidden, Initial INVITE doesn't have History-Info, 302 Contact: provisionedUser@domain ------
+       # <run-0>
+          SC;scenario/orig_withoutHI.xml;1040;FAILED;Unexpected response <500> while in <recv> action with index=2
+          SC;scenario/redirect.xml;7041;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/term15.xml;7041;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc15.xml;TC15: Transport Link is not redirection server, PBX node is hidden, Initial INVITE doesn't have History-Info, 302 Contact: provisionedUser@domain;19261;FAILED;
+     #------ Testcase file=tc/tc16.xml name= TC16: Transport Link is not redirection server, PBX node is hidden, Initial INVITE doesn't have History-Info, 302 Contact: unprovisionedPbxUser@IP ------
+       # <run-0>
+          SC;scenario/orig_withoutHI.xml;1034;FAILED;Unexpected response <500> while in <recv> action with index=2
+          SC;scenario/redirect.xml;7037;FAILED;Cannot run due to concurrent scenario failure.
+          SC;scenario/term16.xml;7036;FAILED;Cannot run due to concurrent scenario failure.
+     TC;tc/tc16.xml;TC16: Transport Link is not redirection server, PBX node is hidden, Initial INVITE doesn't have History-Info, 302 Contact: unprovisionedPbxUser@IP;19251;FAILED;
+  # <run-12>
+     #------ Testcase file=tc/prov_final_opi.xml name= prov_final_opi ------
+       # <run-0>
+          SC;../opi/removeDomain.xml;1463;PASSED;
+          SC;../opi/removeServiceNode.xml;156;PASSED;
+          SC;../opi/removeServiceNode.xml;144;PASSED;
+     TC;tc/prov_final_opi.xml;prov_final_opi;1769;PASSED;null
+     #------ Testcase file=tc/prov_final_omi.xml name= prov_final_omi ------
+       # <run-0>
+          SC;../omi/deleteStandAloneSipPbxSessMgrAssoc.xml;2279;PASSED;
+          SC;../omi/deleteStandAloneSipPbx.xml;2219;PASSED;
+          SC;../omi/removeInformationalElement.xml;2141;PASSED;
+     TC;tc/prov_final_omi.xml;prov_final_omi;6646;PASSED;null
+TS;/var/lib/jenkins/workspace/Experius/12.1/Functional_Tests_Minitaf/a2-test/test/HICleanup_transportlink/test_suite.xml;HICleanup_transportlink;644091;FAILED;
